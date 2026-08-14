@@ -4,6 +4,8 @@
 
 *Vertraulich · Stand: August 2026 · Gültigkeit: 90 Tage*
 
+> **Eröffnung 2027.** Bis zur Eröffnung nehmen wir Voranmeldungen entgegen und schließen Vorverträge ab — Träger mit Vorvertrag erhalten Pilotkonditionen und bevorzugte Kontingente in der ersten Saison.
+
 ---
 
 ## 1. Das Angebot in einem Absatz

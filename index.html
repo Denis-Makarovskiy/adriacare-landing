@@ -91,6 +91,14 @@
     font-weight: 600;
   }
 
+  .topbar {
+    background: var(--gold); text-align: center; padding: 9px 16px;
+    margin: 0 -24px;
+  }
+  .topbar a {
+    color: #2a2107; text-decoration: none; font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em;
+  }
+  .topbar a:hover { text-decoration: underline; }
   header.site {
     display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
     padding: 22px 0 18px;
@@ -223,11 +231,18 @@
   details[open] summary::after { content: "–"; }
   details p { padding: 0 0 20px; color: var(--ink-soft); max-width: 68ch; }
 
-  .contact { background: var(--sea-deep); color: var(--on-sea); border-top: none; }
+  .contact {
+    background: var(--sea-deep); color: var(--on-sea); border-top: none;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px 72px; align-items: start;
+  }
   .contact .eyebrow { color: var(--gold); }
   .contact h2 { color: var(--on-sea); }
   .contact .prose p { color: #c3d3d9; }
-  form { margin-top: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px; max-width: 760px; }
+  form { margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px; }
+  @media (max-width: 900px) {
+    .contact { grid-template-columns: 1fr; gap: 8px; }
+    form { margin-top: 26px; }
+  }
   @media (max-width: 680px) { form { grid-template-columns: 1fr; } }
   .field { display: grid; gap: 7px; }
   .field.full { grid-column: 1 / -1; }
@@ -260,6 +275,7 @@
 <body>
 
 <div class="wrap">
+  <div class="topbar"><a href="#angebot" data-i18n="banner">Eröffnung 2027 · Wir nehmen Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
   <header class="site">
     <a class="brand" href="#top">Adria<span> Care</span> Residenz</a>
     <div class="head-right">
@@ -529,6 +545,7 @@
   var I18N = {
     de: null, /* German lives in the markup as the source of truth */
     en: {
+      banner: "Opening in 2027 · We are taking preliminary applications and signing pre-agreements →",
       tag: "Budva Riviera · Montenegro",
       e_hero: "For operators and directors of residential care homes",
       h1: "Your residents winter on the Adriatic. Your standard of care travels with them.",
@@ -623,6 +640,7 @@
       foot1: "Adria Care Residence · Budva Riviera, Montenegro"
     },
     fr: {
+      banner: "Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →",
       tag: "Budva · Monténégro",
       e_hero: "Pour les gestionnaires et directions d'EHPAD et de résidences médicalisées",
       h1: "Vos résidents passent l'hiver sur l'Adriatique. Votre standard de soins voyage avec eux.",
@@ -717,6 +735,7 @@
       foot1: "Adria Care Résidence · Budva, Monténégro"
     },
     es: {
+      banner: "Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →",
       tag: "Budva · Montenegro",
       e_hero: "Para gestores y direcciones de residencias de mayores",
       h1: "Sus residentes invernan en el Adriático. Su estándar de cuidados viaja con ellos.",
@@ -811,6 +830,7 @@
       foot1: "Adria Care Residencia · Budva, Montenegro"
     },
     sr: {
+      banner: "Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →",
       tag: "Budva · Crna Gora",
       e_hero: "Za osnivače i direktore ustanova za smeštaj starijih",
       h1: "Vaši korisnici zimuju na Jadranu. Vaš standard nege putuje sa njima.",
@@ -905,6 +925,7 @@
       foot1: "Adria Care Rezidencija · Budva, Crna Gora"
     },
     ru: {
+      banner: "Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →",
       tag: "Будва · Черногория",
       e_hero: "Для учредителей и директоров стационарных учреждений ухода",
       h1: "Ваши резиденты зимуют на Адриатике. Ваш стандарт ухода едет с ними.",
