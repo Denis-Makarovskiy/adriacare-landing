@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Saisonale Pflegeresidenz in Budva, Montenegro — Partner europäischer Pflegeeinrichtungen. Aufenthalte von 4–12 Wochen, mehrsprachige Betreuung, Saisonindex-Preise.">
+<title>Adria Care Residenz — Saisonale Pflegeresidenz an der Adria</title>
+<style>
+  :root {
+    --ink: #1d2a30;
+    --ink-soft: #46565e;
+    --ground: #f6f4ee;
+    --surface: #fdfcf9;
+    --line: #d9d4c8;
+    --sea: #16566b;
+    --sea-deep: #0e3d4e;
+    --gold: #c89b3c;
+    --on-sea: #f2f6f7;
+    --ph-a: #cfd9d4;
+    --ph-b: #a9c2c6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8e6df;
+      --ink-soft: #a9b3b8;
+      --ground: #141d21;
+      --surface: #1b2529;
+      --line: #32414a;
+      --sea: #4d97ae;
+      --sea-deep: #0e3d4e;
+      --gold: #d3ad58;
+      --on-sea: #f2f6f7;
+      --ph-a: #24343a;
+      --ph-b: #2e4650;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e8e6df;
+    --ink-soft: #a9b3b8;
+    --ground: #141d21;
+    --surface: #1b2529;
+    --line: #32414a;
+    --sea: #4d97ae;
+    --sea-deep: #0e3d4e;
+    --gold: #d3ad58;
+    --on-sea: #f2f6f7;
+    --ph-a: #24343a;
+    --ph-b: #2e4650;
+  }
+  :root[data-theme="light"] {
+    --ink: #1d2a30;
+    --ink-soft: #46565e;
+    --ground: #f6f4ee;
+    --surface: #fdfcf9;
+    --line: #d9d4c8;
+    --sea: #16566b;
+    --sea-deep: #0e3d4e;
+    --gold: #c89b3c;
+    --on-sea: #f2f6f7;
+    --ph-a: #cfd9d4;
+    --ph-b: #a9c2c6;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  h1, h2, h3 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    line-height: 1.18;
+    text-wrap: balance;
+    margin: 0;
+  }
+  p { margin: 0; }
+  a { color: var(--sea); }
+
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+  .prose { max-width: 62ch; }
+
+  .eyebrow {
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sea);
+    font-weight: 600;
+  }
+
+  header.site {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    padding: 22px 0 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .brand {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 21px; font-weight: 600; color: var(--ink); text-decoration: none;
+  }
+  .brand span { color: var(--sea); }
+  .brand-tag { font-size: 13px; color: var(--ink-soft); }
+  .head-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+
+  .lang { display: flex; gap: 2px; border: 1px solid var(--line); }
+  .lang button {
+    font: inherit; font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em;
+    background: transparent; color: var(--ink-soft); border: none;
+    padding: 6px 9px; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--sea); color: var(--on-sea); }
+  .lang button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+
+  .hero { padding: 74px 0 56px; }
+  .hero h1 { font-size: clamp(34px, 5.2vw, 56px); max-width: 20ch; }
+  .hero .lede {
+    margin-top: 26px; max-width: 58ch;
+    font-size: 19.5px; color: var(--ink-soft);
+  }
+  .hero-meta {
+    margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 28px;
+    font-size: 14.5px; color: var(--ink-soft);
+  }
+  .hero-meta b { color: var(--ink); font-weight: 600; }
+  .cta-row { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .btn {
+    display: inline-block; padding: 13px 26px;
+    background: var(--sea); color: var(--on-sea);
+    text-decoration: none; font-weight: 600; font-size: 16px;
+    border: 1px solid var(--sea); cursor: pointer; font-family: inherit;
+  }
+  .btn:hover { background: var(--sea-deep); border-color: var(--sea-deep); }
+  .btn:focus-visible, a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--gold); outline-offset: 2px;
+  }
+  .btn-quiet { background: transparent; color: var(--sea); }
+  .btn-quiet:hover { background: transparent; color: var(--sea-deep); }
+
+  /* Photo placeholders */
+  figure.ph {
+    margin: 0; position: relative; overflow: hidden;
+    background:
+      radial-gradient(120% 90% at 15% 0%, var(--ph-a) 0%, transparent 60%),
+      linear-gradient(160deg, var(--ph-b) 0%, var(--ph-a) 55%, var(--ph-b) 100%);
+    border: 1px solid var(--line);
+    display: grid; place-items: center;
+  }
+  figure.ph figcaption {
+    text-align: center; padding: 18px; color: var(--ink-soft);
+    font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+    max-width: 30ch;
+  }
+  figure.ph figcaption::before {
+    content: "◻"; display: block; font-size: 26px; margin-bottom: 8px; color: var(--sea);
+  }
+  .gallery { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 14px; padding-bottom: 68px; }
+  .gallery .ph { aspect-ratio: 4 / 3; }
+  .gallery .ph:first-child { aspect-ratio: auto; }
+  @media (max-width: 780px) { .gallery { grid-template-columns: 1fr; } .gallery .ph:first-child { aspect-ratio: 16/9; } }
+  .ph-wide { aspect-ratio: 21 / 7; margin-top: 44px; }
+  @media (max-width: 780px) { .ph-wide { aspect-ratio: 16/9; } }
+
+  section { padding: 68px 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 10px 0 26px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  @media (max-width: 780px) { .two-col { grid-template-columns: 1fr; } }
+
+  .pain-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 18px; }
+  .pain-list li { padding-left: 20px; border-left: 3px solid var(--gold); color: var(--ink-soft); }
+  .pain-list b { color: var(--ink); font-weight: 600; }
+
+  .steps { margin: 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: 0; }
+  .steps li {
+    counter-increment: step;
+    display: grid; grid-template-columns: 64px 1fr; gap: 20px;
+    padding: 22px 0; border-bottom: 1px solid var(--line);
+  }
+  .steps li:last-child { border-bottom: none; }
+  .steps li::before {
+    content: counter(step, decimal-leading-zero);
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 28px; color: var(--sea); line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+  }
+  .steps h3 { font-size: 19px; margin-bottom: 6px; }
+  .steps p { color: var(--ink-soft); font-size: 16px; max-width: 60ch; }
+
+  .care-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+  @media (max-width: 780px) { .care-grid { grid-template-columns: 1fr; } }
+  .care-card { background: var(--surface); border: 1px solid var(--line); padding: 26px; }
+  .care-card h3 { font-size: 19px; margin-bottom: 10px; }
+  .care-card p { color: var(--ink-soft); font-size: 16px; }
+
+  .table-scroll { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 15.5px; }
+  th, td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  th {
+    font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-soft); font-weight: 600;
+  }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  .table-note { margin-top: 12px; font-size: 14px; color: var(--ink-soft); max-width: 70ch; }
+  .delta { color: var(--sea); font-weight: 600; }
+
+  .seasons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  @media (max-width: 900px) { .seasons { grid-template-columns: 1fr; } }
+  .season { border-top: 3px solid var(--sea); background: var(--surface); border-inline: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 24px; }
+  .season .when { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+  .season h3 { font-size: 20px; margin: 8px 0 10px; }
+  .season p { color: var(--ink-soft); font-size: 15.5px; }
+
+  details { border-bottom: 1px solid var(--line); }
+  details:first-of-type { border-top: 1px solid var(--line); }
+  summary {
+    cursor: pointer; padding: 18px 0; font-weight: 600; font-size: 17px;
+    list-style: none; display: flex; justify-content: space-between; gap: 16px;
+  }
+  summary::after { content: "+"; color: var(--sea); font-size: 20px; }
+  details[open] summary::after { content: "–"; }
+  details p { padding: 0 0 20px; color: var(--ink-soft); max-width: 68ch; }
+
+  .contact { background: var(--sea-deep); color: var(--on-sea); border-top: none; }
+  .contact .eyebrow { color: var(--gold); }
+  .contact h2 { color: var(--on-sea); }
+  .contact .prose p { color: #c3d3d9; }
+  form { margin-top: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px; max-width: 760px; }
+  @media (max-width: 680px) { form { grid-template-columns: 1fr; } }
+  .field { display: grid; gap: 7px; }
+  .field.full { grid-column: 1 / -1; }
+  label { font-size: 13.5px; font-weight: 600; letter-spacing: 0.04em; color: #c3d3d9; }
+  input, select, textarea {
+    font: inherit; font-size: 16px; color: var(--on-sea);
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.25);
+    padding: 12px 14px; width: 100%;
+  }
+  input::placeholder, textarea::placeholder { color: rgba(243,246,247,0.45); }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+  select option { color: #1d2a30; }
+  .contact .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 6px; }
+  .contact .btn:hover { filter: brightness(1.08); }
+  .form-note { grid-column: 1 / -1; font-size: 13.5px; color: #9db3bb; }
+
+  footer.site {
+    padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
+    display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero h1, .hero .lede, .hero-meta, .cta-row { animation: rise 0.7s ease-out backwards; }
+    .hero .lede { animation-delay: 0.12s; }
+    .hero-meta { animation-delay: 0.22s; }
+    .cta-row { animation-delay: 0.3s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="#top">Adria<span> Care</span> Residenz</a>
+    <div class="head-right">
+      <span class="brand-tag" data-i18n="tag">Budva · Montenegro</span>
+      <nav class="lang" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-lang="sr" aria-pressed="false">SR</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero" id="top">
+    <p class="eyebrow" data-i18n="e_hero">Für Träger und Leitungen stationärer Pflegeeinrichtungen</p>
+    <h1 style="margin-top:14px;" data-i18n="h1">Ihre Bewohner überwintern an der Adria. Ihr Pflegestandard reist mit.</h1>
+    <p class="lede" data-i18n="lede">Adria Care Residenz nimmt Bewohnergruppen europäischer Pflegeeinrichtungen für saisonale Aufenthalte von 4–12 Wochen auf — mit mehrsprachiger Betreuung (Deutsch, Englisch, Französisch, Spanisch, Serbisch, Russisch), lückenloser pflegerischer Übergabe und einer Betriebswirtschaft, die für Ihr Haus rechnet.</p>
+    <div class="hero-meta">
+      <span data-i18n="m1"><b>4–12 Wochen</b> pro Turnus</span>
+      <span data-i18n="m2"><b>Gruppen ab 6</b> Bewohnern</span>
+      <span data-i18n="m3"><b>Pflegegrade 1–3</b></span>
+      <span data-i18n="m4"><b>Begleitkraft</b> Ihres Hauses inklusive</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn" href="#angebot" data-i18n="cta1">Unverbindliches Angebot anfordern</a>
+      <a class="btn btn-quiet" href="#ablauf" data-i18n="cta2">So funktioniert es →</a>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <figure class="ph"><figcaption>Photo 1 · Terrace of the residence at golden hour, residents at breakfast, Budva Riviera behind</figcaption></figure>
+    <figure class="ph"><figcaption>Photo 2 · Caregiver walking arm-in-arm with a resident along the waterfront</figcaption></figure>
+    <figure class="ph"><figcaption>Photo 3 · Bright barrier-free room, sea light through the window</figcaption></figure>
+  </div>
+
+  <section>
+    <div class="two-col">
+      <div>
+        <p class="eyebrow" data-i18n="e_why">Warum jetzt</p>
+        <h2 data-i18n="h_why">Drei Probleme eines Trägers, ein Programm</h2>
+        <p class="prose" style="color:var(--ink-soft);" data-i18n="p_why">Ein saisonaler Turnus an der Adria ist kein Urlaubsprodukt. Er ist ein betriebliches Instrument — und ein Verkaufsargument gegenüber Angehörigen, das kein Wettbewerber in Ihrer Region hat.</p>
+      </div>
+      <ul class="pain-list">
+        <li data-i18n="pain1"><b>Kostendruck.</b> Die Vollkosten eines Pflegeplatzes in Montenegro liegen deutlich unter dem Niveau in Deutschland, Österreich oder Skandinavien. Die Differenz bleibt bei Ihnen — als Marge oder als Preisvorteil für Angehörige.</li>
+        <li data-i18n="pain2"><b>Betriebliche Engpässe.</b> Umbau, Sanierung, Urlaubszeit, Personallücken: Ein 8-Wochen-Turnus verschafft Ihrem Haus planbare Entlastung, ohne Betten dauerhaft abzubauen.</li>
+        <li data-i18n="pain3"><b>Wettbewerb um Angehörige.</b> „Ihre Mutter verbringt den Winter an der Adria — unter demselben Pflegekonzept" ist ein Angebot, das Ihr Haus im lokalen Markt unterscheidbar macht.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ablauf">
+    <p class="eyebrow" data-i18n="e_flow">Ablauf</p>
+    <h2 data-i18n="h_flow">Vom Vertrag bis zur Rückkehr in fünf Schritten</h2>
+    <ol class="steps">
+      <li><div>
+        <h3 data-i18n="s1t">Rahmenvereinbarung und Pilotplanung</h3>
+        <p data-i18n="s1p">Wir definieren gemeinsam Gruppengröße, Pflegegrade, Saison und Dauer. Für den Einstieg empfehlen wir einen Pilotturnus von 4 Wochen mit 6–10 Bewohnern.</p>
+      </div></li>
+      <li><div>
+        <h3 data-i18n="s2t">Pflegerische Übergabe</h3>
+        <p data-i18n="s2p">Ihre Pflegedienstleitung übergibt Pflegeplanung, Medikation und Dokumentation strukturiert an unser Team. Rückfragen klärt eine gemeinsame Videokonferenz vor Abreise.</p>
+      </div></li>
+      <li><div>
+        <h3 data-i18n="s3t">Begleitete Anreise</h3>
+        <p data-i18n="s3p">Tür-zu-Tür-Logistik mit medizinischer Begleitung: Direktflug nach Tivat oder Podgorica mit betreutem Transfer — oder Busreise mit Zwischenübernachtung für Partner aus Österreich, Norditalien und der Region.</p>
+      </div></li>
+      <li><div>
+        <h3 data-i18n="s4t">Aufenthalt unter Ihrem Standard</h3>
+        <p data-i18n="s4p">Pflege nach übergebener Planung, mehrsprachiges Personal, wöchentlicher Bericht an Ihr Haus und auf Wunsch an Angehörige. Eine Begleitkraft Ihres Hauses wohnt kostenfrei mit.</p>
+      </div></li>
+      <li><div>
+        <h3 data-i18n="s5t">Rückkehr und Rückübergabe</h3>
+        <p data-i18n="s5p">Vollständige Dokumentation des Aufenthalts geht zurück an Ihre Pflegedienstleitung — inklusive Vitalverlauf, Medikationsänderungen und ärztlicher Befunde.</p>
+      </div></li>
+    </ol>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_safe">Sicherheit</p>
+    <h2 data-i18n="h_safe">Medizinische Kontinuität ist die Grundlage, nicht das Kleingedruckte</h2>
+    <div class="care-grid">
+      <div class="care-card">
+        <h3 data-i18n="c1t">Lückenlose Pflegeübergabe</h3>
+        <p data-i18n="c1p">Pflegeplanung, Medikationsplan und Dokumentation werden vor Anreise übernommen und während des Aufenthalts fortgeschrieben — kompatibel mit Ihrer Dokumentationspraxis.</p>
+      </div>
+      <div class="care-card">
+        <h3 data-i18n="c2t">Ärztliche Versorgung vor Ort</h3>
+        <p data-i18n="c2p">Kooperationsvertrag mit einer Klinik in Budva für Notfälle, wöchentliche hausärztliche Visite in der Residenz, Apothekenversorgung nach europäischen Standards.</p>
+      </div>
+      <div class="care-card">
+        <h3 data-i18n="c3t">Telemedizinische Anbindung</h3>
+        <p data-i18n="c3p">Auf Wunsch bleibt der behandelnde Arzt Ihres Hauses per Videovisite eingebunden. Ihre Pflegedienstleitung hat jederzeit Zugriff auf den aktuellen Stand.</p>
+      </div>
+      <div class="care-card">
+        <h3 data-i18n="c4t">Versicherung und Rücktransport</h3>
+        <p data-i18n="c4p">Auslandskranken- und Rücktransportversicherung für jeden Bewohner ist im Programmpreis enthalten. Der medizinische Rücktransport ist vertraglich zugesichert.</p>
+      </div>
+    </div>
+    <figure class="ph ph-wide"><figcaption>Photo 4 · Nurse station / doctor's visit in the residence — clinical credibility shot</figcaption></figure>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_econ">Wirtschaftlichkeit</p>
+    <h2 data-i18n="h_econ">Ein Preis, zwei Saisonindizes</h2>
+    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_econ">Unsere Preise sind an die vollstationären Vollkosten in Deutschland gekoppelt — über einen einfachen Saisonindex. In der Nebensaison, dem Kernfenster der Überwinterung, kostet ein Platz die Hälfte des deutschen Niveaus.</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="th1">Pro Bewohner / Monat (Pflegegrad 2)</th>
+            <th data-i18n="th2">Vollkosten Deutschland*</th>
+            <th data-i18n="th3">Nebensaison Okt.–Apr. · Index 0,50</th>
+            <th data-i18n="th4">Hauptsaison Mai–Sep. · Index 0,90</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-i18n="r1">Pflege, Unterkunft, Verpflegung, Klimaprogramm</td>
+            <td class="num">ca. 3.800–4.600 €</td>
+            <td class="num">ca. 1.900–2.300 €</td>
+            <td class="num">ca. 3.420–4.140 €</td>
+          </tr>
+          <tr>
+            <td data-i18n="r2">An- und Abreise mit Begleitung (einmalig)</td>
+            <td class="num">—</td>
+            <td class="num" colspan="2">380–650 €</td>
+          </tr>
+          <tr>
+            <td data-i18n="r3"><b>Ersparnis pro Bewohner und Monat</b></td>
+            <td class="num">—</td>
+            <td class="num"><span class="delta" data-i18n="save1">bis zu 2.300 €</span></td>
+            <td class="num"><span class="delta">380–460 €</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note" data-i18n="note_econ">*Orientierungswerte für vollstationäre Vollkosten; die genaue Kalkulation erstellen wir auf Basis Ihrer Pflegesätze — der Index wird auf Ihren tatsächlichen Satz angewandt. Hinweis: Leistungen der deutschen Pflegeversicherung sind im Ausland regelmäßig nicht abrufbar — das Programm rechnet sich über die Kostendifferenz, nicht über Kassenleistungen. Details im Angebot.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_sea">Saisonprogramme</p>
+    <h2 data-i18n="h_sea">Drei Klimafenster, ganzjährig belegbar</h2>
+    <div class="seasons">
+      <div class="season">
+        <p class="when" data-i18n="w1">November – März · Index 0,50</p>
+        <h3 data-i18n="t1">Überwinterung</h3>
+        <p data-i18n="p1">Milde 10–15 °C statt Dauergrau: mehr Tageslicht, weniger Atemwegs- und Gelenkbeschwerden, spürbar bessere Stimmungslage. Unser stärkstes Programm.</p>
+      </div>
+      <div class="season">
+        <p class="when" data-i18n="w2">April – Juni · September – Oktober · Index 0,50–0,90</p>
+        <h3 data-i18n="t2">Übergangszeit</h3>
+        <p data-i18n="p2">Sanfte Aktivierung und Mobilisierung bei 18–24 °C — geeignet für Bewohner nach Krankenhausaufenthalten und für Häuser mit Umbau- oder Urlaubsfenstern.</p>
+      </div>
+      <div class="season">
+        <p class="when" data-i18n="w3">Juli – August · Index 0,90</p>
+        <h3 data-i18n="t3">Sommerfrische</h3>
+        <p data-i18n="p3">Wenn Hitzewellen Ihre Region belasten: klimatisierte Residenz, Morgenprogramm am Wasser, Rückzug in die kühleren Lagen des Hinterlands.</p>
+      </div>
+    </div>
+    <figure class="ph ph-wide"><figcaption>Photo 5 · Group activity outdoors — light gymnastics or coffee on the promenade, winter sun</figcaption></figure>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_faq">Häufige Fragen</p>
+    <h2 data-i18n="h_faq">Was Träger uns zuerst fragen</h2>
+    <details>
+      <summary data-i18n="q1">Wer trägt die Kosten — Kasse, Träger oder Angehörige?</summary>
+      <p data-i18n="a1">Die deutsche Pflegeversicherung zahlt stationäre Leistungen im Ausland regelmäßig nicht. Das Programm finanziert sich daher über die Kostendifferenz: Entweder kalkuliert der Träger den Turnus innerhalb seiner bestehenden Sätze und behält die Marge, oder Angehörige buchen den Aufenthalt als Zusatzangebot — in beiden Fällen unter den üblichen Eigenanteilen eines deutschen Heimplatzes.</p>
+    </details>
+    <details>
+      <summary data-i18n="q2">Was passiert im medizinischen Notfall?</summary>
+      <p data-i18n="a2">Die Residenz hat einen Kooperationsvertrag mit einer Klinik in Budva (24/7-Aufnahme), eine Rufbereitschaft vor Ort und für jeden Bewohner eine Auslandskranken- und Rücktransportversicherung. Ihr Haus und die Angehörigen werden im Ereignisfall sofort informiert.</p>
+    </details>
+    <details>
+      <summary data-i18n="q3">In welchen Sprachen wird betreut?</summary>
+      <p data-i18n="a3">Die Betreuung ist mehrsprachig: Pflegedienstleitung und Schichtleitungen sind deutschsprachig, im Team wird außerdem Englisch, Französisch, Spanisch, Serbisch und Russisch gesprochen. Die Dokumentation führen wir in der Sprache Ihres Hauses. Zusätzlich wohnt eine Begleitkraft Ihres Hauses kostenfrei mit — sie bleibt Vertrauensperson der Gruppe.</p>
+    </details>
+    <details>
+      <summary data-i18n="q4">Ist eine 20-stündige Busfahrt Bewohnern zumutbar?</summary>
+      <p data-i18n="a4">Für die meisten Gruppen empfehlen wir den Direktflug nach Tivat oder Podgorica (ab Deutschland 2–2,5 Stunden) mit betreutem Transfer. Die Busvariante mit Zwischenübernachtung bieten wir für regionale Partner an, für die sie die wirtschaftlichere und schonendere Route ist.</p>
+    </details>
+    <details>
+      <summary data-i18n="q5">Für welche Bewohner ist das Programm geeignet?</summary>
+      <p data-i18n="a5">Pflegegrade 1–3, reisefähig nach Einschätzung des behandelnden Arztes. Schwere Demenz und intensivpflichtige Bewohner nehmen wir derzeit nicht auf — hier ist Kontinuität der Umgebung wichtiger als jedes Klima.</p>
+    </details>
+    <details>
+      <summary data-i18n="q6">Wie startet man mit geringem Risiko?</summary>
+      <p data-i18n="a6">Mit einem Pilotturnus: 4 Wochen, 6–10 Bewohner, zu Pilotkonditionen, mit Besuch Ihrer Leitung vor Ort vor Vertragsschluss. Danach entscheiden Sie über eine Rahmenvereinbarung.</p>
+    </details>
+  </section>
+
+  <section class="contact" id="angebot">
+    <div class="prose">
+      <p class="eyebrow" data-i18n="e_c">Angebot anfordern</p>
+      <h2 data-i18n="h_c">Erhalten Sie eine Kalkulation für Ihr Haus</h2>
+      <p style="margin-top:14px;" data-i18n="p_c">Nennen Sie uns Eckdaten Ihrer Einrichtung — wir senden Ihnen innerhalb von fünf Werktagen ein konkretes Angebot mit Preisen je Pflegegrad und einem Vorschlag für einen Pilotturnus.</p>
+    </div>
+    <form id="lead-form">
+      <div class="field">
+        <label for="f-org" data-i18n="l_org">Einrichtung / Träger</label>
+        <input id="f-org" name="org" type="text" data-i18n-ph="ph_org" placeholder="Seniorenheim St. Elisabeth" required>
+      </div>
+      <div class="field">
+        <label for="f-name" data-i18n="l_name">Ansprechperson</label>
+        <input id="f-name" name="name" type="text" data-i18n-ph="ph_name" placeholder="Vor- und Nachname" required>
+      </div>
+      <div class="field">
+        <label for="f-email" data-i18n="l_email">E-Mail</label>
+        <input id="f-email" name="email" type="email" placeholder="name@care.eu" required>
+      </div>
+      <div class="field">
+        <label for="f-country" data-i18n="l_country">Land</label>
+        <select id="f-country" name="country">
+          <option data-i18n="co1">Deutschland</option>
+          <option data-i18n="co2">Österreich</option>
+          <option data-i18n="co3">Schweiz</option>
+          <option data-i18n="co4">Anderes Land</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-size" data-i18n="l_size">Denkbare Gruppengröße</label>
+        <select id="f-size" name="size">
+          <option data-i18n="sz1">6–10 Bewohner</option>
+          <option data-i18n="sz2">11–20 Bewohner</option>
+          <option data-i18n="sz3">Mehr als 20 Bewohner</option>
+          <option data-i18n="sz4">Noch offen</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-season" data-i18n="l_season">Interessante Saison</label>
+        <select id="f-season" name="season">
+          <option data-i18n="se1">Überwinterung (Nov–März)</option>
+          <option data-i18n="se2">Übergangszeit (Frühjahr/Herbst)</option>
+          <option data-i18n="se3">Sommerfrische (Juli–Aug)</option>
+          <option data-i18n="se4">Ganzjährig / flexibel</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="f-msg" data-i18n="l_msg">Anmerkungen (optional)</label>
+        <textarea id="f-msg" name="msg" rows="3" data-i18n-ph="ph_msg" placeholder="Pflegegrade, Zeitfenster, besondere Anforderungen …"></textarea>
+      </div>
+      <p class="form-note" data-i18n="fnote">Unverbindlich. Ihre Angaben verwenden wir ausschließlich zur Erstellung des Angebots.</p>
+      <div class="field full">
+        <button class="btn" type="submit" data-i18n="btn">Angebot anfordern</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="site">
+    <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
+    <span>kontakt@adriacare.me · Impressum · Datenschutz</span>
+  </footer>
+</div>
+
+<script>
+  var I18N = {
+    de: null, /* German lives in the markup as the source of truth */
+    en: {
+      tag: "Budva Riviera · Montenegro",
+      e_hero: "For operators and directors of residential care homes",
+      h1: "Your residents winter on the Adriatic. Your standard of care travels with them.",
+      lede: "Adria Care Residence hosts resident groups from European care homes for seasonal stays of 4–12 weeks — with multilingual care (German, English, French, Spanish, Serbian, Russian), a seamless nursing handover, and economics that work for your organisation.",
+      m1: "<b>4–12 weeks</b> per rotation",
+      m2: "<b>Groups of 6+</b> residents",
+      m3: "<b>Care levels 1–3</b>",
+      m4: "<b>Your own escort staff</b> included",
+      cta1: "Request a no-obligation offer",
+      cta2: "How it works →",
+      e_why: "Why now",
+      h_why: "Three operator problems, one programme",
+      p_why: "A seasonal rotation on the Adriatic is not a holiday product. It is an operational instrument — and a selling point with families that no competitor in your region can match.",
+      pain1: "<b>Cost pressure.</b> The full cost of a care place in Montenegro is far below the level in Germany, Austria or Scandinavia. The difference stays with you — as margin, or as a price advantage for families.",
+      pain2: "<b>Operational bottlenecks.</b> Renovation, refurbishment, holiday periods, staffing gaps: an 8-week rotation gives your home predictable relief without permanently cutting beds.",
+      pain3: "<b>Competing for families.</b> “Your mother spends the winter on the Adriatic — under the same care concept” is an offer that sets your home apart in its local market.",
+      e_flow: "Process",
+      h_flow: "From contract to return in five steps",
+      s1t: "Framework agreement and pilot planning",
+      s1p: "Together we define group size, care levels, season and duration. To start, we recommend a 4-week pilot rotation with 6–10 residents.",
+      s2t: "Nursing handover",
+      s2p: "Your head of nursing hands over care plans, medication and documentation to our team in a structured format. Open questions are settled in a joint video call before departure.",
+      s3t: "Escorted travel",
+      s3p: "Door-to-door logistics with medical escort: direct flight to Tivat or Podgorica with assisted transfer — or a coach journey with an overnight stop for partners from Austria, northern Italy and the region.",
+      s4t: "The stay, under your standard",
+      s4p: "Care follows the handed-over plan, with multilingual staff, a weekly report to your home and, on request, to families. One escort staff member from your home stays free of charge.",
+      s5t: "Return and handback",
+      s5p: "Complete documentation of the stay returns to your head of nursing — including vital-sign history, medication changes and medical findings.",
+      e_safe: "Safety",
+      h_safe: "Medical continuity is the foundation, not the small print",
+      c1t: "Seamless nursing handover",
+      c1p: "Care plans, medication plans and documentation are taken over before arrival and kept up to date throughout the stay — compatible with your documentation practice.",
+      c2t: "Physician care on site",
+      c2p: "Cooperation agreement with a clinic in Budva for emergencies, a weekly GP round in the residence, and pharmacy supply to European standards.",
+      c3t: "Telemedicine link",
+      c3p: "On request, your home's attending physician stays involved via video rounds. Your head of nursing has access to the current status at all times.",
+      c4t: "Insurance and repatriation",
+      c4p: "International health and medical-repatriation insurance for every resident is included in the programme price. Medical repatriation is contractually guaranteed.",
+      e_econ: "Economics",
+      h_econ: "One price, two seasonal indices",
+      p_econ: "Our prices are pegged to full residential care costs in Germany via a simple seasonal index. In the low season — the core wintering window — a place costs half the German level.",
+      th1: "Per resident / month (care level 2)",
+      th2: "Full cost, Germany*",
+      th3: "Low season Oct–Apr · index 0.50",
+      th4: "High season May–Sep · index 0.90",
+      r1: "Care, accommodation, meals, climate programme",
+      r2: "Escorted travel there and back (one-off)",
+      r3: "<b>Saving per resident per month</b>",
+      save1: "up to €2,300",
+      note_econ: "*Reference values for full residential costs; the exact calculation is based on your own care rates — the index is applied to your actual rate. Note: German long-term-care insurance benefits are generally not payable abroad — the programme pays for itself through the cost difference, not through insurance benefits. Details in the offer.",
+      e_sea: "Seasonal programmes",
+      h_sea: "Three climate windows, bookable year round",
+      w1: "November – March · index 0.50",
+      t1: "Wintering",
+      p1: "A mild 10–15 °C instead of constant grey: more daylight, fewer respiratory and joint complaints, a noticeably better mood. Our strongest programme.",
+      w2: "April – June · September – October · index 0.50–0.90",
+      t2: "Shoulder season",
+      p2: "Gentle activation and mobilisation at 18–24 °C — suited to residents recovering after hospital stays, and to homes with renovation or holiday windows.",
+      w3: "July – August · index 0.90",
+      t3: "Summer retreat",
+      p3: "When heatwaves strain your region: an air-conditioned residence, morning programme by the water, and retreat to the cooler hills behind the riviera.",
+      e_faq: "Frequent questions",
+      h_faq: "What operators ask us first",
+      q1: "Who pays — insurer, operator or families?",
+      a1: "German long-term-care insurance generally does not cover residential care abroad. The programme is therefore financed through the cost difference: either the operator prices the rotation within its existing rates and keeps the margin, or families book the stay as a premium option — in both cases below the usual out-of-pocket cost of a German care place.",
+      q2: "What happens in a medical emergency?",
+      a2: "The residence has a cooperation agreement with a clinic in Budva (24/7 admission), on-call staff on site, and international health and repatriation insurance for every resident. Your home and the family are informed immediately if anything happens.",
+      q3: "What languages does the staff speak?",
+      a3: "Care is multilingual: the head of nursing and shift leads are German-speaking, and the wider team also covers English, French, Spanish, Serbian and Russian. Documentation is kept in your home's language. In addition, an escort staff member from your home stays free of charge — a familiar face the group trusts.",
+      q4: "Is a 20-hour coach journey reasonable for residents?",
+      a4: "For most groups we recommend the direct flight to Tivat or Podgorica (2–2.5 hours from Germany) with assisted transfer. The coach option with an overnight stop is offered to regional partners for whom it is the more economical and gentler route.",
+      q5: "Which residents is the programme suitable for?",
+      a5: "Care levels 1–3, fit to travel in the judgement of the attending physician. We currently do not admit residents with severe dementia or intensive-care needs — for them, continuity of environment matters more than any climate.",
+      q6: "How do we start with low risk?",
+      a6: "With a pilot rotation: 4 weeks, 6–10 residents, at pilot conditions, with a site visit by your management before signing. After that, you decide on a framework agreement.",
+      e_c: "Request an offer",
+      h_c: "Get a calculation for your home",
+      p_c: "Tell us the key facts about your facility — within five working days you will receive a concrete offer with prices per care level and a proposal for a pilot rotation.",
+      l_org: "Facility / operator", ph_org: "St Elisabeth Care Home",
+      l_name: "Contact person", ph_name: "First and last name",
+      l_email: "Email",
+      l_country: "Country", co1: "Germany", co2: "Austria", co3: "Switzerland", co4: "Other country",
+      l_size: "Likely group size", sz1: "6–10 residents", sz2: "11–20 residents", sz3: "More than 20 residents", sz4: "Still open",
+      l_season: "Season of interest", se1: "Wintering (Nov–Mar)", se2: "Shoulder season (spring/autumn)", se3: "Summer retreat (Jul–Aug)", se4: "Year-round / flexible",
+      l_msg: "Notes (optional)", ph_msg: "Care levels, time window, special requirements …",
+      fnote: "No obligation. Your details are used solely to prepare the offer.",
+      btn: "Request offer",
+      foot1: "Adria Care Residence · Budva Riviera, Montenegro"
+    },
+    fr: {
+      tag: "Budva · Monténégro",
+      e_hero: "Pour les gestionnaires et directions d'EHPAD et de résidences médicalisées",
+      h1: "Vos résidents passent l'hiver sur l'Adriatique. Votre standard de soins voyage avec eux.",
+      lede: "Adria Care Résidence accueille des groupes de résidents d'établissements européens pour des séjours saisonniers de 4 à 12 semaines — avec un accompagnement multilingue (allemand, anglais, français, espagnol, serbe, russe), une transmission des soins sans rupture et une économie qui profite à votre établissement.",
+      m1: "<b>4–12 semaines</b> par rotation",
+      m2: "<b>Groupes dès 6</b> résidents",
+      m3: "<b>Niveaux de dépendance 1–3</b>",
+      m4: "<b>Accompagnant de votre équipe</b> inclus",
+      cta1: "Demander une offre sans engagement",
+      cta2: "Comment ça marche →",
+      e_why: "Pourquoi maintenant",
+      h_why: "Trois problèmes de gestionnaire, un seul programme",
+      p_why: "Une rotation saisonnière sur l'Adriatique n'est pas un produit de vacances. C'est un instrument de gestion — et un argument auprès des familles qu'aucun concurrent de votre région ne peut offrir.",
+      pain1: "<b>Pression sur les coûts.</b> Le coût complet d'une place au Monténégro est nettement inférieur au niveau allemand, autrichien ou scandinave. La différence vous revient — en marge, ou en avantage tarifaire pour les familles.",
+      pain2: "<b>Contraintes d'exploitation.</b> Travaux, rénovation, congés, pénurie de personnel : une rotation de 8 semaines soulage votre établissement de façon planifiable, sans supprimer de lits.",
+      pain3: "<b>Concurrence auprès des familles.</b> « Votre mère passe l'hiver sur l'Adriatique — avec le même concept de soins » : une offre qui distingue votre établissement sur son marché local.",
+      e_flow: "Déroulement",
+      h_flow: "Du contrat au retour en cinq étapes",
+      s1t: "Accord-cadre et planification du pilote",
+      s1p: "Nous définissons ensemble la taille du groupe, les niveaux de dépendance, la saison et la durée. Pour commencer, nous recommandons une rotation pilote de 4 semaines avec 6 à 10 résidents.",
+      s2t: "Transmission des soins",
+      s2p: "Votre cadre de santé transmet à notre équipe, de façon structurée, plans de soins, médication et dossiers. Les questions ouvertes sont réglées en visioconférence avant le départ.",
+      s3t: "Voyage accompagné",
+      s3p: "Logistique porte à porte avec accompagnement médical : vol direct vers Tivat ou Podgorica avec transfert assisté — ou trajet en autocar avec nuit d'étape pour les partenaires d'Autriche, d'Italie du Nord et de la région.",
+      s4t: "Le séjour, selon votre standard",
+      s4p: "Soins selon le plan transmis, personnel multilingue, rapport hebdomadaire à votre établissement et, sur demande, aux familles. Un accompagnant de votre équipe est logé gratuitement.",
+      s5t: "Retour et rétrocession",
+      s5p: "La documentation complète du séjour revient à votre cadre de santé — courbes de constantes, modifications de traitement et comptes rendus médicaux inclus.",
+      e_safe: "Sécurité",
+      h_safe: "La continuité médicale est le socle, pas une clause en petits caractères",
+      c1t: "Transmission des soins sans rupture",
+      c1p: "Plans de soins, plans de médication et dossiers sont repris avant l'arrivée et tenus à jour pendant le séjour — compatibles avec vos pratiques de documentation.",
+      c2t: "Suivi médical sur place",
+      c2p: "Convention avec une clinique de Budva pour les urgences, visite hebdomadaire d'un généraliste dans la résidence, approvisionnement pharmaceutique aux normes européennes.",
+      c3t: "Lien télémédical",
+      c3p: "Sur demande, le médecin traitant de votre établissement reste impliqué par télévisite. Votre cadre de santé a accès à tout moment à l'état actuel du dossier.",
+      c4t: "Assurance et rapatriement",
+      c4p: "Assurance santé internationale et rapatriement médical inclus dans le prix du programme pour chaque résident. Le rapatriement médical est garanti contractuellement.",
+      e_econ: "Économie",
+      h_econ: "Un prix, deux indices saisonniers",
+      p_econ: "Nos prix sont indexés sur le coût complet de l'hébergement médicalisé en Allemagne, via un indice saisonnier simple. En basse saison — la fenêtre clé de l'hivernage — une place coûte la moitié du niveau allemand.",
+      th1: "Par résident / mois (niveau 2)",
+      th2: "Coût complet, Allemagne*",
+      th3: "Basse saison oct.–avr. · indice 0,50",
+      th4: "Haute saison mai–sept. · indice 0,90",
+      r1: "Soins, hébergement, restauration, programme climatique",
+      r2: "Voyage aller-retour accompagné (unique)",
+      r3: "<b>Économie par résident et par mois</b>",
+      save1: "jusqu'à 2 300 €",
+      note_econ: "*Valeurs indicatives de coût complet ; le calcul exact est établi sur la base de vos propres tarifs — l'indice s'applique à votre tarif réel. À noter : les prestations de l'assurance dépendance allemande ne sont en général pas versées à l'étranger — le programme se finance par l'écart de coûts, pas par des prestations d'assurance. Détails dans l'offre.",
+      e_sea: "Programmes saisonniers",
+      h_sea: "Trois fenêtres climatiques, réservables toute l'année",
+      w1: "Novembre – mars · indice 0,50",
+      t1: "Hivernage",
+      p1: "10–15 °C de douceur au lieu de la grisaille : plus de lumière, moins de troubles respiratoires et articulaires, un moral nettement meilleur. Notre programme phare.",
+      w2: "Avril – juin · septembre – octobre · indice 0,50–0,90",
+      t2: "Intersaison",
+      p2: "Activation et mobilisation douces à 18–24 °C — adaptées aux résidents en sortie d'hospitalisation et aux établissements en période de travaux ou de congés.",
+      w3: "Juillet – août · indice 0,90",
+      t3: "Fraîcheur d'été",
+      p3: "Quand la canicule pèse sur votre région : résidence climatisée, programme matinal au bord de l'eau, repli vers les collines plus fraîches de l'arrière-pays.",
+      e_faq: "Questions fréquentes",
+      h_faq: "Ce que les gestionnaires nous demandent d'abord",
+      q1: "Qui paie — l'assurance, le gestionnaire ou les familles ?",
+      a1: "L'assurance dépendance allemande ne couvre en général pas l'hébergement médicalisé à l'étranger. Le programme se finance donc par l'écart de coûts : soit le gestionnaire intègre la rotation dans ses tarifs existants et conserve la marge, soit les familles réservent le séjour en option premium — dans les deux cas en dessous du reste à charge habituel d'une place en Allemagne.",
+      q2: "Que se passe-t-il en cas d'urgence médicale ?",
+      a2: "La résidence a une convention avec une clinique de Budva (admission 24 h/24), une astreinte sur place et, pour chaque résident, une assurance santé internationale avec rapatriement. Votre établissement et la famille sont informés immédiatement.",
+      q3: "En quelles langues se fait l'accompagnement ?",
+      a3: "L'accompagnement est multilingue : la direction des soins et les chefs d'équipe sont germanophones, et l'équipe couvre aussi l'anglais, le français, l'espagnol, le serbe et le russe. La documentation est tenue dans la langue de votre établissement. De plus, un accompagnant de votre établissement est logé gratuitement — il reste la personne de confiance du groupe.",
+      q4: "Un trajet de 20 heures en autocar est-il raisonnable ?",
+      a4: "Pour la plupart des groupes, nous recommandons le vol direct vers Tivat ou Podgorica (2 à 2,5 heures depuis l'Allemagne) avec transfert assisté. L'option autocar avec nuit d'étape s'adresse aux partenaires régionaux pour qui elle est la voie la plus économique et la plus douce.",
+      q5: "À quels résidents le programme s'adresse-t-il ?",
+      a5: "Niveaux de dépendance 1 à 3, aptes au voyage selon l'avis du médecin traitant. Nous n'accueillons pas pour l'instant les résidents atteints de démence sévère ou nécessitant des soins intensifs — pour eux, la continuité de l'environnement prime sur tout climat.",
+      q6: "Comment démarrer avec un risque minimal ?",
+      a6: "Par une rotation pilote : 4 semaines, 6 à 10 résidents, à conditions pilotes, avec visite de votre direction sur place avant signature. Vous décidez ensuite d'un accord-cadre.",
+      e_c: "Demander une offre",
+      h_c: "Recevez un calcul pour votre établissement",
+      p_c: "Indiquez-nous les données clés de votre établissement — sous cinq jours ouvrés, vous recevrez une offre concrète avec les prix par niveau de dépendance et une proposition de rotation pilote.",
+      l_org: "Établissement / gestionnaire", ph_org: "Résidence Sainte-Élisabeth",
+      l_name: "Personne de contact", ph_name: "Prénom et nom",
+      l_email: "E-mail",
+      l_country: "Pays", co1: "Allemagne", co2: "Autriche", co3: "Suisse", co4: "Autre pays",
+      l_size: "Taille de groupe envisagée", sz1: "6–10 résidents", sz2: "11–20 résidents", sz3: "Plus de 20 résidents", sz4: "À définir",
+      l_season: "Saison souhaitée", se1: "Hivernage (nov.–mars)", se2: "Intersaison (printemps/automne)", se3: "Fraîcheur d'été (juil.–août)", se4: "Toute l'année / flexible",
+      l_msg: "Remarques (facultatif)", ph_msg: "Niveaux de dépendance, créneau, exigences particulières …",
+      fnote: "Sans engagement. Vos données servent uniquement à établir l'offre.",
+      btn: "Demander l'offre",
+      foot1: "Adria Care Résidence · Budva, Monténégro"
+    },
+    es: {
+      tag: "Budva · Montenegro",
+      e_hero: "Para gestores y direcciones de residencias de mayores",
+      h1: "Sus residentes invernan en el Adriático. Su estándar de cuidados viaja con ellos.",
+      lede: "Adria Care Residencia acoge grupos de residentes de centros europeos para estancias estacionales de 4 a 12 semanas — con atención multilingüe (alemán, inglés, francés, español, serbio, ruso), traspaso asistencial sin fisuras y una economía que beneficia a su centro.",
+      m1: "<b>4–12 semanas</b> por turno",
+      m2: "<b>Grupos desde 6</b> residentes",
+      m3: "<b>Grados de dependencia 1–3</b>",
+      m4: "<b>Acompañante de su centro</b> incluido",
+      cta1: "Solicitar oferta sin compromiso",
+      cta2: "Cómo funciona →",
+      e_why: "Por qué ahora",
+      h_why: "Tres problemas del gestor, un solo programa",
+      p_why: "Un turno estacional en el Adriático no es un producto vacacional. Es un instrumento de gestión — y un argumento ante las familias que ningún competidor de su zona puede igualar.",
+      pain1: "<b>Presión de costes.</b> El coste íntegro de una plaza en Montenegro está muy por debajo del nivel alemán, austriaco o escandinavo. La diferencia se queda con usted — como margen o como ventaja de precio para las familias.",
+      pain2: "<b>Cuellos de botella operativos.</b> Obras, reformas, vacaciones, falta de personal: un turno de 8 semanas da a su centro un respiro planificable sin eliminar camas.",
+      pain3: "<b>Competencia por las familias.</b> «Su madre pasa el invierno en el Adriático — con el mismo concepto de cuidados» es una oferta que distingue a su centro en el mercado local.",
+      e_flow: "Proceso",
+      h_flow: "Del contrato al regreso en cinco pasos",
+      s1t: "Acuerdo marco y planificación del piloto",
+      s1p: "Definimos juntos tamaño del grupo, grados de dependencia, temporada y duración. Para empezar recomendamos un turno piloto de 4 semanas con 6–10 residentes.",
+      s2t: "Traspaso asistencial",
+      s2p: "Su dirección de enfermería entrega de forma estructurada planes de cuidados, medicación y documentación a nuestro equipo. Las dudas se resuelven en videoconferencia antes de la salida.",
+      s3t: "Viaje acompañado",
+      s3p: "Logística puerta a puerta con acompañamiento médico: vuelo directo a Tivat o Podgorica con traslado asistido — o autocar con noche intermedia para socios de Austria, el norte de Italia y la región.",
+      s4t: "La estancia, bajo su estándar",
+      s4p: "Cuidados según el plan entregado, personal multilingüe, informe semanal a su centro y, si lo desean, a las familias. Un acompañante de su centro se aloja gratis.",
+      s5t: "Regreso y devolución",
+      s5p: "La documentación completa de la estancia vuelve a su dirección de enfermería — con evolución de constantes, cambios de medicación e informes médicos.",
+      e_safe: "Seguridad",
+      h_safe: "La continuidad médica es la base, no la letra pequeña",
+      c1t: "Traspaso asistencial sin fisuras",
+      c1p: "Planes de cuidados, medicación y documentación se asumen antes de la llegada y se actualizan durante la estancia — compatibles con su práctica documental.",
+      c2t: "Atención médica in situ",
+      c2p: "Convenio con una clínica de Budva para urgencias, visita semanal de medicina general en la residencia y suministro farmacéutico según estándares europeos.",
+      c3t: "Conexión telemédica",
+      c3p: "Si lo desean, el médico de su centro sigue implicado mediante visitas por vídeo. Su dirección de enfermería tiene acceso permanente al estado actual.",
+      c4t: "Seguro y repatriación",
+      c4p: "El seguro médico internacional y de repatriación de cada residente está incluido en el precio. La repatriación médica está garantizada por contrato.",
+      e_econ: "Economía",
+      h_econ: "Un precio, dos índices estacionales",
+      p_econ: "Nuestros precios están vinculados al coste íntegro residencial en Alemania mediante un índice estacional sencillo. En temporada baja — la ventana clave de la invernada — una plaza cuesta la mitad del nivel alemán.",
+      th1: "Por residente / mes (grado 2)",
+      th2: "Coste íntegro, Alemania*",
+      th3: "Temporada baja oct.–abr. · índice 0,50",
+      th4: "Temporada alta may.–sep. · índice 0,90",
+      r1: "Cuidados, alojamiento, manutención, programa climático",
+      r2: "Viaje de ida y vuelta acompañado (pago único)",
+      r3: "<b>Ahorro por residente y mes</b>",
+      save1: "hasta 2.300 €",
+      note_econ: "*Valores orientativos de coste íntegro; el cálculo exacto se elabora sobre sus propias tarifas — el índice se aplica a su tarifa real. Nota: las prestaciones del seguro de dependencia alemán en general no se abonan en el extranjero — el programa se financia con la diferencia de costes, no con prestaciones del seguro. Detalles en la oferta.",
+      e_sea: "Programas estacionales",
+      h_sea: "Tres ventanas climáticas, reservables todo el año",
+      w1: "Noviembre – marzo · índice 0,50",
+      t1: "Invernada",
+      p1: "Suaves 10–15 °C en lugar del gris permanente: más luz, menos molestias respiratorias y articulares, un ánimo notablemente mejor. Nuestro programa estrella.",
+      w2: "Abril – junio · septiembre – octubre · índice 0,50–0,90",
+      t2: "Entretiempo",
+      p2: "Activación y movilización suaves a 18–24 °C — adecuadas para residentes tras hospitalización y para centros con obras o periodos vacacionales.",
+      w3: "Julio – agosto · índice 0,90",
+      t3: "Frescor de verano",
+      p3: "Cuando las olas de calor castigan su región: residencia climatizada, programa matinal junto al agua y refugio en las colinas más frescas del interior.",
+      e_faq: "Preguntas frecuentes",
+      h_faq: "Lo primero que nos preguntan los gestores",
+      q1: "¿Quién paga — el seguro, el gestor o las familias?",
+      a1: "El seguro de dependencia alemán en general no cubre la atención residencial en el extranjero. El programa se financia por la diferencia de costes: o bien el gestor calcula el turno dentro de sus tarifas y conserva el margen, o bien las familias reservan la estancia como opción premium — en ambos casos por debajo del copago habitual de una plaza alemana.",
+      q2: "¿Qué ocurre en una urgencia médica?",
+      a2: "La residencia tiene convenio con una clínica de Budva (admisión 24/7), guardia localizada in situ y, para cada residente, seguro médico internacional con repatriación. Su centro y la familia son informados de inmediato.",
+      q3: "¿En qué idiomas se atiende?",
+      a3: "La atención es multilingüe: la dirección de enfermería y los jefes de turno son germanohablantes, y el equipo cubre además inglés, francés, español, serbio y ruso. La documentación se lleva en el idioma de su centro. Además, un acompañante de su centro se aloja gratis — sigue siendo la persona de confianza del grupo.",
+      q4: "¿Es razonable un viaje de 20 horas en autocar?",
+      a4: "Para la mayoría de los grupos recomendamos el vuelo directo a Tivat o Podgorica (2–2,5 horas desde Alemania) con traslado asistido. La opción de autocar con noche intermedia se ofrece a socios regionales para quienes es la ruta más económica y llevadera.",
+      q5: "¿Para qué residentes es adecuado el programa?",
+      a5: "Grados de dependencia 1–3, aptos para viajar según el criterio de su médico. Por ahora no admitimos residentes con demencia grave o necesidades de cuidados intensivos — para ellos, la continuidad del entorno importa más que cualquier clima.",
+      q6: "¿Cómo empezar con poco riesgo?",
+      a6: "Con un turno piloto: 4 semanas, 6–10 residentes, en condiciones piloto, con visita de su dirección al centro antes de firmar. Después deciden sobre un acuerdo marco.",
+      e_c: "Solicitar oferta",
+      h_c: "Reciba un cálculo para su centro",
+      p_c: "Indíquenos los datos básicos de su centro — en cinco días laborables recibirá una oferta concreta con precios por grado de dependencia y una propuesta de turno piloto.",
+      l_org: "Centro / gestor", ph_org: "Residencia Santa Isabel",
+      l_name: "Persona de contacto", ph_name: "Nombre y apellidos",
+      l_email: "Correo electrónico",
+      l_country: "País", co1: "Alemania", co2: "Austria", co3: "Suiza", co4: "Otro país",
+      l_size: "Tamaño de grupo previsto", sz1: "6–10 residentes", sz2: "11–20 residentes", sz3: "Más de 20 residentes", sz4: "Por definir",
+      l_season: "Temporada de interés", se1: "Invernada (nov.–mar.)", se2: "Entretiempo (primavera/otoño)", se3: "Frescor de verano (jul.–ago.)", se4: "Todo el año / flexible",
+      l_msg: "Observaciones (opcional)", ph_msg: "Grados de dependencia, fechas, requisitos especiales …",
+      fnote: "Sin compromiso. Sus datos se usan únicamente para elaborar la oferta.",
+      btn: "Solicitar oferta",
+      foot1: "Adria Care Residencia · Budva, Montenegro"
+    },
+    sr: {
+      tag: "Budva · Crna Gora",
+      e_hero: "Za osnivače i direktore ustanova za smeštaj starijih",
+      h1: "Vaši korisnici zimuju na Jadranu. Vaš standard nege putuje sa njima.",
+      lede: "Adria Care Rezidencija prima grupe korisnika evropskih domova za stare na sezonske boravke od 4 do 12 nedelja — uz višejezičnu negu (nemački, engleski, francuski, španski, srpski, ruski), potpunu primopredaju nege i ekonomiju koja se isplati vašoj ustanovi.",
+      m1: "<b>4–12 nedelja</b> po turnusu",
+      m2: "<b>Grupe od 6+</b> korisnika",
+      m3: "<b>Stepeni nege 1–3</b>",
+      m4: "<b>Pratilac iz vaše ustanove</b> uključen",
+      cta1: "Zatražite neobavezujuću ponudu",
+      cta2: "Kako funkcioniše →",
+      e_why: "Zašto sada",
+      h_why: "Tri problema osnivača, jedan program",
+      p_why: "Sezonski turnus na Jadranu nije turistički proizvod. To je poslovni instrument — i argument prema porodicama kakav nijedan konkurent u vašem regionu nema.",
+      pain1: "<b>Pritisak troškova.</b> Puni trošak mesta u Crnoj Gori znatno je ispod nivoa u Nemačkoj, Austriji ili Skandinaviji. Razlika ostaje vama — kao marža ili kao cenovna prednost za porodice.",
+      pain2: "<b>Operativna uska grla.</b> Rekonstrukcija, renoviranje, godišnji odmori, manjak osoblja: turnus od 8 nedelja donosi vašoj ustanovi planirano rasterećenje bez trajnog smanjenja kapaciteta.",
+      pain3: "<b>Konkurencija za porodice.</b> „Vaša majka provodi zimu na Jadranu — po istom konceptu nege" jeste ponuda po kojoj se vaša ustanova izdvaja na lokalnom tržištu.",
+      e_flow: "Tok saradnje",
+      h_flow: "Od ugovora do povratka u pet koraka",
+      s1t: "Okvirni sporazum i planiranje pilota",
+      s1p: "Zajedno definišemo veličinu grupe, stepene nege, sezonu i trajanje. Za početak preporučujemo pilot-turnus od 4 nedelje sa 6–10 korisnika.",
+      s2t: "Primopredaja nege",
+      s2p: "Vaša glavna sestra strukturisano predaje našem timu plan nege, terapiju i dokumentaciju. Otvorena pitanja rešavaju se zajedničkim video-pozivom pre polaska.",
+      s3t: "Putovanje uz pratnju",
+      s3p: "Logistika od vrata do vrata uz medicinsku pratnju: direktan let do Tivta ili Podgorice sa asistiranim transferom — ili autobus sa noćenjem za partnere iz Austrije, severne Italije i regiona.",
+      s4t: "Boravak po vašem standardu",
+      s4p: "Nega po predatom planu, višejezično osoblje, nedeljni izveštaj vašoj ustanovi i, po želji, porodicama. Pratilac iz vaše ustanove smešten je besplatno.",
+      s5t: "Povratak i vraćanje dokumentacije",
+      s5p: "Kompletna dokumentacija boravka vraća se vašoj glavnoj sestri — uključujući vitalne parametre, izmene terapije i lekarske nalaze.",
+      e_safe: "Bezbednost",
+      h_safe: "Medicinski kontinuitet je temelj, a ne sitna slova",
+      c1t: "Potpuna primopredaja nege",
+      c1p: "Plan nege, terapijska lista i dokumentacija preuzimaju se pre dolaska i vode tokom boravka — kompatibilno sa vašom praksom dokumentovanja.",
+      c2t: "Lekarska briga na licu mesta",
+      c2p: "Ugovor o saradnji sa klinikom u Budvi za hitne slučajeve, nedeljna vizita lekara opšte prakse u rezidenciji, snabdevanje lekovima po evropskim standardima.",
+      c3t: "Telemedicinska veza",
+      c3p: "Po želji, ordinirajući lekar vaše ustanove ostaje uključen putem video-vizita. Vaša glavna sestra u svakom trenutku ima uvid u aktuelno stanje.",
+      c4t: "Osiguranje i medicinska repatrijacija",
+      c4p: "Međunarodno zdravstveno osiguranje sa medicinskim prevozom kući uključeno je u cenu za svakog korisnika. Medicinska repatrijacija je ugovorno garantovana.",
+      e_econ: "Ekonomija",
+      h_econ: "Jedna cena, dva sezonska indeksa",
+      p_econ: "Naše cene vezane su za pune troškove stacionarne nege u Nemačkoj preko jednostavnog sezonskog indeksa. U vansezoni — ključnom periodu zimovanja — mesto košta polovinu nemačkog nivoa.",
+      th1: "Po korisniku / mesečno (stepen 2)",
+      th2: "Puni trošak, Nemačka*",
+      th3: "Vansezona okt.–apr. · indeks 0,50",
+      th4: "Sezona maj–sep. · indeks 0,90",
+      r1: "Nega, smeštaj, ishrana, klimatski program",
+      r2: "Putovanje uz pratnju u oba smera (jednokratno)",
+      r3: "<b>Ušteda po korisniku mesečno</b>",
+      save1: "do 2.300 €",
+      note_econ: "*Orijentacione vrednosti punih troškova; tačan obračun izrađujemo na osnovu vaših tarifa — indeks se primenjuje na vašu stvarnu cenu. Napomena: nemačko osiguranje za negu po pravilu ne pokriva usluge u inostranstvu — program se isplati kroz razliku u troškovima, a ne kroz naknade osiguranja. Detalji u ponudi.",
+      e_sea: "Sezonski programi",
+      h_sea: "Tri klimatska prozora, dostupna cele godine",
+      w1: "Novembar – mart · indeks 0,50",
+      t1: "Zimovanje",
+      p1: "Blagih 10–15 °C umesto sivila: više dnevnog svetla, manje respiratornih i zglobnih tegoba, primetno bolje raspoloženje. Naš najjači program.",
+      w2: "April – jun · septembar – oktobar · indeks 0,50–0,90",
+      t2: "Prelazni period",
+      p2: "Blaga aktivacija i mobilizacija na 18–24 °C — pogodno za korisnike posle bolničkog lečenja i za ustanove u periodu renoviranja ili godišnjih odmora.",
+      w3: "Jul – avgust · indeks 0,90",
+      t3: "Letnje osveženje",
+      p3: "Kada toplotni talasi pritisnu vaš region: klimatizovana rezidencija, jutarnji program uz vodu, povlačenje u svežije zaleđe rivijere.",
+      e_faq: "Česta pitanja",
+      h_faq: "Šta nas osnivači prvo pitaju",
+      q1: "Ko snosi troškove — osiguranje, osnivač ili porodice?",
+      a1: "Nemačko osiguranje za negu po pravilu ne plaća stacionarne usluge u inostranstvu. Program se zato finansira iz razlike u troškovima: ili osnivač obračuna turnus u okviru svojih postojećih cena i zadrži maržu, ili porodice rezervišu boravak kao premium opciju — u oba slučaja ispod uobičajenog ličnog učešća za mesto u Nemačkoj.",
+      q2: "Šta se dešava u hitnom medicinskom slučaju?",
+      a2: "Rezidencija ima ugovor sa klinikom u Budvi (prijem 24/7), dežurstvo na licu mesta i za svakog korisnika međunarodno zdravstveno osiguranje sa repatrijacijom. Vaša ustanova i porodica odmah se obaveštavaju.",
+      q3: "Na kojim jezicima se pruža nega?",
+      a3: "Nega je višejezična: glavna sestra i vođe smena govore nemački, a tim pokriva i engleski, francuski, španski, srpski i ruski. Dokumentacija se vodi na jeziku vaše ustanove. Uz to, pratilac iz vaše ustanove smešten je besplatno — on ostaje osoba od poverenja za grupu.",
+      q4: "Da li je put autobusom od 20 sati primeren korisnicima?",
+      a4: "Za većinu grupa preporučujemo direktan let do Tivta ili Podgorice (2–2,5 sata iz Nemačke) sa asistiranim transferom. Autobusku varijantu sa noćenjem nudimo regionalnim partnerima kojima je to ekonomičnija i podnošljivija ruta.",
+      q5: "Za koje korisnike je program pogodan?",
+      a5: "Stepeni nege 1–3, sposobni za putovanje po proceni ordinirajućeg lekara. Korisnike sa teškom demencijom ili potrebom za intenzivnom negom za sada ne primamo — njima je kontinuitet okruženja važniji od bilo koje klime.",
+      q6: "Kako početi uz minimalan rizik?",
+      a6: "Pilot-turnusom: 4 nedelje, 6–10 korisnika, po pilot-uslovima, uz obilazak rezidencije pre potpisivanja. Nakon toga odlučujete o okvirnom sporazumu.",
+      e_c: "Zatražite ponudu",
+      h_c: "Dobijte obračun za vašu ustanovu",
+      p_c: "Pošaljite nam osnovne podatke o vašoj ustanovi — u roku od pet radnih dana dobićete konkretnu ponudu sa cenama po stepenu nege i predlogom pilot-turnusa.",
+      l_org: "Ustanova / osnivač", ph_org: "Dom „Sveta Jelisaveta"",
+      l_name: "Kontakt osoba", ph_name: "Ime i prezime",
+      l_email: "E-pošta",
+      l_country: "Zemlja", co1: "Nemačka", co2: "Austrija", co3: "Švajcarska", co4: "Druga zemlja",
+      l_size: "Moguća veličina grupe", sz1: "6–10 korisnika", sz2: "11–20 korisnika", sz3: "Više od 20 korisnika", sz4: "Još otvoreno",
+      l_season: "Sezona od interesa", se1: "Zimovanje (nov.–mart)", se2: "Prelazni period (proleće/jesen)", se3: "Letnje osveženje (jul–avg.)", se4: "Cele godine / fleksibilno",
+      l_msg: "Napomene (opciono)", ph_msg: "Stepeni nege, termin, posebni zahtevi …",
+      fnote: "Neobavezujuće. Vaše podatke koristimo isključivo za izradu ponude.",
+      btn: "Zatražite ponudu",
+      foot1: "Adria Care Rezidencija · Budva, Crna Gora"
+    },
+    ru: {
+      tag: "Будва · Черногория",
+      e_hero: "Для учредителей и директоров стационарных учреждений ухода",
+      h1: "Ваши резиденты зимуют на Адриатике. Ваш стандарт ухода едет с ними.",
+      lede: "Adria Care Residenz принимает группы резидентов европейских домов престарелых на сезонные заезды от 4 до 12 недель — с мультиязычным сопровождением (немецкий, английский, французский, испанский, сербский, русский), полной передачей ухода и экономикой, выгодной вашему учреждению.",
+      m1: "<b>4–12 недель</b> на заезд",
+      m2: "<b>Группы от 6</b> резидентов",
+      m3: "<b>Степени ухода 1–3</b>",
+      m4: "<b>Сопровождающий вашего учреждения</b> включён",
+      cta1: "Запросить предложение без обязательств",
+      cta2: "Как это работает →",
+      e_why: "Почему сейчас",
+      h_why: "Три проблемы оператора, одна программа",
+      p_why: "Сезонный заезд на Адриатику — не туристический продукт. Это операционный инструмент и аргумент для семей, которого нет ни у одного конкурента в вашем регионе.",
+      pain1: "<b>Давление издержек.</b> Полная себестоимость места в Черногории значительно ниже уровня Германии, Австрии или Скандинавии. Разница остаётся у вас — как маржа или как ценовое преимущество для семей.",
+      pain2: "<b>Операционные узкие места.</b> Ремонт, реконструкция, отпуска, кадровые пробелы: заезд на 8 недель даёт вашему дому планируемую разгрузку без сокращения коек.",
+      pain3: "<b>Конкуренция за семьи.</b> «Ваша мама проведёт зиму на Адриатике — по той же концепции ухода» — предложение, выделяющее ваш дом на локальном рынке.",
+      e_flow: "Процесс",
+      h_flow: "От договора до возвращения за пять шагов",
+      s1t: "Рамочное соглашение и планирование пилота",
+      s1p: "Вместе определяем размер группы, степени ухода, сезон и длительность. Для старта рекомендуем пилотный заезд на 4 недели с 6–10 резидентами.",
+      s2t: "Передача ухода",
+      s2p: "Ваша старшая медсестра структурированно передаёт нашей команде план ухода, медикаменты и документацию. Открытые вопросы решаются на общей видеоконференции перед отъездом.",
+      s3t: "Сопровождаемый переезд",
+      s3p: "Логистика «от двери до двери» с медицинским сопровождением: прямой рейс в Тиват или Подгорицу с ассистированным трансфером — или автобус с промежуточной ночёвкой для партнёров из Австрии, Северной Италии и региона.",
+      s4t: "Пребывание по вашему стандарту",
+      s4p: "Уход по переданному плану, мультиязычный персонал, еженедельный отчёт вашему учреждению и, по желанию, семьям. Сопровождающий сотрудник вашего дома проживает бесплатно.",
+      s5t: "Возвращение и обратная передача",
+      s5p: "Полная документация пребывания возвращается вашей старшей медсестре — включая динамику показателей, изменения терапии и врачебные заключения.",
+      e_safe: "Безопасность",
+      h_safe: "Медицинская преемственность — это фундамент, а не мелкий шрифт",
+      c1t: "Полная передача ухода",
+      c1p: "План ухода, лист назначений и документация принимаются до приезда и ведутся в течение всего пребывания — совместимо с вашей практикой документирования.",
+      c2t: "Врачебная помощь на месте",
+      c2p: "Договор с клиникой в Будве на экстренные случаи, еженедельный обход врача общей практики в резиденции, снабжение лекарствами по европейским стандартам.",
+      c3t: "Телемедицинская связь",
+      c3p: "По желанию лечащий врач вашего учреждения остаётся на связи через видеообходы. Старшая медсестра в любой момент видит актуальное состояние.",
+      c4t: "Страховка и репатриация",
+      c4p: "Международная медицинская страховка с медицинской репатриацией для каждого резидента включена в цену программы. Медицинская транспортировка домой гарантирована договором.",
+      e_econ: "Экономика",
+      h_econ: "Один прайс, два сезонных индекса",
+      p_econ: "Наши цены привязаны к полной себестоимости стационарного ухода в Германии через простой сезонный индекс. В несезон — ключевое окно зимовки — место стоит половину немецкого уровня.",
+      th1: "На резидента / месяц (степень 2)",
+      th2: "Полная себестоимость, Германия*",
+      th3: "Несезон окт.–апр. · индекс 0,50",
+      th4: "Сезон май–сент. · индекс 0,90",
+      r1: "Уход, проживание, питание, климатическая программа",
+      r2: "Дорога туда и обратно с сопровождением (разово)",
+      r3: "<b>Экономия на резидента в месяц</b>",
+      save1: "до 2 300 €",
+      note_econ: "*Ориентировочные значения полной себестоимости; точный расчёт делаем на основе ваших тарифов — индекс применяется к вашей фактической ставке. Важно: выплаты немецкого страхования по уходу за границей, как правило, недоступны — программа окупается за счёт разницы в издержках, а не страховых выплат. Подробности в предложении.",
+      e_sea: "Сезонные программы",
+      h_sea: "Три климатических окна, доступны круглый год",
+      w1: "Ноябрь – март · индекс 0,50",
+      t1: "Зимовка",
+      p1: "Мягкие 10–15 °C вместо серости: больше дневного света, меньше жалоб на дыхание и суставы, заметно лучше настроение. Наша сильнейшая программа.",
+      w2: "Апрель – июнь · сентябрь – октябрь · индекс 0,50–0,90",
+      t2: "Межсезонье",
+      p2: "Мягкая активизация и мобилизация при 18–24 °C — подходит резидентам после госпитализаций и домам в период ремонта или отпусков.",
+      w3: "Июль – август · индекс 0,90",
+      t3: "Летняя прохлада",
+      p3: "Когда ваш регион накрывает жара: кондиционированная резиденция, утренняя программа у воды, отдых в более прохладных предгорьях ривьеры.",
+      e_faq: "Частые вопросы",
+      h_faq: "О чём операторы спрашивают в первую очередь",
+      q1: "Кто платит — страховка, оператор или семьи?",
+      a1: "Немецкое страхование по уходу, как правило, не оплачивает стационарные услуги за границей. Поэтому программа финансируется за счёт разницы в издержках: либо оператор закладывает заезд в свои действующие тарифы и оставляет маржу себе, либо семьи бронируют пребывание как премиум-опцию — в обоих случаях дешевле обычной доплаты за место в Германии.",
+      q2: "Что происходит при неотложном медицинском случае?",
+      a2: "У резиденции договор с клиникой в Будве (приём 24/7), дежурный персонал на месте и для каждого резидента — международная медицинская страховка с репатриацией. Ваше учреждение и семья информируются немедленно.",
+      q3: "На каких языках ведётся сопровождение?",
+      a3: "Сопровождение мультиязычное: руководитель службы ухода и старшие смен — немецкоговорящие, команда также покрывает английский, французский, испанский, сербский и русский. Документация ведётся на языке вашего учреждения. Кроме того, сопровождающий сотрудник вашего дома проживает бесплатно — он остаётся доверенным лицом группы.",
+      q4: "Разумна ли 20-часовая поездка на автобусе?",
+      a4: "Большинству групп мы рекомендуем прямой рейс в Тиват или Подгорицу (2–2,5 часа из Германии) с ассистированным трансфером. Автобусный вариант с ночёвкой предлагаем региональным партнёрам, для которых это экономичнее и легче переносится.",
+      q5: "Каким резидентам подходит программа?",
+      a5: "Степени ухода 1–3, способность к переезду — по заключению лечащего врача. Резидентов с тяжёлой деменцией и потребностью в интенсивном уходе пока не принимаем — для них постоянство окружения важнее любого климата.",
+      q6: "Как начать с минимальным риском?",
+      a6: "С пилотного заезда: 4 недели, 6–10 резидентов, на пилотных условиях, с визитом вашего руководства в резиденцию до подписания. Затем вы решаете о рамочном соглашении.",
+      e_c: "Запросить предложение",
+      h_c: "Получите расчёт для вашего учреждения",
+      p_c: "Пришлите ключевые данные вашего учреждения — в течение пяти рабочих дней вы получите конкретное предложение с ценами по степеням ухода и планом пилотного заезда.",
+      l_org: "Учреждение / оператор", ph_org: "Дом престарелых «Св. Елизавета»",
+      l_name: "Контактное лицо", ph_name: "Имя и фамилия",
+      l_email: "E-mail",
+      l_country: "Страна", co1: "Германия", co2: "Австрия", co3: "Швейцария", co4: "Другая страна",
+      l_size: "Возможный размер группы", sz1: "6–10 резидентов", sz2: "11–20 резидентов", sz3: "Более 20 резидентов", sz4: "Пока открыто",
+      l_season: "Интересующий сезон", se1: "Зимовка (нояб.–март)", se2: "Межсезонье (весна/осень)", se3: "Летняя прохлада (июль–авг.)", se4: "Круглый год / гибко",
+      l_msg: "Комментарий (необязательно)", ph_msg: "Степени ухода, сроки, особые требования …",
+      fnote: "Без обязательств. Ваши данные используются только для подготовки предложения.",
+      btn: "Запросить предложение",
+      foot1: "Adria Care Residenz · Будва, Черногория"
+    }
+  };
+
+  /* Capture German source strings from the markup so DE can be restored */
+  var DE = {};
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { DE[el.getAttribute('data-i18n')] = el.innerHTML; });
+  document.querySelectorAll('[data-i18n-ph]').forEach(function (el) { DE[el.getAttribute('data-i18n-ph')] = el.getAttribute('placeholder'); });
+  I18N.de = DE;
+
+  function setLang(lang) {
+    var dict = I18N[lang] || I18N.de;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var v = dict[el.getAttribute('data-i18n')];
+      if (v != null) el.innerHTML = v;
+    });
+    document.querySelectorAll('[data-i18n-ph]').forEach(function (el) {
+      var v = dict[el.getAttribute('data-i18n-ph')];
+      if (v != null) el.setAttribute('placeholder', v);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang));
+    });
+    try { localStorage.setItem('acr-lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem('acr-lang'); } catch (e) {}
+  if (saved && I18N[saved] && saved !== 'de') setLang(saved);
+
+  document.getElementById('lead-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var d = new FormData(this);
+    var body = 'Einrichtung / Facility: ' + d.get('org') +
+      '\nKontakt / Contact: ' + d.get('name') +
+      '\nE-Mail: ' + d.get('email') +
+      '\nLand / Country: ' + d.get('country') +
+      '\nGruppe / Group: ' + d.get('size') +
+      '\nSaison / Season: ' + d.get('season') +
+      '\nAnmerkungen / Notes: ' + (d.get('msg') || '—');
+    location.href = 'mailto:kontakt@adriacare.me?subject=' +
+      encodeURIComponent('Angebotsanfrage / Offer request — ' + d.get('org')) +
+      '&body=' + encodeURIComponent(body);
+  });
+</script>
+
+</body>
+</html>
