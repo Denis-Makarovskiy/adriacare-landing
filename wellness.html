@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gesundheit &amp; Aktivität in Montenegro: Morgengymnastik, Thalasso und sanfte Wanderwege für Senioren — das Aktivprogramm der Adria Care Residenz in Budva.">
+<title>Gesundheit &amp; Aktivität in Montenegro — Adria Care Residenz</title>
+<style>
+  :root {
+    --ink: #1d2a30; --ink-soft: #46565e; --ground: #f6f4ee; --surface: #fdfcf9;
+    --line: #d9d4c8; --sea: #16566b; --sea-deep: #0e3d4e; --gold: #c89b3c; --on-sea: #f2f6f7;
+    --ph-a: #cfd9d4; --ph-b: #a9c2c6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e8e6df; --ink-soft: #a9b3b8; --ground: #141d21; --surface: #1b2529;
+      --line: #32414a; --sea: #4d97ae; --sea-deep: #0e3d4e; --gold: #d3ad58; --on-sea: #f2f6f7;
+      --ph-a: #24343a; --ph-b: #2e4650; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 17px; line-height: 1.65; }
+  h1, h2, h3 { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600; line-height: 1.18; text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--sea); }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+  .prose { max-width: 62ch; }
+  .eyebrow { font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--sea); font-weight: 600; }
+  .topbar { background: var(--gold); text-align: center; padding: 9px 16px; margin: 0 -24px; }
+  .topbar a { color: #2a2107; text-decoration: none; font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em; }
+  .topbar a:hover { text-decoration: underline; }
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    flex-wrap: wrap; padding: 22px 0 18px; border-bottom: 1px solid var(--line); }
+  .brand { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 21px; font-weight: 600; color: var(--ink); text-decoration: none; }
+  .brand span { color: var(--sea); }
+  .head-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .backlink { font-size: 14px; text-decoration: none; font-weight: 600; }
+  .lang { display: flex; gap: 2px; border: 1px solid var(--line); }
+  .lang button { font: inherit; font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em;
+    background: transparent; color: var(--ink-soft); border: none; padding: 6px 9px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--sea); color: var(--on-sea); }
+  .lang button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  .hero { padding: 70px 0 56px; }
+  .hero h1 { font-size: clamp(32px, 4.8vw, 52px); max-width: 22ch; }
+  .hero .lede { margin-top: 24px; max-width: 60ch; font-size: 19px; color: var(--ink-soft); }
+  figure.ph { margin: 0; border: 1px solid var(--line);
+    background: linear-gradient(135deg, var(--ph-a), var(--ph-b));
+    display: grid; place-items: center; padding: 16px; text-align: center; }
+  figure.ph figcaption { font-size: 13.5px; letter-spacing: 0.03em; color: var(--ink-soft); max-width: 52ch; }
+  figure.ph figcaption::before { content: "◻ "; color: var(--sea); }
+  .ph-hero { aspect-ratio: 21 / 9; margin-top: 38px; }
+  .ph-feature { aspect-ratio: 16 / 9; margin-top: 34px; }
+  @media (max-width: 780px) { .ph-hero, .ph-feature { aspect-ratio: 16 / 9; min-height: 180px; } }
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 10px 0 24px; }
+  .btn { display: inline-block; padding: 13px 26px; background: var(--sea); color: var(--on-sea);
+    text-decoration: none; font-weight: 600; font-size: 16px; border: 1px solid var(--sea); }
+  .btn:hover { background: var(--sea-deep); border-color: var(--sea-deep); }
+  .btn:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 15px; }
+  th, td { text-align: left; padding: 11px 16px; border-bottom: 1px solid var(--line); }
+  th { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  .table-note { margin-top: 12px; font-size: 14px; color: var(--ink-soft); max-width: 70ch; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--sea); padding: 24px; }
+  .card .tag { font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+  .card h3 { font-size: 19px; margin: 8px 0 10px; }
+  .card p { color: var(--ink-soft); font-size: 15.5px; }
+  .cta-band { background: var(--sea-deep); color: var(--on-sea); border-top: none; }
+  .cta-band .eyebrow { color: var(--gold); }
+  .cta-band h2 { color: var(--on-sea); }
+  .cta-band p { color: #c3d3d9; }
+  .cta-band .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 26px; }
+  footer.site { padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
+    display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027 · Wir nehmen Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
+  <header class="site">
+    <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
+    <div class="head-right">
+      <a class="backlink" href="montenegro.html" data-i18n="back">← Montenegro</a>
+      <nav class="lang" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-lang="sr" aria-pressed="false">SR</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow" data-i18n="e_hero">Gesundheit &amp; Aktivität</p>
+    <h1 style="margin-top:14px;" data-i18n="h1">Sanfte Gesundheits- und Aktivprogramme zwischen Meer und Bergen</h1>
+    <p class="lede" data-i18n="lede">Bewegung in milder Meeresluft ist der Kern unseres Klimaprogramms: von der Morgengymnastik auf der Terrasse bis zur geführten Wanderung auf echten Bergpfaden — immer im Tempo der Bewohner, immer in Begleitung.</p>
+    <figure class="ph ph-hero">
+      <figcaption>Photo · well-hero.webp — seniors' morning gymnastics on a terrace above the sea, winter sun</figcaption>
+    </figure>
+  </div>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_daily">Im Haus</p>
+    <h2 data-i18n="h_daily">Tägliche Programme in der Residenz</h2>
+    <div class="cards">
+      <div class="card">
+        <p class="tag" data-i18n="d1t">Täglich · im Freien</p>
+        <h3 data-i18n="d1h">Morgengymnastik &amp; Atemübungen</h3>
+        <p data-i18n="d1p">Betreute Bewegung an der Meerluft, angepasst an Mobilität und Pflegegrad: sanfte Kräftigung, Dehnung und Atemübungen — im Winter in der Vormittagssonne, im Sommer früh vor der Wärme.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="d2t">Mehrmals wöchentlich · Partner-Spa</p>
+        <h3 data-i18n="d2h">Thalasso &amp; Wellness</h3>
+        <p data-i18n="d2p">Meerwasserbecken, Massagen und Physiotherapie im Partner-Spa in Budva: Anwendungen nach ärztlicher Empfehlung, Transfer im Kleinbus, Begleitung durch unser Team.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="d3t">Täglich · Garten &amp; Promenade</p>
+        <h3 data-i18n="d3h">Gedächtnis- und Balancetraining im Freien</h3>
+        <p data-i18n="d3p">Kleine Gruppen üben Gleichgewicht, Koordination und Erinnerung unter freiem Himmel — spielerisch, sturzpräventiv und dokumentiert für die Rückmeldung an das Heim in der Heimat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_trails">Draußen im Land</p>
+    <h2 data-i18n="h_trails">Sanfte Wanderwege</h2>
+    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_trails">Montenegro bietet etwas Seltenes: echte Berg- und Seelandschaften mit ebenen, gut gepflegten Wegen. Diese Auswahl haben wir auf Seniorentauglichkeit geprüft — nach Länge, Profil und Erreichbarkeit mit dem Bus.</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="th_trail">Weg</th>
+            <th data-i18n="th_region">Region</th>
+            <th data-i18n="th_len">Länge</th>
+            <th data-i18n="th_prof">Höhenprofil</th>
+            <th data-i18n="th_suit">Eignung</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td data-i18n="t1n">Uferpromenade Budva–Bečići</td><td data-i18n="t1r">Küste</td><td class="num" data-i18n="t1l">6 km</td><td data-i18n="t1p">eben</td><td data-i18n="t1s">für alle</td></tr>
+          <tr><td data-i18n="t2n">Miločer-Pfad zum Sveti Stefan</td><td data-i18n="t2r">Küste</td><td class="num" data-i18n="t2l">1,5 km</td><td data-i18n="t2p">eben</td><td data-i18n="t2s">für alle</td></tr>
+          <tr><td data-i18n="t3n">Rundweg Biogradsko-See</td><td data-i18n="t3r">Nationalpark Biogradska Gora</td><td class="num" data-i18n="t3l">3,4 km</td><td data-i18n="t3p">eben</td><td data-i18n="t3s">mit Begleitung</td></tr>
+          <tr><td data-i18n="t4n">Rundweg Schwarzer See (Crno jezero)</td><td data-i18n="t4r">Durmitor</td><td class="num" data-i18n="t4l">3,6 km</td><td data-i18n="t4p">eben</td><td data-i18n="t4s">mit Begleitung</td></tr>
+          <tr><td data-i18n="t5n">Panoramaweg Vrmac</td><td data-i18n="t5r">Bucht von Kotor</td><td class="num" data-i18n="t5l">4 km</td><td data-i18n="t5p">sanft ansteigend</td><td data-i18n="t5s">für Geübte</td></tr>
+          <tr><td data-i18n="t6n">Njegoš-Mausoleum am Lovćen</td><td data-i18n="t6r">Nationalpark Lovćen</td><td class="num" data-i18n="t6l">Bergstraße</td><td data-i18n="t6p">461 Stufen</td><td data-i18n="t6s">nur Aussichtspunkt ohne Stufen empfohlen</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note" data-i18n="note_trails">Jede Wanderung findet mit geschulter Begleitung statt: Bänke und Pausen sind vorab eingeplant, der Bus bringt die Gruppe bis zum Ausgangspunkt, ein medizinisches Notfallset ist immer dabei.</p>
+    <figure class="ph ph-feature">
+      <figcaption>Photo · well-trail.webp — small senior group with guide on the flat lakeside boardwalk, Biogradska Gora</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_safety">Verantwortung</p>
+    <h2 data-i18n="h_safety">Sicherheit bei Aktivität</h2>
+    <p class="prose" style="color:var(--ink-soft);" data-i18n="p_safety">Vor jeder Aktivität steht ein kurzer Gesundheitscheck durch unsere Pflegefachkräfte. Die Gruppen bleiben klein — maximal acht Teilnehmer je Begleitung. Im Sommer gilt ein festes Trink- und Schattenprotokoll, und ein Physiotherapeut überwacht die Belastung jedes Einzelnen. So bleibt Bewegung das, was sie sein soll: ein Gewinn, kein Risiko.</p>
+  </section>
+
+  <section class="cta-band">
+    <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
+    <h2 data-i18n="h_cta">Ihre Bewohner können dieses Aktivprogramm in einem Pilotturnus selbst erleben</h2>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Fordern Sie eine Kalkulation für einen Pilotturnus an — mit einem Aktivitätenplan, der zum Mobilitätsprofil Ihrer Bewohner passt, und Preisen je Pflegegrad.</p>
+    <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
+  </section>
+
+  <footer class="site">
+    <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
+    <span>parthners@adriacare.me · <span data-i18n="foot_symbol">Symbolbilder</span></span>
+  </footer>
+</div>
+
+<script>
+  var I18N = {
+    de: null,
+    en: {
+      banner: 'Opening in 2027 · We are taking preliminary applications and signing pre-agreements →',
+      back: '← Montenegro',
+      e_hero: 'Health & activity',
+      h1: 'Gentle health and activity programmes between sea and mountains',
+      lede: 'Movement in mild sea air is the core of our climate programme: from morning gymnastics on the terrace to guided walks on real mountain trails — always at the residents’ pace, always accompanied.',
+      e_daily: 'At the residence', h_daily: 'Daily programmes at the residence',
+      d1t: 'Daily · outdoors', d1h: 'Morning gymnastics & breathing exercises',
+      d1p: 'Supervised movement in sea air, adapted to mobility and care level: gentle strengthening, stretching and breathing exercises — under the late-morning sun in winter, early before the heat in summer.',
+      d2t: 'Several times a week · partner spa', d2h: 'Thalasso & wellness',
+      d2p: 'Sea-water pools, massage and physiotherapy at our partner spa in Budva: treatments on medical recommendation, minibus transfer, accompanied by our team.',
+      d3t: 'Daily · garden & promenade', d3h: 'Memory and balance training outdoors',
+      d3p: 'Small groups practise balance, coordination and memory in the open air — playful, fall-preventive, and documented for feedback to the home operator.',
+      e_trails: 'Out in the country', h_trails: 'Gentle hiking trails',
+      p_trails: 'Montenegro offers something rare: genuine mountain and lake landscapes with level, well-kept paths. We have vetted this selection for senior suitability — by length, profile and bus access.',
+      th_trail: 'Trail', th_region: 'Region', th_len: 'Length', th_prof: 'Elevation profile', th_suit: 'Suitability',
+      t1n: 'Seafront promenade Budva–Bečići', t1r: 'Coast', t1l: '6 km', t1p: 'level', t1s: 'for everyone',
+      t2n: 'Miločer path to Sveti Stefan', t2r: 'Coast', t2l: '1.5 km', t2p: 'level', t2s: 'for everyone',
+      t3n: 'Biogradsko Lake loop', t3r: 'Biogradska Gora National Park', t3l: '3.4 km', t3p: 'level', t3s: 'with escort',
+      t4n: 'Black Lake loop (Crno jezero)', t4r: 'Durmitor', t4l: '3.6 km', t4p: 'level', t4s: 'with escort',
+      t5n: 'Vrmac panoramic trail', t5r: 'Bay of Kotor', t5l: '4 km', t5p: 'gently rising', t5s: 'for the practised',
+      t6n: 'Njegoš Mausoleum on Lovćen', t6r: 'Lovćen National Park', t6l: 'mountain road', t6p: '461 steps', t6s: 'viewpoint without steps only recommended',
+      note_trails: 'Every hike takes place with a trained escort: benches and rest stops are planned in advance, the bus brings the group to the trailhead, and a medical emergency kit is always carried.',
+      e_safety: 'Responsibility', h_safety: 'Safety during activity',
+      p_safety: 'Every activity begins with a short health check by our nursing staff. Groups stay small — no more than eight participants per escort. In summer a fixed hydration and shade protocol applies, and a physiotherapist supervises each person’s exertion. Movement thus remains what it should be: a gain, not a risk.',
+      e_cta: 'Next step', h_cta: 'Your residents can experience this activity programme themselves in a pilot rotation',
+      p_cta: 'Request a calculation for a pilot rotation — with an activity plan matched to your residents’ mobility profile, and prices per care level.',
+      cta: 'Request an offer', foot1: 'Adria Care Residence · Budva, Montenegro',
+      foot_symbol: 'Illustrative images'
+    },
+    fr: {
+      banner: 'Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →',
+      back: '← Monténégro',
+      e_hero: 'Santé & activité',
+      h1: 'Des programmes de santé et d’activité en douceur, entre mer et montagnes',
+      lede: 'Le mouvement dans l’air marin tempéré est le cœur de notre programme climatique : de la gymnastique matinale sur la terrasse aux randonnées guidées sur de vrais sentiers de montagne — toujours au rythme des résidents, toujours accompagnés.',
+      e_daily: 'À la résidence', h_daily: 'Programmes quotidiens à la résidence',
+      d1t: 'Tous les jours · en plein air', d1h: 'Gymnastique matinale & exercices respiratoires',
+      d1p: 'Mouvement encadré dans l’air marin, adapté à la mobilité et au niveau de dépendance : renforcement doux, étirements et exercices respiratoires — au soleil de fin de matinée l’hiver, tôt avant la chaleur l’été.',
+      d2t: 'Plusieurs fois par semaine · spa partenaire', d2h: 'Thalasso & bien-être',
+      d2p: 'Bassins d’eau de mer, massages et kinésithérapie dans notre spa partenaire de Budva : soins sur recommandation médicale, transfert en minibus, accompagnement par notre équipe.',
+      d3t: 'Tous les jours · jardin & promenade', d3h: 'Entraînement de la mémoire et de l’équilibre en plein air',
+      d3p: 'De petits groupes exercent l’équilibre, la coordination et la mémoire au grand air — de façon ludique, préventive contre les chutes, et documentée pour le retour à l’établissement d’origine.',
+      e_trails: 'Dans le pays', h_trails: 'Sentiers de randonnée en douceur',
+      p_trails: 'Le Monténégro offre une chose rare : de vrais paysages de montagnes et de lacs avec des chemins plats et bien entretenus. Nous avons vérifié cette sélection pour les aînés — longueur, profil et accès en bus.',
+      th_trail: 'Sentier', th_region: 'Région', th_len: 'Longueur', th_prof: 'Profil', th_suit: 'Adapté à',
+      t1n: 'Promenade du littoral Budva–Bečići', t1r: 'Côte', t1l: '6 km', t1p: 'plat', t1s: 'pour tous',
+      t2n: 'Sentier de Miločer vers Sveti Stefan', t2r: 'Côte', t2l: '1,5 km', t2p: 'plat', t2s: 'pour tous',
+      t3n: 'Boucle du lac Biogradsko', t3r: 'Parc national de Biogradska Gora', t3l: '3,4 km', t3p: 'plat', t3s: 'avec accompagnement',
+      t4n: 'Boucle du Lac Noir (Crno jezero)', t4r: 'Durmitor', t4l: '3,6 km', t4p: 'plat', t4s: 'avec accompagnement',
+      t5n: 'Sentier panoramique du Vrmac', t5r: 'Bouches de Kotor', t5l: '4 km', t5p: 'montée douce', t5s: 'pour marcheurs entraînés',
+      t6n: 'Mausolée de Njegoš au Lovćen', t6r: 'Parc national du Lovćen', t6l: 'route de montagne', t6p: '461 marches', t6s: 'belvédère sans marches uniquement recommandé',
+      note_trails: 'Chaque randonnée se fait avec un accompagnement formé : bancs et pauses planifiés à l’avance, bus jusqu’au point de départ, trousse médicale d’urgence toujours à bord.',
+      e_safety: 'Responsabilité', h_safety: 'La sécurité pendant l’activité',
+      p_safety: 'Chaque activité commence par un bref contrôle de santé par notre personnel soignant. Les groupes restent petits — huit participants au maximum par accompagnant. L’été, un protocole strict d’hydratation et d’ombre s’applique, et un kinésithérapeute surveille l’effort de chacun. Le mouvement reste ainsi ce qu’il doit être : un bénéfice, pas un risque.',
+      e_cta: 'Prochaine étape', h_cta: 'Vos résidents peuvent vivre ce programme d’activité eux-mêmes lors d’une rotation pilote',
+      p_cta: 'Demandez un calcul pour une rotation pilote — avec un plan d’activités adapté au profil de mobilité de vos résidents et les prix par niveau de dépendance.',
+      cta: 'Demander une offre', foot1: 'Adria Care Résidence · Budva, Monténégro',
+      foot_symbol: 'Images d’illustration'
+    },
+    es: {
+      banner: 'Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →',
+      back: '← Montenegro',
+      e_hero: 'Salud y actividad',
+      h1: 'Programas suaves de salud y actividad entre el mar y las montañas',
+      lede: 'El movimiento en el aire marino templado es el núcleo de nuestro programa climático: de la gimnasia matinal en la terraza a las caminatas guiadas por auténticos senderos de montaña — siempre al ritmo de los residentes, siempre acompañados.',
+      e_daily: 'En la residencia', h_daily: 'Programas diarios en la residencia',
+      d1t: 'A diario · al aire libre', d1h: 'Gimnasia matinal y ejercicios respiratorios',
+      d1p: 'Ejercicio supervisado con brisa marina, adaptado a la movilidad y al grado de dependencia: fortalecimiento suave, estiramientos y respiración — al sol de media mañana en invierno, temprano antes del calor en verano.',
+      d2t: 'Varias veces por semana · spa asociado', d2h: 'Talasoterapia y bienestar',
+      d2p: 'Piscinas de agua de mar, masajes y fisioterapia en nuestro spa asociado de Budva: tratamientos por recomendación médica, traslado en microbús y acompañamiento de nuestro equipo.',
+      d3t: 'A diario · jardín y paseo marítimo', d3h: 'Entrenamiento de memoria y equilibrio al aire libre',
+      d3p: 'Pequeños grupos ejercitan el equilibrio, la coordinación y la memoria a cielo abierto — de forma lúdica, preventiva de caídas y documentada para informar a la residencia de origen.',
+      e_trails: 'Por el país', h_trails: 'Senderos suaves',
+      p_trails: 'Montenegro ofrece algo poco común: auténticos paisajes de montaña y lago con caminos llanos y bien cuidados. Hemos verificado esta selección para mayores — por longitud, perfil y acceso en autobús.',
+      th_trail: 'Sendero', th_region: 'Región', th_len: 'Longitud', th_prof: 'Perfil', th_suit: 'Aptitud',
+      t1n: 'Paseo marítimo Budva–Bečići', t1r: 'Costa', t1l: '6 km', t1p: 'llano', t1s: 'para todos',
+      t2n: 'Sendero de Miločer a Sveti Stefan', t2r: 'Costa', t2l: '1,5 km', t2p: 'llano', t2s: 'para todos',
+      t3n: 'Circuito del lago Biogradsko', t3r: 'Parque nacional Biogradska Gora', t3l: '3,4 km', t3p: 'llano', t3s: 'con acompañante',
+      t4n: 'Circuito del Lago Negro (Crno jezero)', t4r: 'Durmitor', t4l: '3,6 km', t4p: 'llano', t4s: 'con acompañante',
+      t5n: 'Sendero panorámico de Vrmac', t5r: 'Bahía de Kotor', t5l: '4 km', t5p: 'subida suave', t5s: 'para caminantes con práctica',
+      t6n: 'Mausoleo de Njegoš en el Lovćen', t6r: 'Parque nacional Lovćen', t6l: 'carretera de montaña', t6p: '461 escalones', t6s: 'solo se recomienda el mirador sin escalones',
+      note_trails: 'Cada caminata se realiza con acompañamiento formado: los bancos y las pausas se planifican de antemano, el autobús lleva al grupo hasta el inicio del sendero y siempre se lleva un botiquín médico de emergencia.',
+      e_safety: 'Responsabilidad', h_safety: 'Seguridad durante la actividad',
+      p_safety: 'Antes de cada actividad, nuestro personal de enfermería realiza un breve control de salud. Los grupos se mantienen pequeños — máximo ocho participantes por acompañante. En verano rige un protocolo fijo de hidratación y sombra, y un fisioterapeuta supervisa el esfuerzo de cada persona. Así el movimiento sigue siendo lo que debe ser: un beneficio, no un riesgo.',
+      e_cta: 'Siguiente paso', h_cta: 'Sus residentes pueden vivir este programa de actividad en persona en un turno piloto',
+      p_cta: 'Solicite un cálculo para un turno piloto — con un plan de actividades acorde al perfil de movilidad de sus residentes y precios por grado de dependencia.',
+      cta: 'Solicitar oferta', foot1: 'Adria Care Residencia · Budva, Montenegro',
+      foot_symbol: 'Imágenes ilustrativas'
+    },
+    sr: {
+      banner: 'Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →',
+      back: '← Crna Gora',
+      e_hero: 'Zdravlje i aktivnost',
+      h1: 'Blagi zdravstveni i aktivni programi između mora i planina',
+      lede: 'Kretanje na blagom morskom vazduhu srž je našeg klimatskog programa: od jutarnje gimnastike na terasi do vođenih šetnji pravim planinskim stazama — uvek u tempu korisnika, uvek uz pratnju.',
+      e_daily: 'U rezidenciji', h_daily: 'Svakodnevni programi u rezidenciji',
+      d1t: 'Svakodnevno · na otvorenom', d1h: 'Jutarnja gimnastika i vežbe disanja',
+      d1p: 'Vežbanje uz stručni nadzor na morskom vazduhu, prilagođeno pokretljivosti i stepenu nege: blago jačanje, istezanje i vežbe disanja — zimi na prepodnevnom suncu, leti rano pre vrućine.',
+      d2t: 'Više puta nedeljno · partnerska banja', d2h: 'Talaso i velnes',
+      d2p: 'Bazeni sa morskom vodom, masaže i fizioterapija u partnerskom spa-centru u Budvi: tretmani po lekarskoj preporuci, prevoz minibusom, pratnja našeg tima.',
+      d3t: 'Svakodnevno · vrt i šetalište', d3h: 'Trening pamćenja i ravnoteže na otvorenom',
+      d3p: 'Male grupe vežbaju ravnotežu, koordinaciju i pamćenje pod vedrim nebom — kroz igru, uz prevenciju padova i dokumentovano za povratnu informaciju matičnom domu.',
+      e_trails: 'Po zemlji', h_trails: 'Blage pešačke staze',
+      p_trails: 'Crna Gora nudi nešto retko: prave planinske i jezerske pejzaže sa ravnim, dobro održavanim stazama. Ovaj izbor proverili smo prema merilima za starije — po dužini, profilu i dostupnosti autobusom.',
+      th_trail: 'Staza', th_region: 'Region', th_len: 'Dužina', th_prof: 'Visinski profil', th_suit: 'Pogodnost',
+      t1n: 'Šetalište Budva–Bečići', t1r: 'Obala', t1l: '6 km', t1p: 'ravno', t1s: 'za sve',
+      t2n: 'Miločerska staza do Svetog Stefana', t2r: 'Obala', t2l: '1,5 km', t2p: 'ravno', t2s: 'za sve',
+      t3n: 'Kružna staza oko Biogradskog jezera', t3r: 'NP Biogradska gora', t3l: '3,4 km', t3p: 'ravno', t3s: 'uz pratnju',
+      t4n: 'Kružna staza oko Crnog jezera', t4r: 'Durmitor', t4l: '3,6 km', t4p: 'ravno', t4s: 'uz pratnju',
+      t5n: 'Panoramska staza Vrmac', t5r: 'Boka Kotorska', t5l: '4 km', t5p: 'blagi uspon', t5s: 'za uvežbane',
+      t6n: 'Njegošev mauzolej na Lovćenu', t6r: 'NP Lovćen', t6l: 'planinski put', t6p: '461 stepenik', t6s: 'preporučuje se samo vidikovac bez stepenika',
+      note_trails: 'Svaka šetnja odvija se uz obučenu pratnju: klupe i pauze planiraju se unapred, autobus dovozi grupu do polazne tačke, a medicinski komplet za hitne slučajeve uvek je uz nas.',
+      e_safety: 'Odgovornost', h_safety: 'Bezbednost tokom aktivnosti',
+      p_safety: 'Pre svake aktivnosti naše medicinsko osoblje obavlja kratku proveru zdravlja. Grupe ostaju male — najviše osam učesnika po pratiocu. Leti važi strog protokol hidratacije i hladovine, a fizioterapeut prati opterećenje svakog pojedinca. Tako kretanje ostaje ono što treba da bude: dobit, a ne rizik.',
+      e_cta: 'Sledeći korak', h_cta: 'Vaši korisnici mogu ovaj aktivni program doživeti sami u pilot-turnusu',
+      p_cta: 'Zatražite obračun za pilot-turnus — sa planom aktivnosti prilagođenim profilu pokretljivosti vaših korisnika i cenama po stepenu nege.',
+      cta: 'Zatražite ponudu', foot1: 'Adria Care Rezidencija · Budva, Crna Gora',
+      foot_symbol: 'Ilustrativne fotografije'
+    },
+    ru: {
+      banner: 'Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →',
+      back: '← Черногория',
+      e_hero: 'Здоровье и активность',
+      h1: 'Мягкие программы здоровья и активности между морем и горами',
+      lede: 'Движение на мягком морском воздухе — сердце нашей климатической программы: от утренней гимнастики на террасе до прогулок с гидом по настоящим горным тропам — всегда в темпе резидентов, всегда в сопровождении.',
+      e_daily: 'В резиденции', h_daily: 'Ежедневные программы в резиденции',
+      d1t: 'Ежедневно · на воздухе', d1h: 'Утренняя гимнастика и дыхательные упражнения',
+      d1p: 'Занятия под присмотром на морском воздухе, с учётом подвижности и степени ухода: мягкое укрепление, растяжка и дыхательные упражнения — зимой на позднеутреннем солнце, летом рано утром, до жары.',
+      d2t: 'Несколько раз в неделю · партнёрский спа', d2h: 'Талассо и веллнес',
+      d2p: 'Бассейны с морской водой, массаж и физиотерапия в партнёрском спа-центре Будвы: процедуры по назначению врача, трансфер на микроавтобусе, сопровождение нашей командой.',
+      d3t: 'Ежедневно · сад и набережная', d3h: 'Тренировка памяти и равновесия на воздухе',
+      d3p: 'Небольшие группы тренируют равновесие, координацию и память под открытым небом — в игровой форме, с профилактикой падений и с документацией для отчёта дому-партнёру.',
+      e_trails: 'По стране', h_trails: 'Щадящие пешеходные маршруты',
+      p_trails: 'Черногория предлагает редкое сочетание: настоящие горные и озёрные пейзажи с ровными, ухоженными тропами. Эту подборку мы проверили на пригодность для старшего возраста — по длине, профилю и доступности на автобусе.',
+      th_trail: 'Маршрут', th_region: 'Регион', th_len: 'Длина', th_prof: 'Профиль высот', th_suit: 'Пригодность',
+      t1n: 'Набережная Будва–Бечичи', t1r: 'Побережье', t1l: '6 км', t1p: 'ровно', t1s: 'для всех',
+      t2n: 'Милочерская тропа к Свети-Стефану', t2r: 'Побережье', t2l: '1,5 км', t2p: 'ровно', t2s: 'для всех',
+      t3n: 'Кольцевая тропа вокруг Биоградского озера', t3r: 'Нацпарк Биоградска-Гора', t3l: '3,4 км', t3p: 'ровно', t3s: 'с сопровождением',
+      t4n: 'Кольцевая тропа вокруг Чёрного озера (Crno jezero)', t4r: 'Дурмитор', t4l: '3,6 км', t4p: 'ровно', t4s: 'с сопровождением',
+      t5n: 'Панорамная тропа Врмац', t5r: 'Бока-Которская бухта', t5l: '4 км', t5p: 'плавный подъём', t5s: 'для тренированных',
+      t6n: 'Мавзолей Негоша на Ловчене', t6r: 'Нацпарк Ловчен', t6l: 'горная дорога', t6p: '461 ступень', t6s: 'рекомендуется только смотровая площадка без ступеней',
+      note_trails: 'Каждая прогулка проходит с обученным сопровождением: скамейки и паузы спланированы заранее, автобус довозит группу до начала тропы, медицинская аптечка всегда с собой.',
+      e_safety: 'Ответственность', h_safety: 'Безопасность во время активности',
+      p_safety: 'Перед каждым занятием наши медсёстры проводят короткую проверку самочувствия. Группы остаются малыми — не более восьми участников на одного сопровождающего. Летом действует строгий протокол питья и тени, а физиотерапевт следит за нагрузкой каждого. Так движение остаётся тем, чем должно быть: пользой, а не риском.',
+      e_cta: 'Следующий шаг', h_cta: 'Ваши резиденты смогут прожить эту программу активности сами в пилотном заезде',
+      p_cta: 'Запросите расчёт пилотного заезда — с планом активности, подобранным под профиль подвижности ваших резидентов, и ценами по степеням ухода.',
+      cta: 'Запросить предложение', foot1: 'Adria Care Residenz · Будва, Черногория',
+      foot_symbol: 'Иллюстративные изображения'
+    }
+  };
+
+  var DE = {};
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { DE[el.getAttribute('data-i18n')] = el.innerHTML; });
+  I18N.de = DE;
+
+  function setLang(lang) {
+    var dict = I18N[lang] || I18N.de;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var v = dict[el.getAttribute('data-i18n')];
+      if (v != null) el.innerHTML = v;
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang));
+    });
+    try { localStorage.setItem('acr-lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem('acr-lang'); } catch (e) {}
+  if (saved && I18N[saved] && saved !== 'de') setLang(saved);
+</script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Nachbarländer entdecken: begleitete Tagesausflüge nach Kroatien, Bosnien-Herzegowina und Albanien sowie Mehrtagesreisen nach Nordmazedonien — seniorengerecht organisiert von der Adria Care Residenz in Budva.">
+<title>Nachbarländer entdecken — Adria Care Residenz</title>
+<style>
+  :root {
+    --ink: #1d2a30; --ink-soft: #46565e; --ground: #f6f4ee; --surface: #fdfcf9;
+    --line: #d9d4c8; --sea: #16566b; --sea-deep: #0e3d4e; --gold: #c89b3c; --on-sea: #f2f6f7;
+    --ph-a: #cfd9d4; --ph-b: #a9c2c6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e8e6df; --ink-soft: #a9b3b8; --ground: #141d21; --surface: #1b2529;
+      --line: #32414a; --sea: #4d97ae; --sea-deep: #0e3d4e; --gold: #d3ad58; --on-sea: #f2f6f7;
+      --ph-a: #24343a; --ph-b: #2e4650; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 17px; line-height: 1.65; }
+  h1, h2, h3 { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600; line-height: 1.18; text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--sea); }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+  .prose { max-width: 62ch; }
+  .eyebrow { font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--sea); font-weight: 600; }
+  .topbar { background: var(--gold); text-align: center; padding: 9px 16px; margin: 0 -24px; }
+  .topbar a { color: #2a2107; text-decoration: none; font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em; }
+  .topbar a:hover { text-decoration: underline; }
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    flex-wrap: wrap; padding: 22px 0 18px; border-bottom: 1px solid var(--line); }
+  .brand { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 21px; font-weight: 600; color: var(--ink); text-decoration: none; }
+  .brand span { color: var(--sea); }
+  .head-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .backlink { font-size: 14px; text-decoration: none; font-weight: 600; }
+  .lang { display: flex; gap: 2px; border: 1px solid var(--line); }
+  .lang button { font: inherit; font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em;
+    background: transparent; color: var(--ink-soft); border: none; padding: 6px 9px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--sea); color: var(--on-sea); }
+  .lang button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  .hero { padding: 70px 0 56px; }
+  .hero h1 { font-size: clamp(32px, 4.8vw, 52px); max-width: 22ch; }
+  .hero .lede { margin-top: 24px; max-width: 60ch; font-size: 19px; color: var(--ink-soft); }
+  figure.ph { position: relative; overflow: hidden; margin: 0;
+    border: 1px solid var(--line);
+    background: linear-gradient(135deg, var(--ph-a), var(--ph-b));
+    display: grid; place-items: center; padding: 20px; text-align: center; }
+  figure.ph figcaption { font-size: 14px; letter-spacing: 0.03em; color: var(--ink-soft);
+    max-width: 56ch; }
+  .ph-hero { aspect-ratio: 21 / 9; margin-top: 38px; }
+  .ph-feature { aspect-ratio: 16 / 9; margin-top: 34px; }
+  @media (max-width: 780px) { .ph-hero { aspect-ratio: 16 / 9; } }
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 10px 0 24px; }
+  .btn { display: inline-block; padding: 13px 26px; background: var(--sea); color: var(--on-sea);
+    text-decoration: none; font-weight: 600; font-size: 16px; border: 1px solid var(--sea); }
+  .btn:hover { background: var(--sea-deep); border-color: var(--sea-deep); }
+  .btn:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .cards-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+  @media (max-width: 780px) { .cards-2 { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--sea); padding: 24px; }
+  .card .tag { font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+  .card h3 { font-size: 19px; margin: 8px 0 10px; }
+  .card p { color: var(--ink-soft); font-size: 15.5px; }
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+  @media (max-width: 900px) { .facts { grid-template-columns: 1fr 1fr; } }
+  .fact b { display: block; font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 30px; color: var(--sea); font-variant-numeric: tabular-nums; }
+  .fact span { color: var(--ink-soft); font-size: 15px; }
+  .cta-band { background: var(--sea-deep); color: var(--on-sea); border-top: none; }
+  .cta-band .eyebrow { color: var(--gold); }
+  .cta-band h2 { color: var(--on-sea); }
+  .cta-band p { color: #c3d3d9; }
+  .cta-band .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 26px; }
+  footer.site { padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
+    display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027 · Wir nehmen Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
+  <header class="site">
+    <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
+    <div class="head-right">
+      <a class="backlink" href="montenegro.html" data-i18n="back">← Montenegro</a>
+      <nav class="lang" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-lang="sr" aria-pressed="false">SR</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow" data-i18n="e_hero">Über die Grenze</p>
+    <h1 style="margin-top:14px;" data-i18n="h1">Vier Länder in Tagesreichweite von Budva</h1>
+    <p class="lede" data-i18n="lede">Montenegro grenzt an Kroatien, Bosnien-Herzegowina und Albanien — und über eine kurze Fahrt ist auch die Seenregion Nordmazedoniens erreichbar. Wir organisieren begleitete Tagesausflüge und behutsame Mehrtagesreisen mit demselben Seniorenstandard wie zu Hause: Kleinbus bis vor die Tür, wenig Gehstrecke, medizinische Begleitung — und die EU-freundlichen Grenzformalitäten übernehmen wir.</p>
+    <figure class="ph ph-hero">
+      <figcaption>Photo · nb-hero.webp — Dubrovnik old town walls seen from the sea approach, soft morning light</figcaption>
+    </figure>
+  </div>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_day">Tagesausflüge</p>
+    <h2 data-i18n="h_day">Drei Nachbarn, drei Tagesreisen — morgens los, abends zurück</h2>
+    <div class="cards">
+      <div class="card">
+        <p class="tag" data-i18n="d1t">Kroatien · 2 Std. · Ganztag</p>
+        <h3 data-i18n="d1h">Dubrovnik</h3>
+        <p data-i18n="d1p">Die Perle der Adria: Stadtmauern von unten, die Flaniermeile Stradun und die Seilbahn auf den Srđ — Panoramablick ganz ohne Stufen.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="d2t">Bosnien-Herzegowina · 90 Min. · Ganztag</p>
+        <h3 data-i18n="d2h">Trebinje</h3>
+        <p data-i18n="d2p">Platanenplätze, das Kloster Tvrdoš mit Weinverkostung und ein kleiner Wochenmarkt — eine ruhige Stadt für einen langsamen Tag.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="d3t">Albanien · 90 Min. · Ganztag</p>
+        <h3 data-i18n="d3h">Shkodra</h3>
+        <p data-i18n="d3p">Die Rozafa-Festung vom Fuß aus betrachtet, der Blick auf den Skutarisee von der anderen Seite und Kaffee-Kultur an der Fußgängerzone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_multi">Mehrtagesreisen</p>
+    <h2 data-i18n="h_multi">Weiter weg, im gewohnten Tempo — mit Pflegebegleitung im Hotel</h2>
+    <div class="cards-2">
+      <div class="card">
+        <p class="tag" data-i18n="mt1t">Nordmazedonien · 3 Tage · Frühjahr/Herbst</p>
+        <h3 data-i18n="mt1h">Ohrid</h3>
+        <p data-i18n="mt1p">UNESCO-Seestadt mit dem Kloster Sveti Naum, Bootsfahrt zu den Quellen und Hotelaufenthalt mit Pflegebegleitung rund um die Uhr.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="mt2t">Bosnien-Herzegowina · 2 Tage · Übergangszeit</p>
+        <h3 data-i18n="mt2h">Mostar &amp; Herzegowina</h3>
+        <p data-i18n="mt2p">Die Alte Brücke, das Derwisch-Haus Blagaj an der Buna-Quelle und eine Übernachtung in einem ruhigen Stadthotel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_facts">Praktisch</p>
+    <h2 data-i18n="h_facts">Formalitäten geregelt</h2>
+    <div class="facts">
+      <div class="fact"><b data-i18n="fb1">Ausweis</b><span data-i18n="f1">EU-Bürger reisen mit Personalausweis oder Reisepass — mehr braucht es nicht.</span></div>
+      <div class="fact"><b data-i18n="fb2">Grenze</b><span data-i18n="f2">Die Grenzformalitäten übernimmt die Begleitung — Ihre Bewohner bleiben im Bus sitzen.</span></div>
+      <div class="fact"><b data-i18n="fb3">Schutz</b><span data-i18n="f3">Auslandskranken- und Rücktransportversicherung gilt in allen Zielländern weiter.</span></div>
+      <div class="fact"><b data-i18n="fb4">Plan</b><span data-i18n="f4">Pflege- und Medikamentenplan reist mit — die Begleitkraft bleibt dieselbe.</span></div>
+    </div>
+    <figure class="ph ph-feature">
+      <figcaption>Photo · nb-ohrid.webp — lakeside monastery of Sveti Naum at Lake Ohrid, seniors on a shaded bench in the foreground</figcaption>
+    </figure>
+  </section>
+
+  <section class="cta-band">
+    <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
+    <h2 data-i18n="h_cta">Nehmen Sie die Nachbarländer in Ihr Turnusprogramm auf</h2>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Fordern Sie ein Angebot an — Tagesausflüge und Mehrtagesreisen kalkulieren wir je Turnus und Pflegegrad, als Baustein Ihres Saisonprogramms.</p>
+    <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
+  </section>
+
+  <footer class="site">
+    <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
+    <span>parthners@adriacare.me · <span data-i18n="foot_symbol">Symbolbilder</span></span>
+  </footer>
+</div>
+
+<script>
+  var I18N = {
+    de: null,
+    en: {
+      banner: 'Opening in 2027 · We are taking preliminary applications and signing pre-agreements →',
+      back: '← Montenegro',
+      e_hero: 'Across the border',
+      h1: 'Four countries within a day trip of Budva',
+      lede: 'Montenegro borders Croatia, Bosnia-Herzegovina and Albania — and a short drive also brings the lake region of North Macedonia within reach. We organise accompanied day trips and gentle multi-day journeys with the same senior standard as at home: minibus to the door, little walking, medical escort — and we handle the EU-friendly border formalities.',
+      e_day: 'Day trips',
+      h_day: 'Three neighbours, three day trips — out in the morning, back by evening',
+      d1t: 'Croatia · 2 hrs · full day', d1h: 'Dubrovnik',
+      d1p: 'The pearl of the Adriatic: the city walls seen from below, the Stradun promenade, and the cable car up Mount Srđ — a panoramic view without a single step.',
+      d2t: 'Bosnia-Herzegovina · 90 min · full day', d2h: 'Trebinje',
+      d2p: 'Plane-tree squares, the Tvrdoš monastery with a wine tasting, and a small weekly market — a quiet town for a slow day.',
+      d3t: 'Albania · 90 min · full day', d3h: 'Shkodra',
+      d3p: 'Rozafa fortress admired from its foot, Lake Skadar seen from the other side, and café culture along the pedestrian street.',
+      e_multi: 'Multi-day journeys',
+      h_multi: 'Further afield, at a familiar pace — with care escort at the hotel',
+      mt1t: 'North Macedonia · 3 days · spring/autumn', mt1h: 'Ohrid',
+      mt1p: 'A UNESCO lakeside town with the monastery of Sveti Naum, a boat trip to the springs, and a hotel stay with round-the-clock care escort.',
+      mt2t: 'Bosnia-Herzegovina · 2 days · shoulder season', mt2h: 'Mostar & Herzegovina',
+      mt2p: 'The Old Bridge, the Blagaj dervish house at the source of the Buna, and an overnight stay in a quiet city hotel.',
+      e_facts: 'Practical', h_facts: 'Formalities taken care of',
+      fb1: 'ID', f1: 'EU citizens travel on a national ID card or passport — nothing more is needed.',
+      fb2: 'Border', f2: 'The escort handles all border formalities — your residents stay seated in the bus.',
+      fb3: 'Cover', f3: 'Travel health and repatriation insurance remains valid in all destination countries.',
+      fb4: 'Plan', f4: 'The care and medication plan travels along — the escort remains the same person.',
+      e_cta: 'Next step',
+      h_cta: 'Add the neighbouring countries to your rotation programme',
+      p_cta: 'Request an offer — we price day trips and multi-day journeys per rotation and care level, as a building block of your season programme.',
+      cta: 'Request an offer',
+      foot1: 'Adria Care Residence · Budva, Montenegro',
+      foot_symbol: 'Illustrative images'
+    },
+    fr: {
+      banner: 'Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →',
+      back: '← Monténégro',
+      e_hero: 'Au-delà de la frontière',
+      h1: 'Quatre pays à une journée de Budva',
+      lede: 'Le Monténégro est frontalier de la Croatie, de la Bosnie-Herzégovine et de l’Albanie — et un court trajet met aussi la région des lacs de Macédoine du Nord à portée. Nous organisons des excursions accompagnées à la journée et de douces escapades de plusieurs jours, avec le même standard senior qu’à la maison : minibus jusqu’à la porte, peu de marche, accompagnement médical — et nous prenons en charge les formalités frontalières, simples pour les citoyens de l’UE.',
+      e_day: 'Excursions à la journée',
+      h_day: 'Trois voisins, trois excursions — départ le matin, retour le soir',
+      d1t: 'Croatie · 2 h · journée', d1h: 'Dubrovnik',
+      d1p: 'La perle de l’Adriatique : les remparts vus d’en bas, la promenade du Stradun et le téléphérique du mont Srđ — un panorama sans la moindre marche.',
+      d2t: 'Bosnie-Herzégovine · 90 min · journée', d2h: 'Trebinje',
+      d2p: 'Places ombragées de platanes, le monastère de Tvrdoš avec dégustation de vin et un petit marché hebdomadaire — une ville paisible pour une journée lente.',
+      d3t: 'Albanie · 90 min · journée', d3h: 'Shkodra',
+      d3p: 'La forteresse de Rozafa admirée depuis son pied, le lac de Skadar vu de l’autre rive et la culture du café le long de la rue piétonne.',
+      e_multi: 'Voyages de plusieurs jours',
+      h_multi: 'Plus loin, au rythme habituel — avec accompagnement de soins à l’hôtel',
+      mt1t: 'Macédoine du Nord · 3 jours · printemps/automne', mt1h: 'Ohrid',
+      mt1p: 'Ville lacustre UNESCO avec le monastère de Sveti Naum, promenade en bateau vers les sources et séjour à l’hôtel avec accompagnement de soins 24 h/24.',
+      mt2t: 'Bosnie-Herzégovine · 2 jours · intersaison', mt2h: 'Mostar & Herzégovine',
+      mt2p: 'Le Vieux Pont, la maison des derviches de Blagaj à la source de la Buna et une nuitée dans un hôtel de ville tranquille.',
+      e_facts: 'Pratique', h_facts: 'Formalités réglées',
+      fb1: 'Papiers', f1: 'Les citoyens de l’UE voyagent avec une carte d’identité ou un passeport — rien de plus n’est nécessaire.',
+      fb2: 'Frontière', f2: 'L’accompagnement se charge des formalités frontalières — vos résidents restent assis dans le bus.',
+      fb3: 'Couverture', f3: 'L’assurance maladie voyage et rapatriement reste valable dans tous les pays de destination.',
+      fb4: 'Plan', f4: 'Le plan de soins et de médication voyage avec le groupe — l’accompagnant reste le même.',
+      e_cta: 'Prochaine étape',
+      h_cta: 'Ajoutez les pays voisins à votre programme de rotations',
+      p_cta: 'Demandez une offre — nous chiffrons excursions et voyages par rotation et par niveau de dépendance, comme brique de votre programme de saison.',
+      cta: 'Demander une offre',
+      foot1: 'Adria Care Résidence · Budva, Monténégro',
+      foot_symbol: 'Images d’illustration'
+    },
+    es: {
+      banner: 'Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →',
+      back: '← Montenegro',
+      e_hero: 'Al otro lado de la frontera',
+      h1: 'Cuatro países a una jornada de Budva',
+      lede: 'Montenegro limita con Croacia, Bosnia-Herzegovina y Albania — y un trayecto corto pone también al alcance la región de los lagos de Macedonia del Norte. Organizamos excursiones acompañadas de un día y suaves viajes de varios días con el mismo estándar sénior que en casa: microbús hasta la puerta, poca caminata, acompañamiento médico — y nosotros nos ocupamos de los trámites fronterizos, sencillos para ciudadanos de la UE.',
+      e_day: 'Excursiones de un día',
+      h_day: 'Tres vecinos, tres excursiones — salida por la mañana, regreso por la tarde',
+      d1t: 'Croacia · 2 h · día completo', d1h: 'Dubrovnik',
+      d1p: 'La perla del Adriático: las murallas vistas desde abajo, el paseo del Stradun y el teleférico al monte Srđ — vista panorámica sin un solo escalón.',
+      d2t: 'Bosnia-Herzegovina · 90 min · día completo', d2h: 'Trebinje',
+      d2p: 'Plazas de plátanos, el monasterio de Tvrdoš con cata de vinos y un pequeño mercado semanal — una ciudad tranquila para un día pausado.',
+      d3t: 'Albania · 90 min · día completo', d3h: 'Shkodra',
+      d3p: 'La fortaleza de Rozafa contemplada desde su pie, el lago Skadar visto desde la otra orilla y la cultura del café en la calle peatonal.',
+      e_multi: 'Viajes de varios días',
+      h_multi: 'Más lejos, al ritmo de siempre — con acompañamiento de cuidados en el hotel',
+      mt1t: 'Macedonia del Norte · 3 días · primavera/otoño', mt1h: 'Ohrid',
+      mt1p: 'Ciudad lacustre UNESCO con el monasterio de Sveti Naum, paseo en barco a los manantiales y estancia en hotel con acompañamiento de cuidados las 24 horas.',
+      mt2t: 'Bosnia-Herzegovina · 2 días · entretiempo', mt2h: 'Mostar y Herzegovina',
+      mt2p: 'El Puente Viejo, la casa de los derviches de Blagaj junto al nacimiento del Buna y una noche en un tranquilo hotel urbano.',
+      e_facts: 'Práctico', h_facts: 'Trámites resueltos',
+      fb1: 'Documento', f1: 'Los ciudadanos de la UE viajan con DNI o pasaporte — no hace falta nada más.',
+      fb2: 'Frontera', f2: 'El acompañamiento se encarga de los trámites fronterizos — sus residentes permanecen sentados en el bus.',
+      fb3: 'Cobertura', f3: 'El seguro de enfermedad en el extranjero y de repatriación sigue vigente en todos los países de destino.',
+      fb4: 'Plan', f4: 'El plan de cuidados y medicación viaja con el grupo — la persona acompañante sigue siendo la misma.',
+      e_cta: 'Siguiente paso',
+      h_cta: 'Incorpore los países vecinos a su programa de turnos',
+      p_cta: 'Solicite una oferta — calculamos excursiones y viajes por turno y grado de dependencia, como módulo de su programa de temporada.',
+      cta: 'Solicitar oferta',
+      foot1: 'Adria Care Residencia · Budva, Montenegro',
+      foot_symbol: 'Imágenes ilustrativas'
+    },
+    sr: {
+      banner: 'Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →',
+      back: '← Crna Gora',
+      e_hero: 'Preko granice',
+      h1: 'Četiri zemlje na dan puta od Budve',
+      lede: 'Crna Gora se graniči sa Hrvatskom, Bosnom i Hercegovinom i Albanijom — a kratka vožnja približava i jezerski kraj Severne Makedonije. Organizujemo izlete sa pratnjom i blaga višednevna putovanja, uz isti standard za starije kao kod kuće: minibus do vrata, malo hoda, medicinska pratnja — a granične formalnosti, jednostavne za građane EU, preuzimamo mi.',
+      e_day: 'Jednodnevni izleti',
+      h_day: 'Tri suseda, tri izleta — ujutru polazak, uveče povratak',
+      d1t: 'Hrvatska · 2 sata · celodnevni', d1h: 'Dubrovnik',
+      d1p: 'Biser Jadrana: gradske zidine gledane odozdo, šetalište Stradun i žičara na Srđ — panoramski pogled bez ijednog stepenika.',
+      d2t: 'Bosna i Hercegovina · 90 min · celodnevni', d2h: 'Trebinje',
+      d2p: 'Trgovi pod platanima, manastir Tvrdoš sa degustacijom vina i mala nedeljna pijaca — miran grad za polagan dan.',
+      d3t: 'Albanija · 90 min · celodnevni', d3h: 'Skadar',
+      d3p: 'Tvrđava Rozafa posmatrana iz podnožja, pogled na Skadarsko jezero sa druge strane i kultura kafe u pešačkoj zoni.',
+      e_multi: 'Višednevna putovanja',
+      h_multi: 'Dalje od granice, u poznatom ritmu — uz negovateljsku pratnju u hotelu',
+      mt1t: 'Severna Makedonija · 3 dana · proleće/jesen', mt1h: 'Ohrid',
+      mt1p: 'Jezerski grad pod zaštitom UNESCO-a sa manastirom Sveti Naum, vožnja brodom do izvora i boravak u hotelu uz negovateljsku pratnju non-stop.',
+      mt2t: 'Bosna i Hercegovina · 2 dana · prelazni period', mt2h: 'Mostar i Hercegovina',
+      mt2p: 'Stari most, derviška tekija u Blagaju na izvoru Bune i noćenje u mirnom gradskom hotelu.',
+      e_facts: 'Praktično', h_facts: 'Formalnosti rešene',
+      fb1: 'Dokument', f1: 'Građani EU putuju sa ličnom kartom ili pasošem — ništa više nije potrebno.',
+      fb2: 'Granica', f2: 'Granične formalnosti preuzima pratnja — vaši korisnici ostaju da sede u autobusu.',
+      fb3: 'Osiguranje', f3: 'Putno zdravstveno osiguranje i osiguranje repatrijacije važe i u svim zemljama odredišta.',
+      fb4: 'Plan', f4: 'Plan nege i terapije putuje sa grupom — pratilac ostaje ista osoba.',
+      e_cta: 'Sledeći korak',
+      h_cta: 'Uvrstite susedne zemlje u svoj program turnusa',
+      p_cta: 'Zatražite ponudu — izlete i putovanja obračunavamo po turnusu i stepenu nege, kao deo vašeg sezonskog programa.',
+      cta: 'Zatražite ponudu',
+      foot1: 'Adria Care Rezidencija · Budva, Crna Gora',
+      foot_symbol: 'Ilustrativne fotografije'
+    },
+    ru: {
+      banner: 'Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →',
+      back: '← Черногория',
+      e_hero: 'За границу',
+      h1: 'Четыре страны на расстоянии одного дня от Будвы',
+      lede: 'Черногория граничит с Хорватией, Боснией и Герцеговиной и Албанией — а короткая дорога открывает и озёрный край Северной Македонии. Мы организуем однодневные экскурсии с сопровождением и щадящие многодневные путешествия с тем же стандартом для старшего возраста, что и дома: микроавтобус до дверей, минимум ходьбы, медицинское сопровождение — а простые для граждан ЕС пограничные формальности мы берём на себя.',
+      e_day: 'Однодневные экскурсии',
+      h_day: 'Три соседа, три поездки — утром в путь, вечером назад',
+      d1t: 'Хорватия · 2 ч · целый день', d1h: 'Дубровник',
+      d1p: 'Жемчужина Адриатики: городские стены снизу, прогулочная улица Страдун и канатная дорога на гору Срдж — панорамный вид без единой ступени.',
+      d2t: 'Босния и Герцеговина · 90 мин · целый день', d2h: 'Требине',
+      d2p: 'Площади под платанами, монастырь Тврдош с дегустацией вина и маленький еженедельный рынок — тихий город для неспешного дня.',
+      d3t: 'Албания · 90 мин · целый день', d3h: 'Шкодер',
+      d3p: 'Крепость Розафа от подножия, взгляд на Скадарское озеро с другой стороны и кофейная культура на пешеходной улице.',
+      e_multi: 'Многодневные путешествия',
+      h_multi: 'Дальше от дома, в привычном темпе — с сопровождением по уходу в отеле',
+      mt1t: 'Северная Македония · 3 дня · весна/осень', mt1h: 'Охрид',
+      mt1p: 'Озёрный город под охраной ЮНЕСКО с монастырём Свети-Наум, прогулка на кораблике к источникам и проживание в отеле с круглосуточным сопровождением по уходу.',
+      mt2t: 'Босния и Герцеговина · 2 дня · межсезонье', mt2h: 'Мостар и Герцеговина',
+      mt2p: 'Старый мост, дом дервишей в Благае у истока Буны и ночёвка в тихом городском отеле.',
+      e_facts: 'Практично', h_facts: 'Формальности улажены',
+      fb1: 'Документ', f1: 'Граждане ЕС путешествуют по удостоверению личности или загранпаспорту — больше ничего не нужно.',
+      fb2: 'Граница', f2: 'Пограничные формальности берёт на себя сопровождение — ваши резиденты остаются сидеть в автобусе.',
+      fb3: 'Защита', f3: 'Страховка для выезжающих за рубеж и страховка репатриации действуют во всех странах маршрута.',
+      fb4: 'План', f4: 'План ухода и приёма лекарств едет вместе с группой — сопровождающий остаётся тем же.',
+      e_cta: 'Следующий шаг',
+      h_cta: 'Включите соседние страны в программу ваших заездов',
+      p_cta: 'Запросите предложение — экскурсии и путешествия мы рассчитываем по заездам и степеням ухода, как модуль вашей сезонной программы.',
+      cta: 'Запросить предложение',
+      foot1: 'Adria Care Residenz · Будва, Черногория',
+      foot_symbol: 'Иллюстративные изображения'
+    }
+  };
+
+  var DE = {};
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { DE[el.getAttribute('data-i18n')] = el.innerHTML; });
+  I18N.de = DE;
+
+  function setLang(lang) {
+    var dict = I18N[lang] || I18N.de;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var v = dict[el.getAttribute('data-i18n')];
+      if (v != null) el.innerHTML = v;
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang));
+    });
+    try { localStorage.setItem('acr-lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem('acr-lang'); } catch (e) {}
+  if (saved && I18N[saved] && saved !== 'de') setLang(saved);
+</script>
+</body>
+</html>
