@@ -108,5 +108,5 @@ Pflegegrade 1–2 sind unser Standard. Pflegegrad 3 nehmen wir ausschließlich n
 Senden Sie uns Gruppengröße, Pflegegrade und Ihr Wunschzeitfenster — Sie erhalten innerhalb von fünf Werktagen eine verbindliche Kalkulation und einen Terminvorschlag für ein Erstgespräch.
 
 **Adria Care Residenz** · Budva, Montenegro
-parthners@adriacare.me · adriacare.me
+partners@adriacare.me · adriacare.me
 Ansprechpartner: [Name, Telefon]
