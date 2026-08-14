@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Montenegro für Senioren: Klima, Temperaturen, Spaziergänge und seniorengerechte Ausflüge — der Standort der Adria Care Residenz in Budva.">
+<title>Montenegro für Senioren — Adria Care Residenz</title>
+<style>
+  :root {
+    --ink: #1d2a30; --ink-soft: #46565e; --ground: #f6f4ee; --surface: #fdfcf9;
+    --line: #d9d4c8; --sea: #16566b; --sea-deep: #0e3d4e; --gold: #c89b3c; --on-sea: #f2f6f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e8e6df; --ink-soft: #a9b3b8; --ground: #141d21; --surface: #1b2529;
+      --line: #32414a; --sea: #4d97ae; --sea-deep: #0e3d4e; --gold: #d3ad58; --on-sea: #f2f6f7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 17px; line-height: 1.65; }
+  h1, h2, h3 { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600; line-height: 1.18; text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--sea); }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+  .prose { max-width: 62ch; }
+  .eyebrow { font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--sea); font-weight: 600; }
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    flex-wrap: wrap; padding: 22px 0 18px; border-bottom: 1px solid var(--line); }
+  .brand { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 21px; font-weight: 600; color: var(--ink); text-decoration: none; }
+  .brand span { color: var(--sea); }
+  .head-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .backlink { font-size: 14px; text-decoration: none; font-weight: 600; }
+  .lang { display: flex; gap: 2px; border: 1px solid var(--line); }
+  .lang button { font: inherit; font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em;
+    background: transparent; color: var(--ink-soft); border: none; padding: 6px 9px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--sea); color: var(--on-sea); }
+  .lang button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  .hero { padding: 70px 0 56px; }
+  .hero h1 { font-size: clamp(32px, 4.8vw, 52px); max-width: 22ch; }
+  .hero .lede { margin-top: 24px; max-width: 60ch; font-size: 19px; color: var(--ink-soft); }
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 10px 0 24px; }
+  .btn { display: inline-block; padding: 13px 26px; background: var(--sea); color: var(--on-sea);
+    text-decoration: none; font-weight: 600; font-size: 16px; border: 1px solid var(--sea); }
+  .btn:hover { background: var(--sea-deep); border-color: var(--sea-deep); }
+  .btn:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 15px; }
+  th, td { text-align: left; padding: 11px 16px; border-bottom: 1px solid var(--line); }
+  th { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  tr.season-low td { background: color-mix(in srgb, var(--sea) 7%, transparent); }
+  .table-note { margin-top: 12px; font-size: 14px; color: var(--ink-soft); max-width: 70ch; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .cards-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+  @media (max-width: 780px) { .cards-2 { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--sea); padding: 24px; }
+  .card .tag { font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+  .card h3 { font-size: 19px; margin: 8px 0 10px; }
+  .card p { color: var(--ink-soft); font-size: 15.5px; }
+  .walk-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; }
+  .walk-list li { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .walk-list li:last-child { border-bottom: none; }
+  .walk-list h3 { font-size: 18px; }
+  .walk-list .meta { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+  .walk-list p { color: var(--ink-soft); font-size: 15.5px; max-width: 68ch; }
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+  @media (max-width: 900px) { .facts { grid-template-columns: 1fr 1fr; } }
+  .fact b { display: block; font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 30px; color: var(--sea); font-variant-numeric: tabular-nums; }
+  .fact span { color: var(--ink-soft); font-size: 15px; }
+  .cta-band { background: var(--sea-deep); color: var(--on-sea); border-top: none; }
+  .cta-band .eyebrow { color: var(--gold); }
+  .cta-band h2 { color: var(--on-sea); }
+  .cta-band p { color: #c3d3d9; }
+  .cta-band .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 26px; }
+  footer.site { padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
+    display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
+    <div class="head-right">
+      <a class="backlink" href="index.html" data-i18n="back">← Zur Startseite</a>
+      <nav class="lang" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-lang="sr" aria-pressed="false">SR</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow" data-i18n="e_hero">Der Standort</p>
+    <h1 style="margin-top:14px;" data-i18n="h1">Montenegro: eine Adriaküste, die den späten Jahren gut tut</h1>
+    <p class="lede" data-i18n="lede">Zwischen Meer und Bergen liegt eines der mildesten Klimata Europas: rund 240 Sonnentage im Jahr, Winter ohne Frost, Sommer mit kühlem Hinterland. Dazu kurze Wege, europäische Standards und eine Landschaft, die zum täglichen Spazierengehen einlädt — die Grundlage unseres Klimaprogramms.</p>
+  </div>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_climate">Klima &amp; Temperaturen</p>
+    <h2 data-i18n="h_climate">Zwölf Monate Budva in Zahlen</h2>
+    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_climate">Budva liegt in der subtropisch-mediterranen Zone: Der kälteste Monat bleibt im zweistelligen Plusbereich, das Meer speichert die Sommerwärme bis in den November. Hervorgehoben: die Nebensaison mit Saisonindex 0,50.</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="th_month">Monat</th>
+            <th data-i18n="th_air">Luft, Tageshoch</th>
+            <th data-i18n="th_sea">Meer</th>
+            <th data-i18n="th_sun">Sonnenstunden / Tag</th>
+            <th data-i18n="th_idx">Saisonindex</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="season-low"><td data-i18n="m1">Januar</td><td class="num">12 °C</td><td class="num">15 °C</td><td class="num">4</td><td class="num">0,50</td></tr>
+          <tr class="season-low"><td data-i18n="m2">Februar</td><td class="num">13 °C</td><td class="num">14 °C</td><td class="num">5</td><td class="num">0,50</td></tr>
+          <tr class="season-low"><td data-i18n="m3">März</td><td class="num">15 °C</td><td class="num">14 °C</td><td class="num">6</td><td class="num">0,50</td></tr>
+          <tr class="season-low"><td data-i18n="m4">April</td><td class="num">18 °C</td><td class="num">16 °C</td><td class="num">7</td><td class="num">0,50</td></tr>
+          <tr><td data-i18n="m5">Mai</td><td class="num">22 °C</td><td class="num">19 °C</td><td class="num">9</td><td class="num">0,90</td></tr>
+          <tr><td data-i18n="m6">Juni</td><td class="num">26 °C</td><td class="num">23 °C</td><td class="num">10</td><td class="num">0,90</td></tr>
+          <tr><td data-i18n="m7">Juli</td><td class="num">29 °C</td><td class="num">25 °C</td><td class="num">11</td><td class="num">0,90</td></tr>
+          <tr><td data-i18n="m8">August</td><td class="num">29 °C</td><td class="num">26 °C</td><td class="num">10</td><td class="num">0,90</td></tr>
+          <tr><td data-i18n="m9">September</td><td class="num">26 °C</td><td class="num">23 °C</td><td class="num">8</td><td class="num">0,90</td></tr>
+          <tr class="season-low"><td data-i18n="m10">Oktober</td><td class="num">21 °C</td><td class="num">20 °C</td><td class="num">6</td><td class="num">0,50</td></tr>
+          <tr class="season-low"><td data-i18n="m11">November</td><td class="num">17 °C</td><td class="num">18 °C</td><td class="num">4</td><td class="num">0,50</td></tr>
+          <tr class="season-low"><td data-i18n="m12">Dezember</td><td class="num">13 °C</td><td class="num">16 °C</td><td class="num">3</td><td class="num">0,50</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note" data-i18n="note_climate">Langjährige Mittelwerte für Budva (Quellen: nationale Wetterdienste). Für Bewohner mit Herz-Kreislauf- und Atemwegserkrankungen sind besonders die frost- und schwülefreien Übergangsmonate wertvoll: stabile Luftfeuchtigkeit, wenig Wind, hohe Zahl an Tageslichtstunden gegenüber Mittel- und Nordeuropa.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_zones">Drei Klimazonen</p>
+    <h2 data-i18n="h_zones">Ein kleines Land, drei Klimata — nutzbar je nach Saison</h2>
+    <div class="cards">
+      <div class="card">
+        <p class="tag" data-i18n="z1t">Küste · 0–100 m</p>
+        <h3 data-i18n="z1h">Adriatische Riviera</h3>
+        <p data-i18n="z1p">Milde Winter, lange Übergangszeiten, Meeresluft mit Salz- und Pinienaroma. Hier liegt die Residenz — das Basisklima für Überwinterung und Frühjahrsmobilisierung.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="z2t">Seenland · 6–40 m</p>
+        <h3 data-i18n="z2h">Skadar-See</h3>
+        <p data-i18n="z2p">Der größte See des Balkans, eine Autostunde entfernt: stilles Wasser, Vogelwelt, Bootsfahrten ohne Anstrengung — das beliebteste Ausflugsziel unserer Gäste in der Übergangszeit.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="z3t">Berge · 900–1.700 m</p>
+        <h3 data-i18n="z3h">Lovćen und das Hinterland</h3>
+        <p data-i18n="z3p">Wenn der Hochsommer an der Küste zu warm wird: kühle Bergluft in 40 Minuten Fahrt. Panoramastraßen erlauben Höhenerlebnis ganz ohne Wandern — der Bus fährt bis zum Aussichtspunkt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_walks">Tägliche Spaziergänge</p>
+    <h2 data-i18n="h_walks">Flache Wege, Bänke, Meerblick</h2>
+    <ul class="walk-list">
+      <li>
+        <p class="meta" data-i18n="w1m">6 km · eben · durchgehend Bänke</p>
+        <h3 data-i18n="w1h">Die Promenade von Budva</h3>
+        <p data-i18n="w1p">Vom Jachthafen bis zum Strand von Bečići führt eine ebene, gepflasterte Uferpromenade — ideal für das tägliche Gehprogramm in Begleitung, mit Cafés und Ruhepunkten alle 200 Meter.</p>
+      </li>
+      <li>
+        <p class="meta" data-i18n="w2m">0,5 km · Kopfsteinpflaster · mit Begleitung</p>
+        <h3 data-i18n="w2h">Die Altstadt von Budva</h3>
+        <p data-i18n="w2p">Venezianische Gassen, kleine Plätze, die Zitadelle mit Blick auf das Meer. Kompakt genug für einen Vormittag; unsere Betreuer kennen die stufenarmen Routen.</p>
+      </li>
+      <li>
+        <p class="meta" data-i18n="w3m">1,5 km · Parkwege · schattig</p>
+        <h3 data-i18n="w3h">Der Miločer-Park und Sveti Stefan</h3>
+        <p data-i18n="w3p">Zypressen- und Olivenalleen des ehemaligen königlichen Sommersitzes, dazu der berühmteste Fotoblick des Landes: die Inselfestung Sveti Stefan — vom Aussichtspunkt, ohne Abstieg.</p>
+      </li>
+      <li>
+        <p class="meta" data-i18n="w4m">Ganzjährig · direkt an der Residenz</p>
+        <h3 data-i18n="w4h">Morgengymnastik am Wasser</h3>
+        <p data-i18n="w4p">Teil des Klimaprogramms: betreute Bewegung im Freien bei Meeresluft — im Winter in der Vormittagssonne, im Sommer früh am Morgen vor der Wärme.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_trips">Ausflüge im Land</p>
+    <h2 data-i18n="h_trips">Montenegro vom Bus und vom Boot aus — seniorengerecht geplant</h2>
+    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_trips">Jeder Ausflug ist nach denselben Regeln organisiert: klimatisierter Kleinbus bis zum Ziel, maximal 300 Meter Gehstrecke, Sitzgelegenheiten unterwegs, medizinisch geschulte Begleitung und Rückkehr zur Mittagsruhe oder zum frühen Abend.</p>
+    <div class="cards-2">
+      <div class="card">
+        <p class="tag" data-i18n="t1m">Halbtag · Bootsfahrt · UNESCO</p>
+        <h3 data-i18n="t1h">Bucht von Kotor</h3>
+        <p data-i18n="t1p">Fjordartige Landschaft vom Wasser aus: Perast, die Wallfahrtsinsel Gospa od Škrpjela und die venezianische Altstadt von Kotor — das Boot legt direkt an der Uferpromenade an.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="t2m">Halbtag · Boot &amp; Verkostung</p>
+        <h3 data-i18n="t2h">Skadar-See und Weinberge</h3>
+        <p data-i18n="t2p">Stille Bootsfahrt zwischen Seerosenfeldern und Klosterinseln, danach Kostprobe montenegrinischer Weine und Honige auf einem Familiengut — alles ebenerdig.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="t3m">Halbtag · Panoramafahrt</p>
+        <h3 data-i18n="t3h">Cetinje, die alte Königsstadt</h3>
+        <p data-i18n="t3p">Die historische Hauptstadt mit Kloster, Königspalast und Museen — dazu die Serpentinenstraße mit Blick über die gesamte Bucht. Kulturprogramm ohne lange Fußwege.</p>
+      </div>
+      <div class="card">
+        <p class="tag" data-i18n="t4m">Ganztag · Süden · Olivengärten</p>
+        <h3 data-i18n="t4h">Bar und Ulcinj</h3>
+        <p data-i18n="t4p">Der älteste Olivenbaum Europas (über 2.000 Jahre), Olivenöl-Verkostung und die langen Sandstrände des Südens — ein Ausflug für die wärmeren Monate der Übergangszeit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow" data-i18n="e_facts">Praktisch</p>
+    <h2 data-i18n="h_facts">Was den Standort für europäische Träger einfach macht</h2>
+    <div class="facts">
+      <div class="fact"><b>2–2,5 h</b><span data-i18n="f1">Direktflug aus Deutschland und Österreich nach Tivat oder Podgorica; Transfer zur Residenz unter 40 Minuten.</span></div>
+      <div class="fact"><b>€</b><span data-i18n="f2">Der Euro ist offizielle Währung — keine Umrechnung für Angehörige, transparente Abrechnung.</span></div>
+      <div class="fact"><b>~240</b><span data-i18n="f3">Sonnentage im Jahr an der Küste — gegenüber ca. 60–70 in Norddeutschland ein anderes Licht- und Stimmungsniveau.</span></div>
+      <div class="fact"><b>EU-Kurs</b><span data-i18n="f4">EU-Beitrittskandidat mit europäischen Standards in Klinik-Partnerschaften, Apotheken und Lebensmitteln.</span></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
+    <h2 data-i18n="h_cta">Dieses Klima können Ihre Bewohner in 4 Wochen selbst erleben</h2>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Fordern Sie eine Kalkulation für einen Pilotturnus an — mit Preisen je Pflegegrad und einem Saisonvorschlag, der zum Klimaprofil Ihrer Bewohner passt.</p>
+    <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
+  </section>
+
+  <footer class="site">
+    <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
+    <span>partners@adriacare.me</span>
+  </footer>
+</div>
+
+<script>
+  var I18N = {
+    de: null,
+    en: {
+      back: "← Back to the main page",
+      e_hero: "The location",
+      h1: "Montenegro: an Adriatic coast that is kind to later life",
+      lede: "Between sea and mountains lies one of Europe's mildest climates: around 240 sunny days a year, winters without frost, summers with a cool hinterland. Add short distances, European standards and a landscape that invites a daily walk — the foundation of our climate programme.",
+      e_climate: "Climate & temperatures", h_climate: "Twelve months of Budva in numbers",
+      p_climate: "Budva sits in the subtropical Mediterranean zone: the coldest month stays in double digits above zero, and the sea stores summer warmth into November. Highlighted: the low season with price index 0.50.",
+      th_month: "Month", th_air: "Air, daytime high", th_sea: "Sea", th_sun: "Sunshine hours / day", th_idx: "Season index",
+      m1: "January", m2: "February", m3: "March", m4: "April", m5: "May", m6: "June",
+      m7: "July", m8: "August", m9: "September", m10: "October", m11: "November", m12: "December",
+      note_climate: "Long-term averages for Budva (sources: national weather services). For residents with cardiovascular and respiratory conditions, the frost-free, humidity-stable shoulder months are especially valuable: steady air humidity, little wind, and far more daylight hours than central and northern Europe.",
+      e_zones: "Three climate zones", h_zones: "A small country, three climates — used season by season",
+      z1t: "Coast · 0–100 m", z1h: "The Adriatic riviera",
+      z1p: "Mild winters, long shoulder seasons, sea air scented with salt and pine. This is where the residence stands — the base climate for wintering and spring mobilisation.",
+      z2t: "Lakeland · 6–40 m", z2h: "Lake Skadar",
+      z2p: "The largest lake in the Balkans, an hour's drive away: still water, birdlife, effortless boat trips — our guests' favourite excursion in the shoulder season.",
+      z3t: "Mountains · 900–1,700 m", z3h: "Lovćen and the hinterland",
+      z3p: "When high summer on the coast grows too warm: cool mountain air 40 minutes away. Panoramic roads deliver the mountain experience without any hiking — the bus drives to the viewpoint.",
+      e_walks: "Daily walks", h_walks: "Flat paths, benches, sea views",
+      w1m: "6 km · level · benches throughout", w1h: "The Budva promenade",
+      w1p: "From the marina to Bečići beach runs a level paved seafront promenade — ideal for the daily accompanied walking programme, with cafés and resting points every 200 metres.",
+      w2m: "0.5 km · cobblestones · accompanied", w2h: "Budva old town",
+      w2p: "Venetian lanes, small squares, and the citadel overlooking the sea. Compact enough for a morning; our carers know the step-free routes.",
+      w3m: "1.5 km · park paths · shaded", w3h: "Miločer Park and Sveti Stefan",
+      w3p: "Cypress and olive avenues of the former royal summer residence, plus the country's most famous photo view: the island fortress of Sveti Stefan — from the viewpoint, no descent required.",
+      w4m: "Year-round · at the residence", w4h: "Morning exercise by the water",
+      w4p: "Part of the climate programme: supervised outdoor movement in sea air — in winter under the late-morning sun, in summer early before the heat.",
+      e_trips: "Excursions around the country", h_trips: "Montenegro by bus and by boat — planned for seniors",
+      p_trips: "Every excursion follows the same rules: air-conditioned minibus to the destination, no more than 300 metres on foot, seating along the way, medically trained escort, and return in time for the midday rest or early evening.",
+      t1m: "Half day · boat trip · UNESCO", t1h: "Bay of Kotor",
+      t1p: "A fjord-like landscape seen from the water: Perast, the pilgrimage island of Our Lady of the Rocks, and Kotor's Venetian old town — the boat moors right at the promenade.",
+      t2m: "Half day · boat & tasting", t2h: "Lake Skadar and the vineyards",
+      t2p: "A quiet boat ride between water-lily fields and monastery islands, followed by a tasting of Montenegrin wines and honeys at a family estate — all at ground level.",
+      t3m: "Half day · panoramic drive", t3h: "Cetinje, the old royal capital",
+      t3p: "The historic capital with its monastery, royal palace and museums — plus the serpentine road overlooking the whole bay. A cultural programme without long walks.",
+      t4m: "Full day · the south · olive groves", t4h: "Bar and Ulcinj",
+      t4p: "Europe's oldest olive tree (over 2,000 years), olive-oil tasting and the long sandy beaches of the south — an excursion for the warmer shoulder-season months.",
+      e_facts: "Practical", h_facts: "What makes the location easy for European operators",
+      f1: "Direct flight from Germany and Austria to Tivat or Podgorica; transfer to the residence under 40 minutes.",
+      f2: "The euro is the official currency — no conversion for families, transparent billing.",
+      f3: "Sunny days per year on the coast — against roughly 60–70 in northern Germany, a different level of light and mood.",
+      f4: "EU accession candidate with European standards in clinic partnerships, pharmacies and food.",
+      e_cta: "Next step", h_cta: "Your residents can experience this climate themselves in 4 weeks",
+      p_cta: "Request a calculation for a pilot rotation — with prices per care level and a season proposal matched to your residents' climate profile.",
+      cta: "Request an offer", foot1: "Adria Care Residence · Budva, Montenegro"
+    },
+    fr: {
+      back: "← Retour à l'accueil",
+      e_hero: "Le lieu",
+      h1: "Le Monténégro : une côte adriatique douce pour le grand âge",
+      lede: "Entre mer et montagnes s'étend l'un des climats les plus doux d'Europe : environ 240 jours de soleil par an, des hivers sans gel, des étés au frais dans l'arrière-pays. Ajoutez des distances courtes, des standards européens et un paysage qui invite à la promenade quotidienne — le socle de notre programme climatique.",
+      e_climate: "Climat & températures", h_climate: "Douze mois de Budva en chiffres",
+      p_climate: "Budva se trouve en zone méditerranéenne subtropicale : le mois le plus froid reste au-dessus de 10 °C et la mer garde la chaleur de l'été jusqu'en novembre. En surbrillance : la basse saison à l'indice 0,50.",
+      th_month: "Mois", th_air: "Air, maximum diurne", th_sea: "Mer", th_sun: "Heures de soleil / jour", th_idx: "Indice saisonnier",
+      m1: "Janvier", m2: "Février", m3: "Mars", m4: "Avril", m5: "Mai", m6: "Juin",
+      m7: "Juillet", m8: "Août", m9: "Septembre", m10: "Octobre", m11: "Novembre", m12: "Décembre",
+      note_climate: "Moyennes de long terme pour Budva (sources : services météorologiques nationaux). Pour les résidents cardiovasculaires ou respiratoires, les mois d'intersaison sans gel ni touffeur sont particulièrement précieux : humidité stable, peu de vent, bien plus d'heures de lumière qu'en Europe centrale ou du Nord.",
+      e_zones: "Trois zones climatiques", h_zones: "Un petit pays, trois climats — utilisés selon la saison",
+      z1t: "Côte · 0–100 m", z1h: "La riviera adriatique",
+      z1p: "Hivers doux, longues intersaisons, air marin aux senteurs de sel et de pin. C'est ici que se trouve la résidence — le climat de base de l'hivernage et de la mobilisation printanière.",
+      z2t: "Pays des lacs · 6–40 m", z2h: "Le lac de Skadar",
+      z2p: "Le plus grand lac des Balkans, à une heure de route : eau calme, oiseaux, promenades en bateau sans effort — l'excursion préférée de nos hôtes à l'intersaison.",
+      z3t: "Montagnes · 900–1 700 m", z3h: "Le Lovćen et l'arrière-pays",
+      z3p: "Quand le plein été devient trop chaud sur la côte : l'air frais de la montagne à 40 minutes. Les routes panoramiques offrent l'altitude sans randonnée — le bus monte jusqu'au belvédère.",
+      e_walks: "Promenades quotidiennes", h_walks: "Chemins plats, bancs, vue sur mer",
+      w1m: "6 km · plat · bancs en continu", w1h: "La promenade de Budva",
+      w1p: "De la marina à la plage de Bečići court une promenade pavée et plane — idéale pour la marche quotidienne accompagnée, avec cafés et haltes tous les 200 mètres.",
+      w2m: "0,5 km · pavés · accompagné", w2h: "La vieille ville de Budva",
+      w2p: "Ruelles vénitiennes, petites places, citadelle dominant la mer. Assez compacte pour une matinée ; nos accompagnants connaissent les itinéraires sans marches.",
+      w3m: "1,5 km · allées de parc · ombragé", w3h: "Le parc de Miločer et Sveti Stefan",
+      w3p: "Allées de cyprès et d'oliviers de l'ancienne résidence royale d'été, et la vue la plus célèbre du pays : l'île-forteresse de Sveti Stefan — depuis le belvédère, sans descente.",
+      w4m: "Toute l'année · à la résidence", w4h: "Gymnastique matinale au bord de l'eau",
+      w4p: "Au cœur du programme climatique : mouvement encadré en plein air, dans l'air marin — au soleil de fin de matinée l'hiver, tôt le matin avant la chaleur l'été.",
+      e_trips: "Excursions dans le pays", h_trips: "Le Monténégro en bus et en bateau — pensé pour les aînés",
+      p_trips: "Chaque excursion suit les mêmes règles : minibus climatisé jusqu'au but, 300 mètres de marche au maximum, assises en chemin, accompagnement formé aux gestes médicaux et retour pour la sieste ou en début de soirée.",
+      t1m: "Demi-journée · bateau · UNESCO", t1h: "Les bouches de Kotor",
+      t1p: "Un paysage de fjord vu de l'eau : Perast, l'île de pèlerinage Notre-Dame-du-Récif et la vieille ville vénitienne de Kotor — le bateau accoste au pied de la promenade.",
+      t2m: "Demi-journée · bateau & dégustation", t2h: "Le lac de Skadar et les vignobles",
+      t2p: "Promenade en bateau entre nénuphars et îles-monastères, puis dégustation de vins et de miels monténégrins dans un domaine familial — le tout de plain-pied.",
+      t3m: "Demi-journée · route panoramique", t3h: "Cetinje, l'ancienne capitale royale",
+      t3p: "La capitale historique avec monastère, palais royal et musées — et la route en lacets dominant toute la baie. Un programme culturel sans longues marches.",
+      t4m: "Journée · le sud · oliveraies", t4h: "Bar et Ulcinj",
+      t4p: "Le plus vieil olivier d'Europe (plus de 2 000 ans), dégustation d'huile d'olive et longues plages de sable du sud — une excursion pour les mois chauds de l'intersaison.",
+      e_facts: "Pratique", h_facts: "Ce qui simplifie le lieu pour les gestionnaires européens",
+      f1: "Vol direct depuis l'Allemagne et l'Autriche vers Tivat ou Podgorica ; transfert vers la résidence en moins de 40 minutes.",
+      f2: "L'euro est la monnaie officielle — aucune conversion pour les familles, facturation transparente.",
+      f3: "Jours de soleil par an sur la côte — contre 60 à 70 en Allemagne du Nord : un tout autre niveau de lumière et de moral.",
+      f4: "Candidat à l'UE, avec des standards européens pour les cliniques partenaires, les pharmacies et l'alimentation.",
+      e_cta: "Prochaine étape", h_cta: "Vos résidents peuvent vivre ce climat eux-mêmes en 4 semaines",
+      p_cta: "Demandez un calcul pour une rotation pilote — avec les prix par niveau de dépendance et une saison adaptée au profil climatique de vos résidents.",
+      cta: "Demander une offre", foot1: "Adria Care Résidence · Budva, Monténégro"
+    },
+    es: {
+      back: "← Volver a la página principal",
+      e_hero: "El lugar",
+      h1: "Montenegro: una costa adriática amable con los años tardíos",
+      lede: "Entre el mar y las montañas se encuentra uno de los climas más suaves de Europa: unos 240 días de sol al año, inviernos sin heladas y veranos con un interior fresco. Súmele distancias cortas, estándares europeos y un paisaje que invita al paseo diario: la base de nuestro programa climático.",
+      e_climate: "Clima y temperaturas", h_climate: "Doce meses de Budva en cifras",
+      p_climate: "Budva está en la zona mediterránea subtropical: el mes más frío se mantiene por encima de los 10 °C y el mar guarda el calor del verano hasta noviembre. Resaltada: la temporada baja con índice 0,50.",
+      th_month: "Mes", th_air: "Aire, máxima diurna", th_sea: "Mar", th_sun: "Horas de sol / día", th_idx: "Índice estacional",
+      m1: "Enero", m2: "Febrero", m3: "Marzo", m4: "Abril", m5: "Mayo", m6: "Junio",
+      m7: "Julio", m8: "Agosto", m9: "Septiembre", m10: "Octubre", m11: "Noviembre", m12: "Diciembre",
+      note_climate: "Promedios de largo plazo para Budva (fuentes: servicios meteorológicos nacionales). Para residentes con afecciones cardiovasculares y respiratorias, los meses de entretiempo sin heladas ni bochorno son especialmente valiosos: humedad estable, poco viento y muchas más horas de luz que en Europa central y del norte.",
+      e_zones: "Tres zonas climáticas", h_zones: "Un país pequeño, tres climas — aprovechados según la temporada",
+      z1t: "Costa · 0–100 m", z1h: "La riviera adriática",
+      z1p: "Inviernos suaves, largos entretiempos, aire marino con aroma a sal y pino. Aquí está la residencia: el clima base para la invernada y la movilización primaveral.",
+      z2t: "Tierra de lagos · 6–40 m", z2h: "El lago Skadar",
+      z2p: "El mayor lago de los Balcanes, a una hora en coche: aguas tranquilas, aves, paseos en barco sin esfuerzo — la excursión favorita de nuestros huéspedes en el entretiempo.",
+      z3t: "Montañas · 900–1.700 m", z3h: "Lovćen y el interior",
+      z3p: "Cuando el pleno verano aprieta en la costa: aire fresco de montaña a 40 minutos. Las carreteras panorámicas regalan la altura sin caminatas — el autobús llega hasta el mirador.",
+      e_walks: "Paseos diarios", h_walks: "Caminos llanos, bancos, vistas al mar",
+      w1m: "6 km · llano · bancos en todo el recorrido", w1h: "El paseo marítimo de Budva",
+      w1p: "De la marina a la playa de Bečići discurre un paseo pavimentado y llano — ideal para el programa diario de marcha acompañada, con cafés y puntos de descanso cada 200 metros.",
+      w2m: "0,5 km · adoquines · con acompañante", w2h: "El casco antiguo de Budva",
+      w2p: "Callejuelas venecianas, pequeñas plazas y la ciudadela sobre el mar. Lo bastante compacto para una mañana; nuestros cuidadores conocen las rutas sin escalones.",
+      w3m: "1,5 km · senderos de parque · sombra", w3h: "El parque Miločer y Sveti Stefan",
+      w3p: "Avenidas de cipreses y olivos de la antigua residencia real de verano, y la vista más famosa del país: la isla-fortaleza de Sveti Stefan — desde el mirador, sin descenso.",
+      w4m: "Todo el año · junto a la residencia", w4h: "Gimnasia matinal junto al agua",
+      w4p: "Parte del programa climático: ejercicio supervisado al aire libre con brisa marina — en invierno al sol de media mañana, en verano temprano, antes del calor.",
+      e_trips: "Excursiones por el país", h_trips: "Montenegro en autobús y en barco — planificado para mayores",
+      p_trips: "Cada excursión sigue las mismas reglas: microbús climatizado hasta el destino, máximo 300 metros a pie, asientos en el camino, acompañamiento con formación médica y regreso a tiempo para la siesta o la primera hora de la tarde.",
+      t1m: "Media jornada · barco · UNESCO", t1h: "La bahía de Kotor",
+      t1p: "Un paisaje de fiordo visto desde el agua: Perast, la isla de peregrinación de Nuestra Señora de las Rocas y el casco veneciano de Kotor — el barco atraca junto al paseo.",
+      t2m: "Media jornada · barco y degustación", t2h: "El lago Skadar y los viñedos",
+      t2p: "Tranquilo paseo en barco entre nenúfares e islas-monasterio, seguido de una cata de vinos y mieles montenegrinos en una finca familiar — todo a pie llano.",
+      t3m: "Media jornada · ruta panorámica", t3h: "Cetinje, la antigua capital real",
+      t3p: "La capital histórica con su monasterio, palacio real y museos — y la carretera de curvas con vistas a toda la bahía. Programa cultural sin caminatas largas.",
+      t4m: "Jornada completa · el sur · olivares", t4h: "Bar y Ulcinj",
+      t4p: "El olivo más antiguo de Europa (más de 2.000 años), cata de aceite y las largas playas de arena del sur — una excursión para los meses templados del entretiempo.",
+      e_facts: "Práctico", h_facts: "Lo que facilita el lugar a los gestores europeos",
+      f1: "Vuelo directo desde Alemania y Austria a Tivat o Podgorica; traslado a la residencia en menos de 40 minutos.",
+      f2: "El euro es la moneda oficial: sin conversiones para las familias, facturación transparente.",
+      f3: "Días de sol al año en la costa — frente a los 60–70 del norte de Alemania: otro nivel de luz y de ánimo.",
+      f4: "Candidato a la UE con estándares europeos en clínicas asociadas, farmacias y alimentación.",
+      e_cta: "Siguiente paso", h_cta: "Sus residentes pueden vivir este clima en persona en 4 semanas",
+      p_cta: "Solicite un cálculo para un turno piloto — con precios por grado de dependencia y una propuesta de temporada acorde al perfil climático de sus residentes.",
+      cta: "Solicitar oferta", foot1: "Adria Care Residencia · Budva, Montenegro"
+    },
+    sr: {
+      back: "← Nazad na početnu",
+      e_hero: "Lokacija",
+      h1: "Crna Gora: jadranska obala naklonjena poznim godinama",
+      lede: "Između mora i planina leži jedna od najblažih klima Evrope: oko 240 sunčanih dana godišnje, zime bez mraza, leta sa svežim zaleđem. Dodajte kratke razdaljine, evropske standarde i pejzaž koji poziva na svakodnevnu šetnju — osnovu našeg klimatskog programa.",
+      e_climate: "Klima i temperature", h_climate: "Dvanaest meseci Budve u brojevima",
+      p_climate: "Budva je u suptropskoj mediteranskoj zoni: najhladniji mesec ostaje iznad 10 °C, a more čuva letnju toplotu do novembra. Istaknuto: vansezona sa indeksom 0,50.",
+      th_month: "Mesec", th_air: "Vazduh, dnevni maksimum", th_sea: "More", th_sun: "Sunčanih sati / dan", th_idx: "Sezonski indeks",
+      m1: "Januar", m2: "Februar", m3: "Mart", m4: "April", m5: "Maj", m6: "Jun",
+      m7: "Jul", m8: "Avgust", m9: "Septembar", m10: "Oktobar", m11: "Novembar", m12: "Decembar",
+      note_climate: "Višegodišnji proseci za Budvu (izvori: nacionalne meteorološke službe). Za korisnike sa kardiovaskularnim i respiratornim tegobama posebno su dragoceni prelazni meseci bez mraza i sparine: stabilna vlažnost, malo vetra i znatno više sati dnevne svetlosti nego u srednjoj i severnoj Evropi.",
+      e_zones: "Tri klimatske zone", h_zones: "Mala zemlja, tri klime — po sezonama",
+      z1t: "Obala · 0–100 m", z1h: "Jadranska rivijera",
+      z1p: "Blage zime, duga prelazna doba, morski vazduh sa mirisom soli i borova. Ovde je rezidencija — osnovna klima za zimovanje i prolećnu mobilizaciju.",
+      z2t: "Jezerski kraj · 6–40 m", z2h: "Skadarsko jezero",
+      z2p: "Najveće jezero Balkana, sat vremena vožnje: mirna voda, ptičji svet, vožnje čamcem bez napora — omiljeni izlet naših gostiju u prelaznom periodu.",
+      z3t: "Planine · 900–1.700 m", z3h: "Lovćen i zaleđe",
+      z3p: "Kada usred leta obala postane pretopla: svež planinski vazduh na 40 minuta vožnje. Panoramski putevi daruju visinu bez pešačenja — autobus vozi do vidikovca.",
+      e_walks: "Svakodnevne šetnje", h_walks: "Ravne staze, klupe, pogled na more",
+      w1m: "6 km · ravno · klupe celom dužinom", w1h: "Budvansko šetalište",
+      w1p: "Od marine do plaže Bečići vodi ravno popločano šetalište uz more — idealno za dnevni program hodanja uz pratnju, sa kafeima i odmorištima na svakih 200 metara.",
+      w2m: "0,5 km · kaldrma · uz pratnju", w2h: "Stari grad Budva",
+      w2p: "Venecijanske uličice, mali trgovi, citadela sa pogledom na more. Dovoljno kompaktno za jedno prepodne; naši pratioci znaju rute bez stepenika.",
+      w3m: "1,5 km · parkovske staze · hladovina", w3h: "Park Miločer i Sveti Stefan",
+      w3p: "Aleje čempresa i maslina nekadašnje kraljevske letnje rezidencije, uz najpoznatiji foto-pogled zemlje: ostrvo-tvrđavu Sveti Stefan — sa vidikovca, bez silaska.",
+      w4m: "Cele godine · uz rezidenciju", w4h: "Jutarnja gimnastika uz vodu",
+      w4p: "Deo klimatskog programa: vežbanje na otvorenom uz morski vazduh — zimi na prepodnevnom suncu, leti rano ujutru pre vrućine.",
+      e_trips: "Izleti po zemlji", h_trips: "Crna Gora iz autobusa i sa broda — planirano za starije",
+      p_trips: "Svaki izlet prati ista pravila: klimatizovani minibus do cilja, najviše 300 metara hoda, mesta za sedenje usput, medicinski obučena pratnja i povratak do podnevnog odmora ili ranog večera.",
+      t1m: "Poludnevni · brod · UNESCO", t1h: "Boka Kotorska",
+      t1p: "Fjordovski pejzaž sa vode: Perast, ostrvo Gospa od Škrpjela i venecijanski stari grad Kotor — brod pristaje uz samo šetalište.",
+      t2m: "Poludnevni · brod i degustacija", t2h: "Skadarsko jezero i vinogradi",
+      t2p: "Tiha vožnja čamcem između lokvanja i manastirskih ostrva, zatim degustacija crnogorskih vina i meda na porodičnom imanju — sve u ravni.",
+      t3m: "Poludnevni · panoramska vožnja", t3h: "Cetinje, stara prestonica",
+      t3p: "Istorijska prestonica sa manastirom, dvorom i muzejima — uz serpentine sa pogledom na celu Boku. Kulturni program bez dugih pešačenja.",
+      t4m: "Celodnevni · jug · maslinjaci", t4h: "Bar i Ulcinj",
+      t4p: "Najstarija maslina Evrope (preko 2.000 godina), degustacija maslinovog ulja i duge peščane plaže juga — izlet za toplije mesece prelaznog perioda.",
+      e_facts: "Praktično", h_facts: "Šta lokaciju čini jednostavnom za evropske osnivače",
+      f1: "Direktan let iz Nemačke i Austrije do Tivta ili Podgorice; transfer do rezidencije za manje od 40 minuta.",
+      f2: "Evro je zvanična valuta — bez preračunavanja za porodice, transparentan obračun.",
+      f3: "Sunčanih dana godišnje na obali — naspram oko 60–70 u severnoj Nemačkoj: drugi nivo svetlosti i raspoloženja.",
+      f4: "Kandidat za EU sa evropskim standardima u partnerskim klinikama, apotekama i ishrani.",
+      e_cta: "Sledeći korak", h_cta: "Vaši korisnici mogu ovu klimu osetiti sami za 4 nedelje",
+      p_cta: "Zatražite obračun za pilot-turnus — sa cenama po stepenu nege i predlogom sezone koja odgovara klimatskom profilu vaših korisnika.",
+      cta: "Zatražite ponudu", foot1: "Adria Care Rezidencija · Budva, Crna Gora"
+    },
+    ru: {
+      back: "← На главную",
+      e_hero: "Локация",
+      h1: "Черногория: адриатическое побережье, доброе к поздним годам",
+      lede: "Между морем и горами лежит один из самых мягких климатов Европы: около 240 солнечных дней в году, зима без морозов, лето с прохладным предгорьем. Добавьте короткие расстояния, европейские стандарты и пейзаж, зовущий на ежедневную прогулку, — это основа нашей климатической программы.",
+      e_climate: "Климат и температуры", h_climate: "Двенадцать месяцев Будвы в цифрах",
+      p_climate: "Будва находится в субтропической средиземноморской зоне: самый холодный месяц держится выше +10 °C, а море хранит летнее тепло до ноября. Подсвечено: несезон с ценовым индексом 0,50.",
+      th_month: "Месяц", th_air: "Воздух, дневной максимум", th_sea: "Море", th_sun: "Часов солнца / день", th_idx: "Сезонный индекс",
+      m1: "Январь", m2: "Февраль", m3: "Март", m4: "Апрель", m5: "Май", m6: "Июнь",
+      m7: "Июль", m8: "Август", m9: "Сентябрь", m10: "Октябрь", m11: "Ноябрь", m12: "Декабрь",
+      note_climate: "Многолетние средние значения для Будвы (источники: национальные метеослужбы). Для резидентов с сердечно-сосудистыми и лёгочными заболеваниями особенно ценны переходные месяцы без мороза и духоты: стабильная влажность, мало ветра и заметно больше световых часов, чем в Центральной и Северной Европе.",
+      e_zones: "Три климатические зоны", h_zones: "Маленькая страна, три климата — по сезонам",
+      z1t: "Побережье · 0–100 м", z1h: "Адриатическая ривьера",
+      z1p: "Мягкие зимы, длинные межсезонья, морской воздух с ароматом соли и пиний. Здесь стоит резиденция — базовый климат для зимовки и весенней мобилизации.",
+      z2t: "Озёрный край · 6–40 м", z2h: "Скадарское озеро",
+      z2p: "Крупнейшее озеро Балкан в часе езды: тихая вода, птицы, прогулки на кораблике без усилий — любимая экскурсия наших гостей в межсезонье.",
+      z3t: "Горы · 900–1 700 м", z3h: "Ловчен и предгорья",
+      z3p: "Когда разгар лета на побережье слишком тёпел: прохладный горный воздух в 40 минутах езды. Панорамные дороги дарят высоту без походов — автобус довозит до смотровой площадки.",
+      e_walks: "Ежедневные прогулки", h_walks: "Ровные дорожки, скамейки, вид на море",
+      w1m: "6 км · ровно · скамейки по всему пути", w1h: "Набережная Будвы",
+      w1p: "От марины до пляжа Бечичи тянется ровная мощёная набережная — идеальна для ежедневной ходьбы в сопровождении, с кафе и точками отдыха каждые 200 метров.",
+      w2m: "0,5 км · брусчатка · с сопровождением", w2h: "Старый город Будвы",
+      w2p: "Венецианские улочки, маленькие площади, цитадель с видом на море. Достаточно компактно для одного утра; наши сопровождающие знают маршруты без ступеней.",
+      w3m: "1,5 км · парковые дорожки · тень", w3h: "Парк Милочер и Свети-Стефан",
+      w3p: "Кипарисовые и оливковые аллеи бывшей королевской летней резиденции и самый знаменитый вид страны: остров-крепость Свети-Стефан — со смотровой площадки, без спуска.",
+      w4m: "Круглый год · у резиденции", w4h: "Утренняя гимнастика у воды",
+      w4p: "Часть климатической программы: занятия на воздухе под присмотром — зимой на позднеутреннем солнце, летом рано утром, до жары.",
+      e_trips: "Экскурсии по стране", h_trips: "Черногория с автобуса и с борта кораблика — спланировано для старшего возраста",
+      p_trips: "Каждая экскурсия устроена по одним правилам: кондиционированный микроавтобус до места, не более 300 метров пешком, сидячие места по пути, медицински обученное сопровождение и возвращение к дневному отдыху или раннему вечеру.",
+      t1m: "Полдня · кораблик · ЮНЕСКО", t1h: "Бока-Которская бухта",
+      t1p: "Фьордовый пейзаж с воды: Пераст, остров-святыня Госпа-од-Шкрпела и венецианский старый город Котор — кораблик швартуется прямо у набережной.",
+      t2m: "Полдня · кораблик и дегустация", t2h: "Скадарское озеро и виноградники",
+      t2p: "Тихая прогулка на лодке между полями кувшинок и монастырскими островами, затем дегустация черногорских вин и мёда на семейной усадьбе — всё без ступеней.",
+      t3m: "Полдня · панорамная дорога", t3h: "Цетине, старая королевская столица",
+      t3p: "Историческая столица с монастырём, королевским дворцом и музеями — плюс серпантин с видом на всю бухту. Культурная программа без долгой ходьбы.",
+      t4m: "Целый день · юг · оливковые сады", t4h: "Бар и Улцинь",
+      t4p: "Старейшая олива Европы (более 2 000 лет), дегустация оливкового масла и длинные песчаные пляжи юга — экскурсия для тёплых месяцев межсезонья.",
+      e_facts: "Практично", h_facts: "Что делает локацию простой для европейских операторов",
+      f1: "Прямой рейс из Германии и Австрии в Тиват или Подгорицу; трансфер до резиденции — менее 40 минут.",
+      f2: "Евро — официальная валюта: никаких пересчётов для семей, прозрачные счета.",
+      f3: "Солнечных дней в году на побережье — против примерно 60–70 в Северной Германии: другой уровень света и настроения.",
+      f4: "Кандидат в ЕС с европейскими стандартами в клиниках-партнёрах, аптеках и продуктах.",
+      e_cta: "Следующий шаг", h_cta: "Ваши резиденты смогут прожить этот климат сами уже через 4 недели",
+      p_cta: "Запросите расчёт пилотного заезда — с ценами по степеням ухода и сезоном, подобранным под климатический профиль ваших резидентов.",
+      cta: "Запросить предложение", foot1: "Adria Care Residenz · Будва, Черногория"
+    }
+  };
+
+  var DE = {};
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { DE[el.getAttribute('data-i18n')] = el.innerHTML; });
+  I18N.de = DE;
+
+  function setLang(lang) {
+    var dict = I18N[lang] || I18N.de;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var v = dict[el.getAttribute('data-i18n')];
+      if (v != null) el.innerHTML = v;
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang));
+    });
+    try { localStorage.setItem('acr-lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem('acr-lang'); } catch (e) {}
+  if (saved && I18N[saved] && saved !== 'de') setLang(saved);
+</script>
+</body>
+</html>
