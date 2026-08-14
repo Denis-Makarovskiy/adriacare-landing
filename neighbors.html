@@ -105,6 +105,24 @@
   .cta-band .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 26px; }
   footer.site { padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
     display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
+
+  .table-scroll {
+    background-color: var(--surface);
+    background-image:
+      linear-gradient(90deg, var(--surface) 30%, rgba(255,255,255,0)),
+      linear-gradient(270deg, var(--surface) 30%, rgba(255,255,255,0)),
+      radial-gradient(farthest-side at 0 50%, rgba(0,0,0,0.45), rgba(0,0,0,0)),
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.45), rgba(0,0,0,0));
+    background-position: 0 0, 100% 0, 0 0, 100% 0;
+    background-repeat: no-repeat;
+    background-size: 56px 100%, 56px 100%, 16px 100%, 16px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+  @media (max-width: 680px) {
+    th, td { padding: 9px 12px; font-size: 13.5px; }
+    table { min-width: 540px; }
+    footer.site { flex-direction: column; gap: 8px; align-items: flex-start; }
+  }
 </style>
 </head>
 <body>
