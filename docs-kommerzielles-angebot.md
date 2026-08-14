@@ -57,6 +57,7 @@ Der Index wird auf den für Ihr Haus geltenden Vollkostensatz je Pflegegrad ange
 |---|---|---|
 | Pflegegrad 1 | ab 390 € | ab 705 € |
 | Pflegegrad 2 | ab 485 € | ab 875 € |
+| Pflegegrad 3 · nur nach Vorabstimmung | auf Anfrage | auf Anfrage |
 
 **Saisonunabhängige Positionen:**
 
@@ -83,7 +84,7 @@ Der Index wird auf den für Ihr Haus geltenden Vollkostensatz je Pflegegrad ange
 
 ## 6. Aufnahmekriterien
 
-Pflegegrade 1–2, Reisefähigkeit nach Einschätzung des behandelnden Arztes. Nicht aufgenommen werden derzeit Bewohner ab Pflegegrad 3, mit schwerer Demenz oder intensivpflichtiger Versorgung.
+Pflegegrade 1–2 sind unser Standard. Pflegegrad 3 nehmen wir ausschließlich nach vorheriger individueller Abstimmung auf — Einzelfallprüfung durch unsere Pflegedienstleitung auf Basis der Pflegedokumentation. Nicht aufgenommen werden Bewohner ab Pflegegrad 4 sowie Bewohner mit schwerer Demenz oder intensivpflichtiger Versorgung. Die Reisefähigkeit bestätigt in jedem Fall der behandelnde Arzt.
 
 ## 7. Saisonfenster 2026/27
 
