@@ -44,6 +44,11 @@
   .hero { padding: 70px 0 56px; }
   .hero h1 { font-size: clamp(32px, 4.8vw, 52px); max-width: 22ch; }
   .hero .lede { margin-top: 24px; max-width: 60ch; font-size: 19px; color: var(--ink-soft); }
+  img.photo { display: block; width: 100%; height: auto; object-fit: cover;
+    border: 1px solid var(--line); background: var(--surface); }
+  .hero-photo { aspect-ratio: 21 / 9; margin-top: 38px; }
+  .feature-photo { aspect-ratio: 16 / 9; margin-top: 34px; }
+  @media (max-width: 780px) { .hero-photo { aspect-ratio: 16 / 9; } }
   section { padding: 64px 0; border-top: 1px solid var(--line); }
   section h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 10px 0 24px; }
   .btn { display: inline-block; padding: 13px 26px; background: var(--sea); color: var(--on-sea);
@@ -63,9 +68,16 @@
   @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
   @media (max-width: 780px) { .cards-2 { grid-template-columns: 1fr; } }
   .card { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--sea); padding: 24px; }
+  img.card-photo { width: calc(100% + 48px); max-width: none; aspect-ratio: 4 / 3;
+    margin: -24px -24px 20px; border-width: 0 0 1px; }
   .card .tag { font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
   .card h3 { font-size: 19px; margin: 8px 0 10px; }
   .card p { color: var(--ink-soft); font-size: 15.5px; }
+  a.card-link { display: block; text-decoration: none; color: inherit; }
+  a.card-link:hover { border-top-color: var(--gold); }
+  a.card-link .more { display: inline-block; margin-top: 12px; color: var(--sea); font-weight: 600; font-size: 15px; }
+  .cards-4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+  @media (max-width: 780px) { .cards-4 { grid-template-columns: 1fr; } }
   .walk-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; }
   .walk-list li { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 20px 0; border-bottom: 1px solid var(--line); }
   .walk-list li:last-child { border-bottom: none; }
@@ -108,6 +120,7 @@
     <p class="eyebrow" data-i18n="e_hero">Der Standort</p>
     <h1 style="margin-top:14px;" data-i18n="h1">Montenegro: eine Adriaküste, die den späten Jahren gut tut</h1>
     <p class="lede" data-i18n="lede">Zwischen Meer und Bergen liegt eines der mildesten Klimata Europas: rund 240 Sonnentage im Jahr, Winter ohne Frost, Sommer mit kühlem Hinterland. Dazu kurze Wege, europäische Standards und eine Landschaft, die zum täglichen Spazierengehen einlädt — die Grundlage unseres Klimaprogramms.</p>
+    <img class="photo hero-photo" src="img/mne-hero.webp" loading="lazy" width="2100" height="900" alt="Winterliche Luftaufnahme der Budva-Riviera mit Altstadt, Adriaküste und Bergen.">
   </div>
 
   <section>
@@ -149,16 +162,19 @@
     <h2 data-i18n="h_zones">Ein kleines Land, drei Klimata — nutzbar je nach Saison</h2>
     <div class="cards">
       <div class="card">
+        <img class="photo card-photo" src="img/mne-coast.webp" loading="lazy" width="2048" height="1536" alt="Ebene Uferpromenade in Budva mit Palmen, Bänken und Wintersonne über der Adria.">
         <p class="tag" data-i18n="z1t">Küste · 0–100 m</p>
         <h3 data-i18n="z1h">Adriatische Riviera</h3>
         <p data-i18n="z1p">Milde Winter, lange Übergangszeiten, Meeresluft mit Salz- und Pinienaroma. Hier liegt die Residenz — das Basisklima für Überwinterung und Frühjahrsmobilisierung.</p>
       </div>
       <div class="card">
+        <img class="photo card-photo" src="img/mne-skadar.webp" loading="lazy" width="2048" height="1536" alt="Überdachtes Holzboot auf dem Skadar-See zwischen Seerosenfeldern und einer Klosterinsel.">
         <p class="tag" data-i18n="z2t">Seenland · 6–40 m</p>
         <h3 data-i18n="z2h">Skadar-See</h3>
         <p data-i18n="z2p">Der größte See des Balkans, eine Autostunde entfernt: stilles Wasser, Vogelwelt, Bootsfahrten ohne Anstrengung — das beliebteste Ausflugsziel unserer Gäste in der Übergangszeit.</p>
       </div>
       <div class="card">
+        <img class="photo card-photo" src="img/mne-lovcen.webp" loading="lazy" width="2048" height="1536" alt="Zwei ältere Gäste und eine Begleitperson an einem Aussichtspunkt am Lovćen mit Blick auf die Bucht von Kotor.">
         <p class="tag" data-i18n="z3t">Berge · 900–1.700 m</p>
         <h3 data-i18n="z3h">Lovćen und das Hinterland</h3>
         <p data-i18n="z3p">Wenn der Hochsommer an der Küste zu warm wird: kühle Bergluft in 40 Minuten Fahrt. Panoramastraßen erlauben Höhenerlebnis ganz ohne Wandern — der Bus fährt bis zum Aussichtspunkt.</p>
@@ -191,6 +207,7 @@
         <p data-i18n="w4p">Teil des Klimaprogramms: betreute Bewegung im Freien bei Meeresluft — im Winter in der Vormittagssonne, im Sommer früh am Morgen vor der Wärme.</p>
       </li>
     </ul>
+    <img class="photo feature-photo" src="img/mne-sveti-stefan.webp" loading="lazy" width="2048" height="1152" alt="Blick aus dem Miločer-Park auf die Inselfestung Sveti Stefan; ein älteres Paar sitzt auf einer Bank.">
   </section>
 
   <section>
@@ -199,6 +216,7 @@
     <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_trips">Jeder Ausflug ist nach denselben Regeln organisiert: klimatisierter Kleinbus bis zum Ziel, maximal 300 Meter Gehstrecke, Sitzgelegenheiten unterwegs, medizinisch geschulte Begleitung und Rückkehr zur Mittagsruhe oder zum frühen Abend.</p>
     <div class="cards-2">
       <div class="card">
+        <img class="photo card-photo" src="img/mne-kotor.webp" loading="lazy" width="2048" height="1536" alt="Blick vom Ausflugsboot auf die Inselkirche Gospa od Škrpjela, Perast und die Berge der Bucht von Kotor.">
         <p class="tag" data-i18n="t1m">Halbtag · Bootsfahrt · UNESCO</p>
         <h3 data-i18n="t1h">Bucht von Kotor</h3>
         <p data-i18n="t1p">Fjordartige Landschaft vom Wasser aus: Perast, die Wallfahrtsinsel Gospa od Škrpjela und die venezianische Altstadt von Kotor — das Boot legt direkt an der Uferpromenade an.</p>
@@ -209,11 +227,13 @@
         <p data-i18n="t2p">Stille Bootsfahrt zwischen Seerosenfeldern und Klosterinseln, danach Kostprobe montenegrinischer Weine und Honige auf einem Familiengut — alles ebenerdig.</p>
       </div>
       <div class="card">
+        <img class="photo card-photo" src="img/mne-cetinje.webp" loading="lazy" width="2048" height="1536" alt="Kleine Gruppe älterer Gäste mit Guide auf einem ebenen historischen Weg in Cetinje.">
         <p class="tag" data-i18n="t3m">Halbtag · Panoramafahrt</p>
         <h3 data-i18n="t3h">Cetinje, die alte Königsstadt</h3>
         <p data-i18n="t3p">Die historische Hauptstadt mit Kloster, Königspalast und Museen — dazu die Serpentinenstraße mit Blick über die gesamte Bucht. Kulturprogramm ohne lange Fußwege.</p>
       </div>
       <div class="card">
+        <img class="photo card-photo" src="img/mne-olive.webp" loading="lazy" width="2000" height="1500" alt="Monumentaler alter Olivenbaum bei Bar mit Olivenöl und Brot auf einem Verkostungstisch.">
         <p class="tag" data-i18n="t4m">Ganztag · Süden · Olivengärten</p>
         <h3 data-i18n="t4h">Bar und Ulcinj</h3>
         <p data-i18n="t4p">Der älteste Olivenbaum Europas (über 2.000 Jahre), Olivenöl-Verkostung und die langen Sandstrände des Südens — ein Ausflug für die wärmeren Monate der Übergangszeit.</p>
@@ -232,6 +252,37 @@
     </div>
   </section>
 
+  <section>
+    <p class="eyebrow" data-i18n="e_more">Mehr entdecken</p>
+    <h2 data-i18n="h_more">Vier Kapitel des Programms — je eine eigene Seite</h2>
+    <div class="cards-4">
+      <a class="card card-link" href="wellness.html">
+        <p class="tag" data-i18n="mo1t">Gesundheit &amp; Aktivität</p>
+        <h3 data-i18n="mo1h">Sanfte Wanderwege und Thalasso</h3>
+        <p data-i18n="mo1p">Vom Morgenprogramm am Wasser bis zu ebenen Seerundwegen in den Nationalparks — Bewegung im Tempo Ihrer Bewohner.</p>
+        <span class="more" data-i18n="mo_more1">Seite öffnen →</span>
+      </a>
+      <a class="card card-link" href="pilgrimage.html">
+        <p class="tag" data-i18n="mo2t">Pilgerreisen</p>
+        <h3 data-i18n="mo2h">Klöster und heilige Orte</h3>
+        <p data-i18n="mo2p">Ostrog, Cetinje, Reževići — begleitete Besuche mit Teilnahme an der Liturgie nach Wunsch und Kräften.</p>
+        <span class="more" data-i18n="mo_more2">Seite öffnen →</span>
+      </a>
+      <a class="card card-link" href="excursions.html">
+        <p class="tag" data-i18n="mo3t">Ausflüge</p>
+        <h3 data-i18n="mo3h">Der ganze Katalog</h3>
+        <p data-i18n="mo3p">Acht kuratierte Routen mit lizenzierten Guides — vom Boot in der Bucht bis zur Panoramastraße im Nationalpark.</p>
+        <span class="more" data-i18n="mo_more3">Seite öffnen →</span>
+      </a>
+      <a class="card card-link" href="neighbors.html">
+        <p class="tag" data-i18n="mo4t">Nachbarländer</p>
+        <h3 data-i18n="mo4h">Dubrovnik, Trebinje, Shkodra, Ohrid</h3>
+        <p data-i18n="mo4p">Tagesausflüge über die Grenze und sanfte Mehrtagesreisen — mit demselben Seniorenstandard wie zu Hause.</p>
+        <span class="more" data-i18n="mo_more4">Seite öffnen →</span>
+      </a>
+    </div>
+  </section>
+
   <section class="cta-band">
     <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
     <h2 data-i18n="h_cta">Dieses Klima können Ihre Bewohner in 4 Wochen selbst erleben</h2>
@@ -241,6 +292,7 @@
 
   <footer class="site">
     <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
+    <span data-i18n="foot_symbol">Symbolbilder</span>
     <span>parthners@adriacare.me</span>
   </footer>
 </div>
@@ -291,9 +343,16 @@
       f2: "The euro is the official currency — no conversion for families, transparent billing.",
       f3: "Sunny days per year on the coast — against roughly 60–70 in northern Germany, a different level of light and mood.",
       f4: "EU accession candidate with European standards in clinic partnerships, pharmacies and food.",
+      e_more: "Discover more", h_more: "Four chapters of the programme — each with its own page",
+      mo1t: "Health & activity", mo1h: "Gentle trails and thalasso", mo1p: "From the morning programme by the water to level lakeside loops in the national parks — movement at your residents' pace.",
+      mo2t: "Pilgrimage", mo2h: "Monasteries and holy places", mo2p: "Ostrog, Cetinje, Reževići — accompanied visits with liturgy attendance as wished and able.",
+      mo3t: "Excursions", mo3h: "The full catalogue", mo3p: "Eight curated routes with licensed guides — from the boat in the bay to the panoramic road in the national park.",
+      mo4t: "Neighbouring countries", mo4h: "Dubrovnik, Trebinje, Shkodra, Ohrid", mo4p: "Day trips across the border and gentle multi-day journeys — with the same senior standard as at home.",
+      mo_more1: "Open the page →", mo_more2: "Open the page →", mo_more3: "Open the page →", mo_more4: "Open the page →",
       e_cta: "Next step", h_cta: "Your residents can experience this climate themselves in 4 weeks",
       p_cta: "Request a calculation for a pilot rotation — with prices per care level and a season proposal matched to your residents' climate profile.",
-      cta: "Request an offer", foot1: "Adria Care Residence · Budva, Montenegro"
+      cta: "Request an offer", foot1: "Adria Care Residence · Budva, Montenegro",
+      foot_symbol: "Illustrative images"
     },
     fr: {
       banner: "Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →",
@@ -338,9 +397,16 @@
       f2: "L'euro est la monnaie officielle — aucune conversion pour les familles, facturation transparente.",
       f3: "Jours de soleil par an sur la côte — contre 60 à 70 en Allemagne du Nord : un tout autre niveau de lumière et de moral.",
       f4: "Candidat à l'UE, avec des standards européens pour les cliniques partenaires, les pharmacies et l'alimentation.",
+      e_more: "Aller plus loin", h_more: "Quatre chapitres du programme — chacun sur sa propre page",
+      mo1t: "Santé & activité", mo1h: "Sentiers doux et thalasso", mo1p: "Du programme matinal au bord de l'eau aux boucles planes des parcs nationaux — le mouvement au rythme de vos résidents.",
+      mo2t: "Pèlerinages", mo2h: "Monastères et lieux saints", mo2p: "Ostrog, Cetinje, Reževići — visites accompagnées, avec participation à la liturgie selon les envies et les forces.",
+      mo3t: "Excursions", mo3h: "Le catalogue complet", mo3p: "Huit itinéraires choisis avec des guides agréés — du bateau dans les bouches à la route panoramique du parc national.",
+      mo4t: "Pays voisins", mo4h: "Dubrovnik, Trebinje, Shkodra, Ohrid", mo4p: "Excursions d'une journée au-delà de la frontière et voyages doux de plusieurs jours — avec le même standard seniors qu'à la maison.",
+      mo_more1: "Ouvrir la page →", mo_more2: "Ouvrir la page →", mo_more3: "Ouvrir la page →", mo_more4: "Ouvrir la page →",
       e_cta: "Prochaine étape", h_cta: "Vos résidents peuvent vivre ce climat eux-mêmes en 4 semaines",
       p_cta: "Demandez un calcul pour une rotation pilote — avec les prix par niveau de dépendance et une saison adaptée au profil climatique de vos résidents.",
-      cta: "Demander une offre", foot1: "Adria Care Résidence · Budva, Monténégro"
+      cta: "Demander une offre", foot1: "Adria Care Résidence · Budva, Monténégro",
+      foot_symbol: "Images d’illustration"
     },
     es: {
       banner: "Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →",
@@ -385,9 +451,16 @@
       f2: "El euro es la moneda oficial: sin conversiones para las familias, facturación transparente.",
       f3: "Días de sol al año en la costa — frente a los 60–70 del norte de Alemania: otro nivel de luz y de ánimo.",
       f4: "Candidato a la UE con estándares europeos en clínicas asociadas, farmacias y alimentación.",
+      e_more: "Descubra más", h_more: "Cuatro capítulos del programa — cada uno con su propia página",
+      mo1t: "Salud y actividad", mo1h: "Senderos suaves y talaso", mo1p: "Del programa matinal junto al agua a los circuitos llanos de los parques nacionales — movimiento al ritmo de sus residentes.",
+      mo2t: "Peregrinación", mo2h: "Monasterios y lugares santos", mo2p: "Ostrog, Cetinje, Reževići — visitas acompañadas, con asistencia a la liturgia según deseo y fuerzas.",
+      mo3t: "Excursiones", mo3h: "El catálogo completo", mo3p: "Ocho rutas seleccionadas con guías licenciados — del barco en la bahía a la carretera panorámica del parque nacional.",
+      mo4t: "Países vecinos", mo4h: "Dubrovnik, Trebinje, Shkodra, Ohrid", mo4p: "Excursiones de un día al otro lado de la frontera y viajes suaves de varios días — con el mismo estándar sénior que en casa.",
+      mo_more1: "Abrir la página →", mo_more2: "Abrir la página →", mo_more3: "Abrir la página →", mo_more4: "Abrir la página →",
       e_cta: "Siguiente paso", h_cta: "Sus residentes pueden vivir este clima en persona en 4 semanas",
       p_cta: "Solicite un cálculo para un turno piloto — con precios por grado de dependencia y una propuesta de temporada acorde al perfil climático de sus residentes.",
-      cta: "Solicitar oferta", foot1: "Adria Care Residencia · Budva, Montenegro"
+      cta: "Solicitar oferta", foot1: "Adria Care Residencia · Budva, Montenegro",
+      foot_symbol: "Imágenes ilustrativas"
     },
     sr: {
       banner: "Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →",
@@ -432,9 +505,16 @@
       f2: "Evro je zvanična valuta — bez preračunavanja za porodice, transparentan obračun.",
       f3: "Sunčanih dana godišnje na obali — naspram oko 60–70 u severnoj Nemačkoj: drugi nivo svetlosti i raspoloženja.",
       f4: "Kandidat za EU sa evropskim standardima u partnerskim klinikama, apotekama i ishrani.",
+      e_more: "Otkrijte više", h_more: "Četiri poglavlja programa — svako na svojoj stranici",
+      mo1t: "Zdravlje i aktivnost", mo1h: "Blage staze i talaso", mo1p: "Od jutarnjeg programa uz vodu do ravnih staza oko jezera u nacionalnim parkovima — kretanje u ritmu vaših korisnika.",
+      mo2t: "Hodočašća", mo2h: "Manastiri i sveta mesta", mo2p: "Ostrog, Cetinje, Reževići — posete uz pratnju, sa prisustvom liturgiji po želji i snazi.",
+      mo3t: "Izleti", mo3h: "Ceo katalog", mo3p: "Osam odabranih ruta sa licenciranim vodičima — od broda u Boki do panoramskog puta u nacionalnom parku.",
+      mo4t: "Susedne zemlje", mo4h: "Dubrovnik, Trebinje, Skadar, Ohrid", mo4p: "Jednodnevni izleti preko granice i lagana višednevna putovanja — uz isti standard za starije kao kod kuće.",
+      mo_more1: "Otvori stranicu →", mo_more2: "Otvori stranicu →", mo_more3: "Otvori stranicu →", mo_more4: "Otvori stranicu →",
       e_cta: "Sledeći korak", h_cta: "Vaši korisnici mogu ovu klimu osetiti sami za 4 nedelje",
       p_cta: "Zatražite obračun za pilot-turnus — sa cenama po stepenu nege i predlogom sezone koja odgovara klimatskom profilu vaših korisnika.",
-      cta: "Zatražite ponudu", foot1: "Adria Care Rezidencija · Budva, Crna Gora"
+      cta: "Zatražite ponudu", foot1: "Adria Care Rezidencija · Budva, Crna Gora",
+      foot_symbol: "Ilustrativne fotografije"
     },
     ru: {
       banner: "Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →",
@@ -479,9 +559,16 @@
       f2: "Евро — официальная валюта: никаких пересчётов для семей, прозрачные счета.",
       f3: "Солнечных дней в году на побережье — против примерно 60–70 в Северной Германии: другой уровень света и настроения.",
       f4: "Кандидат в ЕС с европейскими стандартами в клиниках-партнёрах, аптеках и продуктах.",
+      e_more: "Узнать больше", h_more: "Четыре главы программы — у каждой своя страница",
+      mo1t: "Здоровье и активность", mo1h: "Мягкие маршруты и талассо", mo1p: "От утренней программы у воды до ровных озёрных троп в национальных парках — движение в темпе ваших резидентов.",
+      mo2t: "Паломничество", mo2h: "Монастыри и святые места", mo2p: "Острог, Цетине, Режевичи — посещения с сопровождением и участием в литургии по желанию и силам.",
+      mo3t: "Экскурсии", mo3h: "Полный каталог", mo3p: "Восемь отобранных маршрутов с лицензированными гидами — от кораблика в бухте до панорамной дороги в национальном парке.",
+      mo4t: "Соседние страны", mo4h: "Дубровник, Требинье, Шкодер, Охрид", mo4p: "Однодневные выезды за границу и щадящие многодневные поездки — с тем же стандартом для старшего возраста, что и дома.",
+      mo_more1: "Открыть страницу →", mo_more2: "Открыть страницу →", mo_more3: "Открыть страницу →", mo_more4: "Открыть страницу →",
       e_cta: "Следующий шаг", h_cta: "Ваши резиденты смогут прожить этот климат сами уже через 4 недели",
       p_cta: "Запросите расчёт пилотного заезда — с ценами по степеням ухода и сезоном, подобранным под климатический профиль ваших резидентов.",
-      cta: "Запросить предложение", foot1: "Adria Care Residenz · Будва, Черногория"
+      cta: "Запросить предложение", foot1: "Adria Care Residenz · Будва, Черногория",
+      foot_symbol: "Иллюстративные изображения"
     }
   };
 
