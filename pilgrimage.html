@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Pilgerorte in Montenegro für Senioren: Ostrog, Cetinje, Reževići, Podmaine, Gospa od Škrpjela und Kotor — begleitete Besuche in ruhigem Tempo, organisiert von der Adria Care Residenz in Budva.">
-<title>Pilgerorte in Montenegro — Adria Care Residenz</title>
+<meta name="description" content="Begleitete Pilgerfahrten ab Budva nach Ostrog, Cetinje, Reževići, Podmaine, Gospa od Škrpjela und Kotor — in ruhigem Tempo und mit geplanten Pausen.">
+<title>Begleitete Pilgerfahrten — Adria Care Residenz</title>
 <link rel="canonical" href="https://adriacare.me/pilgrimage.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adria Care Residenz">
-<meta property="og:title" content="Pilgerorte in Montenegro — Adria Care Residenz">
-<meta property="og:description" content="Pilgerorte in Montenegro für Senioren: Ostrog, Cetinje, Reževići, Podmaine, Gospa od Škrpjela und Kotor — begleitete Besuche in ruhigem Tempo, organisiert von der Adria Care Residenz in Budva.">
+<meta property="og:title" content="Begleitete Pilgerfahrten — Adria Care Residenz">
+<meta property="og:description" content="Begleitete Pilgerfahrten ab Budva nach Ostrog, Cetinje, Reževići, Podmaine, Gospa od Škrpjela und Kotor — in ruhigem Tempo und mit geplanten Pausen.">
 <meta property="og:url" content="https://adriacare.me/pilgrimage.html">
 <meta property="og:image" content="https://adriacare.me/img/hero-terrace.webp">
 <meta property="og:image:width" content="2048">
@@ -21,8 +21,8 @@
 <meta property="og:locale:alternate" content="sr_RS">
 <meta property="og:locale:alternate" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pilgerorte in Montenegro — Adria Care Residenz">
-<meta name="twitter:description" content="Pilgerorte in Montenegro für Senioren: Ostrog, Cetinje, Reževići, Podmaine, Gospa od Škrpjela und Kotor — begleitete Besuche in ruhigem Tempo, organisiert von der Adria Care Residenz in Budva.">
+<meta name="twitter:title" content="Begleitete Pilgerfahrten — Adria Care Residenz">
+<meta name="twitter:description" content="Begleitete Pilgerfahrten ab Budva nach Ostrog, Cetinje, Reževići, Podmaine, Gospa od Škrpjela und Kotor — in ruhigem Tempo und mit geplanten Pausen.">
 <meta name="twitter:image" content="https://adriacare.me/img/hero-terrace.webp">
 
 <style>
@@ -66,16 +66,19 @@
   .hero { padding: 70px 0 56px; }
   .hero h1 { font-size: clamp(32px, 4.8vw, 52px); max-width: 22ch; }
   .hero .lede { margin-top: 24px; max-width: 60ch; font-size: 19px; color: var(--ink-soft); }
-  img.photo { display: block; width: 100%; height: auto; object-fit: cover;
-    border: 1px solid var(--line); background: var(--surface); }
-  figure.ph { margin: 0; border: 1px dashed var(--line);
-    background: linear-gradient(135deg, var(--ph-a), var(--ph-b));
-    display: grid; place-items: center; padding: 20px; text-align: center; }
-  figure.ph figcaption { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-    font-size: 13px; line-height: 1.5; color: var(--ink-soft); max-width: 52ch; }
+  img.photo { display: block; width: 100%; height: 100%; object-fit: cover; }
+  figure.deco { position: relative; overflow: hidden; margin: 0;
+    border: 1px solid var(--line); background: var(--ph-a); }
+  figure.deco img.photo { filter: blur(2.5px) saturate(0.82) brightness(0.9); transform: scale(1.06); }
+  figure.deco::after { content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg, rgba(11,30,39,0.10) 35%, rgba(11,30,39,0.52)); }
+  figure.deco figcaption { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center;
+    padding: 16px; text-align: center; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: clamp(19px, 2.2vw, 27px); font-weight: 600; letter-spacing: 0.02em;
+    color: #f6f9fa; text-shadow: 0 2px 18px rgba(0,0,0,.55); }
   .hero-photo { aspect-ratio: 21 / 9; margin-top: 38px; }
   .feature-photo { aspect-ratio: 16 / 9; margin-top: 34px; }
-  @media (max-width: 780px) { .hero-photo { aspect-ratio: 16 / 9; } }
+  @media (max-width: 780px) { .hero-photo, .feature-photo { aspect-ratio: 16 / 9; min-height: 180px; } }
   section { padding: 64px 0; border-top: 1px solid var(--line); }
   section h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 10px 0 24px; }
   .btn { display: inline-block; padding: 13px 26px; background: var(--sea); color: var(--on-sea);
@@ -105,7 +108,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027 · Wir nehmen Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
+  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027. Wir nehmen bereits Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
   <header class="site">
     <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
     <div class="head-right">
@@ -123,10 +126,11 @@
 
   <div class="hero">
     <p class="eyebrow" data-i18n="e_hero">Pilgerreisen</p>
-    <h1 style="margin-top:14px;" data-i18n="h1">Montenegro: ein Land lebendiger Klöster, in erreichbarer Nähe</h1>
-    <p class="lede" data-i18n="lede">Für viele Bewohner ist der Glaube ein zentraler Teil des Lebens — und bleibt es auch im Süden. Wir organisieren begleitete Besuche orthodoxer und katholischer heiliger Stätten: mit Teilnahme an der Liturgie auf Wunsch, in ruhigem Tempo und mit Sitzgelegenheiten an jedem Ort.</p>
-    <figure class="ph hero-photo">
-      <figcaption>Photo · pilg-hero.webp — Ostrog monastery carved into the cliff face, morning light</figcaption>
+    <h1 style="margin-top:14px;" data-i18n="h1">Montenegros heilige Stätten — gut erreichbar von Budva</h1>
+    <p class="lede" data-i18n="lede">Für viele Bewohner bleibt der Glaube auch während des Aufenthalts ein wichtiger Teil des Lebens. Wir organisieren begleitete Besuche orthodoxer und katholischer Stätten, planen Zeit für Pausen ein und halten das Tempo ruhig. Die Teilnahme an einem Gottesdienst ist immer freiwillig.</p>
+    <figure class="deco hero-photo">
+      <img class="photo" src="img/pilg-hero.webp" loading="lazy" width="2100" height="900" alt="Das weiß leuchtende Kloster Ostrog in einer steilen Felswand im morgendlichen Licht.">
+      <figcaption data-i18n="img_hero">Ostrog im Morgenlicht</figcaption>
     </figure>
   </div>
 
@@ -137,32 +141,32 @@
       <div class="card">
         <p class="tag" data-i18n="c1t">90 Min. · Ganztag</p>
         <h3 data-i18n="c1h">Kloster Ostrog</h3>
-        <p data-i18n="c1p">In eine senkrechte Felswand hoch über dem Zeta-Tal gebaut, bewahrt Ostrog die Reliquien des Hl. Basilius von Ostrog — es ist der wichtigste Wallfahrtsort des Landes. Die Straße führt bis zum oberen Kloster, sodass der Besuch ohne Aufstieg möglich ist.</p>
+        <p data-i18n="c1p">Ostrog ist in eine senkrechte Felswand über dem Zeta-Tal gebaut und bewahrt die Reliquien des heiligen Basilius von Ostrog. Die Straße führt bis zum oberen Kloster, sodass kein langer Aufstieg zu Fuß nötig ist.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c2t">40 Min. · Halbtag</p>
         <h3 data-i18n="c2h">Kloster Cetinje</h3>
-        <p data-i18n="c2p">Im Kloster der alten Königsstadt wird die Reliquie der rechten Hand Johannes des Täufers aufbewahrt. Der Weg vom Bus ist kurz und eben, der Empfang still und geduldig.</p>
+        <p data-i18n="c2p">Im Kloster der alten Königsstadt wird die rechte Hand Johannes des Täufers aufbewahrt. Der Weg vom Kleinbus ist kurz und eben; für den Besuch planen wir ausreichend Zeit ein.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c3t">15 Min. · Halbtag</p>
         <h3 data-i18n="c3h">Kloster Reževići</h3>
-        <p data-i18n="c3p">Direkt an der Küste bei Petrovac, zwischen alten Olivenbäumen über dem Meer. Klein, still und ebenerdig — für viele unserer Gäste der liebste Ort für ein leises Gebet.</p>
+        <p data-i18n="c3p">Das kleine, ruhige Kloster liegt zwischen alten Olivenbäumen nahe Petrovac. Der Hauptweg ist stufenfrei und bietet einen guten Ort für eine persönliche Andacht.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c4t">10 Min. · Halbtag</p>
         <h3 data-i18n="c4h">Kloster Podmaine</h3>
-        <p data-i18n="c4p">Oberhalb von Budva gelegen, mit Blick über die Bucht. Hier lebte und schrieb der Dichterbischof Njegoš — der nächstgelegene Klosterbesuch von der Residenz aus.</p>
+        <p data-i18n="c4p">Das Kloster liegt oberhalb von Budva mit Blick über die Bucht. Hier lebte und arbeitete der Bischof und Dichter Petar II. Petrović-Njegoš. Es ist das nächstgelegene Kloster zur Residenz.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c5t">60 Min. · Halbtag</p>
         <h3 data-i18n="c5h">Gospa od Škrpjela</h3>
-        <p data-i18n="c5p">Die Wallfahrtsinsel in der Bucht von Kotor mit ihrer Marienkirche wird per Boot erreicht. Die Überfahrt von Perast dauert nur wenige Minuten; an Bord und auf der Insel gibt es Sitzplätze.</p>
+        <p data-i18n="c5p">Auf der kleinen Insel in der Bucht von Kotor steht eine Marienkirche. Die Überfahrt von Perast dauert nur wenige Minuten; Sitzplätze gibt es sowohl an Bord als auch auf der Insel.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c6t">50 Min. · Halbtag</p>
         <h3 data-i18n="c6h">Kathedrale Sveti Tripun, Kotor</h3>
-        <p data-i18n="c6p">Die katholische Kathedrale aus dem Jahr 1166 bewahrt die Reliquien des Hl. Tryphon. Sie steht mitten in der Altstadt von Kotor, wenige ebene Schritte vom Anleger entfernt.</p>
+        <p data-i18n="c6p">Die 1166 gegründete katholische Kathedrale bewahrt die Reliquien des heiligen Tryphon. Sie steht im Zentrum der Altstadt von Kotor, nur einen kurzen, weitgehend ebenen Weg vom Anleger entfernt.</p>
       </div>
     </div>
   </section>
@@ -170,22 +174,23 @@
   <section>
     <p class="eyebrow" data-i18n="e_care">Begleitung</p>
     <h2 data-i18n="h_care">So begleiten wir</h2>
-    <p class="prose" style="color:var(--ink-soft);" data-i18n="p_care">Eine Pilgerfahrt ist für uns kein Ausflug wie jeder andere. Wir planen sie im Gespräch mit den Bewohnern und ihren Angehörigen — im eigenen Tempo, mit Zeit für Stille, eine Kerze, ein Gebet. Niemand muss etwas; jeder darf.</p>
+    <p class="prose" style="color:var(--ink-soft);" data-i18n="p_care">Wir besprechen die Route vorab mit den Bewohnern und ihren Angehörigen. Dabei berücksichtigen wir die Möglichkeiten jedes Einzelnen und lassen Zeit für Stille, eine Kerze oder ein Gebet. Die Teilnahme an Gottesdiensten und Ritualen ist stets freiwillig.</p>
     <ul class="point-list">
       <li data-i18n="g1">Absprache mit dem Seelsorger Ihres Hauses vor jeder Fahrt</li>
       <li data-i18n="g2">Teilnahme an der Liturgie nach Wunsch und Kräften</li>
-      <li data-i18n="g3">Sitzgelegenheiten und Ruhepausen an jedem Ort</li>
-      <li data-i18n="g4">Mehrsprachige Begleitung; auf Wunsch Kontakt zur örtlichen Kirchengemeinde (orthodox, katholisch, evangelisch in Absprache)</li>
+      <li data-i18n="g3">Geplante Sitz- und Ruhepausen auf jeder Route</li>
+      <li data-i18n="g4">Mehrsprachige Begleitung; auf Wunsch nehmen wir Kontakt zu einer örtlichen orthodoxen, katholischen oder evangelischen Gemeinde auf</li>
     </ul>
-    <figure class="ph feature-photo">
-      <figcaption>Photo · pilg-candles.webp — elderly hands lighting a candle inside a monastery church, warm candlelight</figcaption>
+    <figure class="deco feature-photo">
+      <img class="photo" src="img/pilg-candles.webp" loading="lazy" width="2048" height="1152" alt="Hände eines älteren Menschen entzünden eine Kerze in einer orthodoxen Klosterkirche.">
+      <figcaption data-i18n="img_feature">Ein Licht der Andacht</figcaption>
     </figure>
   </section>
 
   <section class="cta-band">
     <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
-    <h2 data-i18n="h_cta">Geben Sie dem geistlichen Leben Ihrer Bewohner auch im Süden Raum</h2>
-    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Fordern Sie ein Angebot an — auf Wunsch nehmen wir begleitete Pilgerfahrten fest in das Programm eines Turnus auf und stimmen die Ziele mit Ihrem Haus ab.</p>
+    <h2 data-i18n="h_cta">Bewahren Sie vertraute spirituelle Angebote während des Aufenthalts</h2>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Auf Wunsch nehmen wir begleitete Pilgerfahrten in das Aufenthaltsprogramm auf und stimmen die Routen vorab mit Ihrer Einrichtung ab.</p>
     <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
   </section>
 
@@ -200,41 +205,43 @@
   var I18N = {
     de: null,
     en: {
-      banner: 'Opening in 2027 · We are taking preliminary applications and signing pre-agreements →',
+      banner: 'Opening in 2027. We are already accepting preliminary applications and signing pre-agreements →',
       back: '← Montenegro',
+      img_hero: 'Ostrog in the morning light', img_feature: 'A light of devotion',
       e_hero: 'Pilgrimage journeys',
-      h1: 'Montenegro: a land of living monasteries, within easy reach',
-      lede: 'For many residents, faith is a central part of life — and remains so in the south. We organise accompanied visits to Orthodox and Catholic holy sites: with attendance at the liturgy on request, at a quiet pace, and with seating available at every site.',
+      h1: 'Montenegro’s holy sites, within easy reach of Budva',
+      lede: 'For many residents, faith remains an important part of life while they are away. We arrange accompanied visits to Orthodox and Catholic holy sites, allow time for rest and keep the pace unhurried. Attending a service is always optional.',
       e_sites: 'Holy sites', h_sites: 'The most important places of pilgrimage',
       c1t: '90 min · full day', c1h: 'Ostrog Monastery',
-      c1p: 'Built into a sheer cliff face high above the Zeta valley, Ostrog keeps the relics of St Basil of Ostrog — it is the most important place of pilgrimage in the country. The road leads right up to the upper monastery, so the visit requires no climb.',
+      c1p: 'Ostrog is built into a sheer cliff above the Zeta valley and houses the relics of St Basil of Ostrog. The road reaches the upper monastery, so the visit does not require a long uphill walk.',
       c2t: '40 min · half day', c2h: 'Cetinje Monastery',
-      c2p: 'The monastery of the old royal capital keeps the relic of the right hand of John the Baptist. The way from the bus is short and level, and visitors are received quietly and patiently.',
+      c2p: 'The monastery in Montenegro’s old royal capital houses the right hand of John the Baptist. The route from the minibus is short and level, and we allow plenty of time for the visit.',
       c3t: '15 min · half day', c3h: 'Reževići Monastery',
-      c3p: 'Right on the coast near Petrovac, among old olive trees above the sea. Small, quiet and step-free — for many of our guests the dearest place for a silent prayer.',
+      c3p: 'This small, quiet monastery stands among old olive trees near Petrovac. The main route is step-free, making it a comfortable place to pause for private prayer.',
       c4t: '10 min · half day', c4h: 'Podmaine Monastery',
-      c4p: 'Set above Budva, overlooking the bay. The poet-bishop Njegoš lived and wrote here — the closest monastery visit from the residence.',
+      c4p: 'Set above Budva with views across the bay, the monastery was once home to the bishop and poet Petar II Petrović-Njegoš. It is the closest monastery to the residence.',
       c5t: '60 min · half day', c5h: 'Our Lady of the Rocks',
-      c5p: 'The pilgrimage island in the Bay of Kotor with its church of Mary is reached by boat. The crossing from Perast takes only a few minutes; there is seating on board and on the island.',
+      c5p: 'The small island in the Bay of Kotor is home to a church dedicated to the Virgin Mary. The crossing from Perast takes only a few minutes, with seating on both the boat and the island.',
       c6t: '50 min · half day', c6h: 'St Tryphon Cathedral, Kotor',
-      c6p: 'The Catholic cathedral of 1166 keeps the relics of St Tryphon. It stands in the middle of Kotor old town, a few level steps from the pier.',
-      e_care: 'How we accompany', h_care: 'How we accompany',
-      p_care: 'For us, a pilgrimage is not an excursion like any other. We plan it in conversation with the residents and their families — at each person’s own pace, with time for silence, a candle, a prayer. Nothing is required; everything is allowed.',
+      c6p: 'The Catholic cathedral, founded in 1166, houses the relics of St Tryphon. It stands in the centre of Kotor old town, a short and mostly level walk from the pier.',
+      e_care: 'Support', h_care: 'How we support each visit',
+      p_care: 'We discuss the route with residents and their families in advance. We take account of each person’s ability and leave time for silence, a candle or prayer. Participation in services and rituals is always voluntary.',
       g1: 'Coordination with the chaplain of your home before every journey',
       g2: 'Attendance at the liturgy according to each person’s wish and strength',
-      g3: 'Seating and rest breaks at every site',
-      g4: 'Multilingual accompaniment; on request, contact with the local parish (Orthodox, Catholic, Protestant by arrangement)',
-      e_cta: 'Next step', h_cta: 'Give your residents’ spiritual life its place in the south as well',
-      p_cta: 'Request an offer — on request we include accompanied pilgrimages as a fixed part of a rotation’s programme and agree the destinations with your home.',
+      g3: 'Planned seating and rest breaks on every route',
+      g4: 'Support in several languages; on request, we contact the local Orthodox, Catholic or Protestant community',
+      e_cta: 'Next step', h_cta: 'Maintain a familiar spiritual life during the stay',
+      p_cta: 'At your request, we will include accompanied pilgrimages in the stay programme and agree the routes with your home in advance.',
       cta: 'Request an offer', foot1: 'Adria Care Residence · Budva, Montenegro',
-      foot_symbol: 'Illustrative images'
+      foot_symbol: 'Images for illustrative purposes'
     },
     fr: {
-      banner: 'Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →',
+      banner: 'Ouverture en 2027. Nous acceptons déjà les préinscriptions et concluons des avant-contrats →',
       back: '← Monténégro',
+      img_hero: 'Ostrog dans la lumière du matin', img_feature: 'Une lumière de recueillement',
       e_hero: 'Pèlerinages',
-      h1: 'Le Monténégro : une terre de monastères vivants, à portée de route',
-      lede: 'Pour beaucoup de résidents, la foi est une part centrale de la vie — et le reste dans le sud. Nous organisons des visites accompagnées de lieux saints orthodoxes et catholiques : avec participation à la liturgie sur demande, à un rythme paisible et avec des assises à chaque étape.',
+      h1: 'Les lieux saints du Monténégro, facilement accessibles depuis Budva',
+      lede: 'Pour de nombreux résidents, la foi reste importante, y compris pendant un séjour à l’étranger. Nous organisons des visites accompagnées de lieux saints orthodoxes et catholiques, à un rythme tranquille et avec des temps de repos. La participation à un office est toujours facultative.',
       e_sites: 'Lieux saints', h_sites: 'Les principaux lieux de pèlerinage',
       c1t: '90 min · journée', c1h: 'Le monastère d’Ostrog',
       c1p: 'Bâti dans une paroi rocheuse verticale au-dessus de la vallée de la Zeta, Ostrog conserve les reliques de saint Basile d’Ostrog — c’est le premier lieu de pèlerinage du pays. La route monte jusqu’au monastère supérieur : la visite se fait sans ascension.',
@@ -249,22 +256,23 @@
       c6t: '50 min · demi-journée', c6h: 'La cathédrale Saint-Tryphon, Kotor',
       c6p: 'La cathédrale catholique de 1166 conserve les reliques de saint Tryphon. Elle se dresse au cœur de la vieille ville de Kotor, à quelques pas de plain-pied de l’embarcadère.',
       e_care: 'Accompagnement', h_care: 'Comment nous accompagnons',
-      p_care: 'Un pèlerinage n’est pas pour nous une excursion comme les autres. Nous le préparons en dialogue avec les résidents et leurs proches — au rythme de chacun, avec du temps pour le silence, un cierge, une prière. Rien n’est obligatoire ; tout est permis.',
+      p_care: 'Un pèlerinage ne se prépare pas comme une excursion ordinaire. Nous en parlons avec les résidents et leurs proches, respectons le rythme de chacun et prévoyons du temps pour le silence, un cierge ou une prière. Chacun participe librement.',
       g1: 'Concertation avec l’aumônier de votre établissement avant chaque départ',
       g2: 'Participation à la liturgie selon le souhait et les forces de chacun',
       g3: 'Assises et pauses de repos à chaque étape',
       g4: 'Accompagnement multilingue ; sur demande, mise en relation avec la paroisse locale (orthodoxe, catholique, protestante sur accord)',
-      e_cta: 'Prochaine étape', h_cta: 'Donnez aussi dans le sud sa place à la vie spirituelle de vos résidents',
-      p_cta: 'Demandez une offre — sur demande, nous inscrivons les pèlerinages accompagnés au programme d’une rotation et convenons des destinations avec votre établissement.',
+      e_cta: 'Prochaine étape', h_cta: 'Préservez les habitudes spirituelles pendant le séjour',
+      p_cta: 'À votre demande, nous intégrerons des pèlerinages accompagnés au programme du séjour et conviendrons des itinéraires avec votre établissement.',
       cta: 'Demander une offre', foot1: 'Adria Care Résidence · Budva, Monténégro',
-      foot_symbol: 'Images d’illustration'
+      foot_symbol: 'Images présentées à titre d’illustration'
     },
     es: {
-      banner: 'Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →',
+      banner: 'Apertura en 2027. Ya aceptamos preinscripciones y formalizamos precontratos →',
       back: '← Montenegro',
+      img_hero: 'Ostrog a la luz de la mañana', img_feature: 'Una luz de recogimiento',
       e_hero: 'Peregrinaciones',
-      h1: 'Montenegro: una tierra de monasterios vivos, al alcance de un paseo',
-      lede: 'Para muchos residentes la fe es una parte central de la vida — y lo sigue siendo en el sur. Organizamos visitas acompañadas a lugares santos ortodoxos y católicos: con asistencia a la liturgia si se desea, a un ritmo sereno y con asientos disponibles en cada lugar.',
+      h1: 'Los lugares sagrados de Montenegro, cerca de Budva',
+      lede: 'Para muchos residentes, la fe sigue siendo importante también durante una estancia en el extranjero. Organizamos visitas acompañadas a lugares sagrados ortodoxos y católicos, con un ritmo tranquilo y tiempo para descansar. La asistencia a los oficios siempre es voluntaria.',
       e_sites: 'Lugares santos', h_sites: 'Los principales lugares de peregrinación',
       c1t: '90 min · día completo', c1h: 'Monasterio de Ostrog',
       c1p: 'Construido en una pared vertical de roca sobre el valle del Zeta, Ostrog custodia las reliquias de san Basilio de Ostrog — es el principal lugar de peregrinación del país. La carretera llega hasta el monasterio superior, de modo que la visita no exige subida.',
@@ -279,22 +287,23 @@
       c6t: '50 min · media jornada', c6h: 'Catedral de San Trifón, Kotor',
       c6p: 'La catedral católica de 1166 custodia las reliquias de san Trifón. Se alza en pleno casco antiguo de Kotor, a unos pocos pasos llanos del embarcadero.',
       e_care: 'Acompañamiento', h_care: 'Así acompañamos',
-      p_care: 'Para nosotros una peregrinación no es una excursión más. La preparamos en diálogo con los residentes y sus familias — al ritmo de cada uno, con tiempo para el silencio, una vela, una oración. Nada es obligatorio; todo está permitido.',
+      p_care: 'Una peregrinación requiere una preparación distinta de la de una excursión habitual. La organizamos en diálogo con los residentes y sus familias, respetamos el ritmo de cada persona y dejamos tiempo para el silencio, una vela o una oración. La participación siempre es voluntaria.',
       g1: 'Coordinación con el capellán de su centro antes de cada salida',
       g2: 'Asistencia a la liturgia según el deseo y las fuerzas de cada uno',
       g3: 'Asientos y pausas de descanso en cada lugar',
       g4: 'Acompañamiento multilingüe; si se desea, contacto con la parroquia local (ortodoxa, católica, evangélica previo acuerdo)',
-      e_cta: 'Siguiente paso', h_cta: 'Dé también en el sur su espacio a la vida espiritual de sus residentes',
-      p_cta: 'Solicite una oferta — si lo desea, incluimos las peregrinaciones acompañadas como parte fija del programa de un turno y acordamos los destinos con su centro.',
+      e_cta: 'Siguiente paso', h_cta: 'Mantenga la vida espiritual habitual durante la estancia',
+      p_cta: 'Si lo desea, incluiremos peregrinaciones acompañadas en el programa de la estancia y acordaremos las rutas con su centro.',
       cta: 'Solicitar oferta', foot1: 'Adria Care Residencia · Budva, Montenegro',
-      foot_symbol: 'Imágenes ilustrativas'
+      foot_symbol: 'Imágenes con fines ilustrativos'
     },
     sr: {
-      banner: 'Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →',
+      banner: 'Otvaranje 2027. godine. Već primamo prethodne prijave i zaključujemo predugovore →',
       back: '← Crna Gora',
+      img_hero: 'Ostrog u jutarnjem svetlu', img_feature: 'Svetlost molitve',
       e_hero: 'Hodočašća',
-      h1: 'Crna Gora: zemlja živih manastira, na dohvat ruke',
-      lede: 'Za mnoge korisnike vera je središnji deo života — i ostaje to i na jugu. Organizujemo posete pravoslavnim i katoličkim svetinjama uz pratnju: sa prisustvom liturgiji po želji, u mirnom tempu i sa mestima za sedenje na svakom mestu.',
+      h1: 'Svetinje Crne Gore — blizu Budve',
+      lede: 'Za mnoge korisnike vera ostaje važan deo života i tokom boravka u inostranstvu. Organizujemo posete pravoslavnim i katoličkim svetinjama uz pratnju, u mirnom tempu i sa vremenom za odmor. Prisustvo bogosluženju uvek je dobrovoljno.',
       e_sites: 'Svetinje', h_sites: 'Najvažnija mesta hodočašća',
       c1t: '90 min · ceo dan', c1h: 'Manastir Ostrog',
       c1p: 'Uzidan u okomitu stenu visoko iznad doline Zete, Ostrog čuva mošti Svetog Vasilija Ostroškog — to je najvažnije mesto hodočašća u zemlji. Put vodi do samog gornjeg manastira, pa poseta ne zahteva uspon.',
@@ -309,45 +318,46 @@
       c6t: '50 min · pola dana', c6h: 'Katedrala Svetog Tripuna, Kotor',
       c6p: 'Katolička katedrala iz 1166. godine čuva mošti Svetog Tripuna. Stoji usred starog grada Kotora, na nekoliko ravnih koraka od pristana.',
       e_care: 'Pratnja', h_care: 'Kako pratimo',
-      p_care: 'Hodočašće za nas nije izlet kao svaki drugi. Planiramo ga u razgovoru sa korisnicima i njihovim porodicama — u tempu svakog ponaosob, sa vremenom za tišinu, sveću, molitvu. Ništa nije obavezno; sve je dopušteno.',
+      p_care: 'Hodočašće se ne planira kao običan izlet. Razgovaramo sa korisnicima i njihovim porodicama, poštujemo tempo svakog učesnika i ostavljamo vreme za tišinu, sveću ili molitvu. Učešće je uvek dobrovoljno.',
       g1: 'Dogovor sa duhovnikom vaše ustanove pre svakog putovanja',
       g2: 'Prisustvo liturgiji prema želji i snazi svakoga',
       g3: 'Mesta za sedenje i predasi na svakom mestu',
       g4: 'Višejezična pratnja; po želji kontakt sa mesnom crkvenom zajednicom (pravoslavnom, katoličkom, evangeličkom po dogovoru)',
-      e_cta: 'Sledeći korak', h_cta: 'Dajte duhovnom životu vaših korisnika prostor i na jugu',
-      p_cta: 'Zatražite ponudu — po želji uvrštavamo hodočašća uz pratnju kao stalni deo programa turnusa i usaglašavamo odredišta sa vašom ustanovom.',
+      e_cta: 'Sledeći korak', h_cta: 'Sačuvajte duhovne navike i tokom boravka',
+      p_cta: 'Na vaš zahtev uvrstićemo hodočašća uz pratnju u program boravka i unapred usaglasiti rute sa vašom ustanovom.',
       cta: 'Zatražite ponudu', foot1: 'Adria Care Rezidencija · Budva, Crna Gora',
-      foot_symbol: 'Ilustrativne fotografije'
+      foot_symbol: 'Fotografije služe kao ilustracija'
     },
     ru: {
-      banner: 'Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →',
+      banner: 'Открытие — в 2027 году. Уже принимаем заявки и заключаем предварительные договоры →',
       back: '← Черногория',
+      img_hero: 'Острог в утреннем свете', img_feature: 'Свет молитвы',
       e_hero: 'Паломничество',
-      h1: 'Черногория: земля живых монастырей, до которых рукой подать',
-      lede: 'Для многих резидентов вера — центральная часть жизни, и на юге это не меняется. Мы организуем поездки к православным и католическим святыням с сопровождением: с участием в литургии по желанию, в спокойном темпе и с местами для отдыха сидя в каждой точке.',
+      h1: 'Святыни Черногории — недалеко от Будвы',
+      lede: 'Для многих резидентов вера остаётся важной частью жизни и во время поездки. Мы организуем посещение православных и католических святынь, предусматриваем спокойный темп и места для отдыха. Участие в литургии — только по желанию.',
       e_sites: 'Святыни', h_sites: 'Главные места паломничества',
       c1t: '90 мин · целый день', c1h: 'Монастырь Острог',
-      c1p: 'Встроенный в отвесную скалу высоко над долиной Зеты, Острог хранит мощи святителя Василия Острожского — это главное место паломничества страны. Дорога ведёт до самого верхнего монастыря, так что посещение обходится без подъёма.',
+      c1p: 'Монастырь Острог, построенный в отвесной скале над долиной Зеты, хранит мощи святителя Василия Острожского. Дорога ведёт к верхнему монастырю, поэтому долгий подъём пешком не нужен.',
       c2t: '40 мин · полдня', c2h: 'Цетинский монастырь',
-      c2p: 'В монастыре старой столицы хранится реликвия — десница Иоанна Крестителя. Путь от автобуса короткий и ровный, приём тихий и терпеливый.',
+      c2p: 'В монастыре старой столицы хранится десница Иоанна Крестителя. От остановки автобуса ведёт короткая ровная дорога; на посещение отводим достаточно времени.',
       c3t: '15 мин · полдня', c3h: 'Монастырь Режевичи',
-      c3p: 'Прямо у берега близ Петроваца, среди старых олив над морем. Маленький, тихий и без ступеней — для многих наших гостей самое дорогое место для тихой молитвы.',
+      c3p: 'Небольшой тихий монастырь расположен у побережья близ Петроваца, среди старых оливковых деревьев. На основном маршруте нет ступеней, поэтому здесь удобно задержаться для спокойной молитвы.',
       c4t: '10 мин · полдня', c4h: 'Монастырь Подмаине',
-      c4p: 'Над Будвой, с видом на бухту. Здесь жил и писал владыка-поэт Негош — ближайшая к резиденции монастырская поездка.',
+      c4p: 'Монастырь находится над Будвой, с видом на бухту. Здесь жил и работал владыка и поэт Пётр II Петрович Негош. Это ближайшая к резиденции монастырская экскурсия.',
       c5t: '60 мин · полдня', c5h: 'Госпа-од-Шкрпела',
-      c5p: 'Паломнический остров в Бока-Которской бухте с Богородичной церковью — до него добираются на кораблике. Переправа из Пераста занимает несколько минут; сидячие места есть и на борту, и на острове.',
+      c5p: 'На небольшом острове в Бока-Которской бухте находится церковь Богородицы. Переправа из Пераста занимает несколько минут; места для отдыха есть и на кораблике, и на острове.',
       c6t: '50 мин · полдня', c6h: 'Собор Святого Трифона, Котор',
-      c6p: 'Католический собор 1166 года хранит мощи святого Трифона. Он стоит в самом центре старого города Котора, в нескольких ровных шагах от причала.',
+      c6p: 'Католический собор 1166 года хранит мощи святого Трифона. Он находится в центре старого города Котора; путь от причала короткий и почти ровный.',
       e_care: 'Сопровождение', h_care: 'Как мы сопровождаем',
-      p_care: 'Паломничество для нас — не обычная экскурсия. Мы готовим её в разговоре с резидентами и их близкими — в темпе каждого, со временем для тишины, свечи, молитвы. Ничего не нужно обязательно; всё можно.',
+      p_care: 'Маршрут заранее обсуждаем с резидентами и их близкими. Учитываем возможности каждого человека и оставляем время для тишины, свечи и молитвы. Участие в службах и обрядах всегда добровольное.',
       g1: 'Согласование с духовником вашего дома перед каждой поездкой',
       g2: 'Участие в литургии по желанию и по силам',
-      g3: 'Места для отдыха сидя и паузы в каждой точке',
-      g4: 'Многоязычное сопровождение; по желанию — контакт с местной церковной общиной (православной, католической, евангелической по договорённости)',
-      e_cta: 'Следующий шаг', h_cta: 'Дайте духовной жизни ваших резидентов место и на юге',
-      p_cta: 'Запросите предложение — по желанию мы включаем паломнические поездки с сопровождением в постоянную программу заезда и согласуем маршруты с вашим домом.',
+      g3: 'Места для отдыха и запланированные паузы на каждом маршруте',
+      g4: 'Сопровождение на нескольких языках; по желанию свяжемся с местной православной, католической или протестантской общиной',
+      e_cta: 'Следующий шаг', h_cta: 'Сохраните привычную духовную жизнь и во время заезда',
+      p_cta: 'По вашему запросу мы включим паломнические поездки с сопровождением в программу заезда и заранее согласуем маршруты с учреждением.',
       cta: 'Запросить предложение', foot1: 'Adria Care Residenz · Будва, Черногория',
-      foot_symbol: 'Иллюстративные изображения'
+      foot_symbol: 'Изображения для иллюстрации'
     }
   };
 

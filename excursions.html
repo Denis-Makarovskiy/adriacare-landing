@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Das komplette Ausflugsprogramm der Adria Care Residenz: acht kuratierte Routen durch Montenegro — seniorengerecht geplant, mit lizenzierten Guides und eigener Begleitung.">
+<meta name="description" content="Acht begleitete Ausflugsrouten durch Montenegro: kurze Gehstrecken, geplante Pausen, lizenzierte Guides und klimatisierte Kleinbusse.">
 <title>Ausflüge in Montenegro — Adria Care Residenz</title>
 <link rel="canonical" href="https://adriacare.me/excursions.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adria Care Residenz">
 <meta property="og:title" content="Ausflüge in Montenegro — Adria Care Residenz">
-<meta property="og:description" content="Das komplette Ausflugsprogramm der Adria Care Residenz: acht kuratierte Routen durch Montenegro — seniorengerecht geplant, mit lizenzierten Guides und eigener Begleitung.">
+<meta property="og:description" content="Acht begleitete Ausflugsrouten durch Montenegro: kurze Gehstrecken, geplante Pausen, lizenzierte Guides und klimatisierte Kleinbusse.">
 <meta property="og:url" content="https://adriacare.me/excursions.html">
 <meta property="og:image" content="https://adriacare.me/img/mne-kotor.webp">
 <meta property="og:image:width" content="2048">
@@ -22,7 +22,7 @@
 <meta property="og:locale:alternate" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ausflüge in Montenegro — Adria Care Residenz">
-<meta name="twitter:description" content="Das komplette Ausflugsprogramm der Adria Care Residenz: acht kuratierte Routen durch Montenegro — seniorengerecht geplant, mit lizenzierten Guides und eigener Begleitung.">
+<meta name="twitter:description" content="Acht begleitete Ausflugsrouten durch Montenegro: kurze Gehstrecken, geplante Pausen, lizenzierte Guides und klimatisierte Kleinbusse.">
 <meta name="twitter:image" content="https://adriacare.me/img/mne-kotor.webp">
 
 <style>
@@ -66,15 +66,19 @@
   .hero { padding: 70px 0 56px; }
   .hero h1 { font-size: clamp(32px, 4.8vw, 52px); max-width: 22ch; }
   .hero .lede { margin-top: 24px; max-width: 60ch; font-size: 19px; color: var(--ink-soft); }
-  figure.ph { margin: 0; border: 1px solid var(--line);
-    background: linear-gradient(135deg, var(--ph-a), var(--ph-b));
-    display: grid; place-items: center; padding: 20px; text-align: center; }
-  figure.ph figcaption { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    font-size: clamp(15px, 1.8vw, 19px); font-weight: 600; letter-spacing: 0.02em;
-    color: var(--ink-soft); max-width: 56ch; }
+  img.photo { display: block; width: 100%; height: 100%; object-fit: cover; }
+  figure.deco { position: relative; overflow: hidden; margin: 0;
+    border: 1px solid var(--line); background: var(--ph-a); }
+  figure.deco img.photo { filter: blur(2.5px) saturate(0.82) brightness(0.9); transform: scale(1.06); }
+  figure.deco::after { content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg, rgba(11,30,39,0.10) 35%, rgba(11,30,39,0.52)); }
+  figure.deco figcaption { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center;
+    padding: 16px; text-align: center; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: clamp(19px, 2.2vw, 27px); font-weight: 600; letter-spacing: 0.02em;
+    color: #f6f9fa; text-shadow: 0 2px 18px rgba(0,0,0,.55); }
   .ph-hero { aspect-ratio: 21 / 9; margin-top: 38px; }
   .ph-feature { aspect-ratio: 16 / 9; margin-top: 34px; }
-  @media (max-width: 780px) { .ph-hero { aspect-ratio: 16 / 9; } }
+  @media (max-width: 780px) { .ph-hero, .ph-feature { aspect-ratio: 16 / 9; min-height: 180px; } }
   section { padding: 64px 0; border-top: 1px solid var(--line); }
   section h2 { font-size: clamp(26px, 3.4vw, 36px); margin: 10px 0 24px; }
   .btn { display: inline-block; padding: 13px 26px; background: var(--sea); color: var(--on-sea);
@@ -103,7 +107,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027 · Wir nehmen Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
+  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027. Wir nehmen bereits Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
   <header class="site">
     <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
     <div class="head-right">
@@ -121,10 +125,11 @@
 
   <div class="hero">
     <p class="eyebrow" data-i18n="e_hero">Ausflugsprogramm</p>
-    <h1 style="margin-top:14px;" data-i18n="h1">Ein ganzes Land als Ausflugskatalog — kuratiert für Senioren</h1>
-    <p class="lede" data-i18n="lede">Alle Ausflüge finden mit lizenzierten montenegrinischen Guides und unserem eigenen Begleitpersonal statt, in klimatisierten Kleinbussen und nach einem festen Seniorenstandard: maximal 300 Meter Gehstrecke, Sitzgelegenheiten unterwegs, Rückkehr zur Mittagsruhe oder bis zum frühen Abend.</p>
-    <figure class="ph ph-hero">
-      <figcaption>Photo · exc-hero.webp — small group of seniors with a guide at a panoramic viewpoint over the Bay of Kotor, minibus behind</figcaption>
+    <h1 style="margin-top:14px;" data-i18n="h1">Acht entspannte Routen durch Montenegro</h1>
+    <p class="lede" data-i18n="lede">Lizenzierte montenegrinische Guides leiten jeden Ausflug, unterstützt von einer Begleitkraft unseres Teams. Klimatisierte Kleinbusse, Gehstrecken von höchstens 300 Metern und geplante Pausen halten die Belastung überschaubar. Die Gruppe kehrt zur Mittagsruhe oder am frühen Abend zurück.</p>
+    <figure class="deco ph-hero">
+      <img class="photo" src="img/exc-hero.webp" loading="lazy" width="2100" height="900" alt="Ältere Reisende mit Guide und Kleinbus an einem Aussichtspunkt über der Bucht von Kotor.">
+      <figcaption data-i18n="img_hero">Panorama ohne langen Aufstieg</figcaption>
     </figure>
   </div>
 
@@ -133,8 +138,8 @@
     <h2 data-i18n="h_std">Vier Regeln, die auf jedem Ausflug gelten</h2>
     <div class="facts">
       <div class="fact"><b>DE · EN</b><span data-i18n="s1">Lizenzierte montenegrinische Guides führen jede Tour auf Deutsch und Englisch.</span></div>
-      <div class="fact"><b>8–10</b><span data-i18n="s2">Maximale Gruppengröße — klein genug für individuelles Tempo und persönliche Ansprache.</span></div>
-      <div class="fact"><b>+1</b><span data-i18n="s3">Auf jeder Fahrt: eine medizinisch geschulte Begleitperson mit Erste-Hilfe-Ausrüstung.</span></div>
+      <div class="fact"><b>8–10</b><span data-i18n="s2">Die Gruppe bleibt klein, damit jeder Teilnehmer in seinem Tempo unterwegs sein kann und persönliche Unterstützung erhält.</span></div>
+      <div class="fact"><b>+1</b><span data-i18n="s3">Eine in Erster Hilfe geschulte Begleitkraft mit Erste-Hilfe-Set ist auf jeder Fahrt dabei.</span></div>
       <div class="fact"><b>100 %</b><span data-i18n="s4">Jede Route wird vorab auf Barrierefreiheit geprüft; Eintritte und Sitzplätze sind im Voraus reserviert.</span></div>
     </div>
   </section>
@@ -142,7 +147,7 @@
   <section>
     <p class="eyebrow" data-i18n="e_cat">Der Katalog</p>
     <h2 data-i18n="h_cat">Acht Routen durch Montenegro</h2>
-    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_cat">Das Programm deckt Küste, Seen und Berge ab und ist auf die Saison abgestimmt. Ihre Einrichtung erhält vor jedem Turnus den Ausflugsplan mit Terminen, Gehstrecken und Rückkehrzeiten.</p>
+    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_cat">Das Programm umfasst Küste, Seen und Berge; die Routen wählen wir passend zur Saison. Vor jedem Aufenthalt erhält Ihre Einrichtung einen Plan mit Terminen, Gehstrecken und Rückkehrzeiten.</p>
     <div class="cards-2">
       <div class="card">
         <p class="tag" data-i18n="c1t">Halbtag · ganzjährig</p>
@@ -162,12 +167,12 @@
       <div class="card">
         <p class="tag" data-i18n="c4t">Halbtag · Mai–Okt.</p>
         <h3 data-i18n="c4h">Lovćen-Panoramastraße</h3>
-        <p data-i18n="c4p">Die berühmte Serpentinenstraße über der Bucht von Kotor: Höhenluft und Weitblick ganz ohne Wandern. Der Bus fährt bis zu den Aussichtspunkten; an warmen Sommertagen zugleich eine willkommene Abkühlung.</p>
+        <p data-i18n="c4p">Der Kleinbus folgt der Serpentinenstraße über der Bucht von Kotor und hält direkt an den Aussichtspunkten. Eine lange Wanderung ist nicht nötig; im Sommer ist es in den Bergen deutlich kühler als an der Küste.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c5t">Ganztag · Juni–Sept.</p>
         <h3 data-i18n="c5h">Durmitor &amp; Schwarzer See</h3>
-        <p data-i18n="c5p">Der Nationalpark im Norden mit dem Schwarzen See auf 1.400 Metern: ebener Uferweg mit Bänken, Mittagessen im Berggasthof. Die längere Anfahrt ist mit Pausen geplant — ein Höhepunkt des Sommers.</p>
+        <p data-i18n="c5p">Der Schwarze See liegt in einem Nationalpark im Norden auf 1.400 Metern. Zum Programm gehören ein ebener Uferweg mit Bänken und ein Mittagessen im Berggasthof. Wegen der längeren Anfahrt planen wir mehrere Pausen ein.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c6t">Ganztag · ganzjährig</p>
@@ -177,7 +182,7 @@
       <div class="card">
         <p class="tag" data-i18n="c7t">Halbtag · ganzjährig</p>
         <h3 data-i18n="c7h">Weinkeller Šipčanik &amp; Podgorica</h3>
-        <p data-i18n="c7p">Europas größter Weinkeller, angelegt in einem ehemaligen Flugzeughangar unter der Erde: Verkostung im Sitzen bei konstanten Temperaturen, dazu eine kurze Panoramafahrt durch die Hauptstadt.</p>
+        <p data-i18n="c7p">Der Weinkeller befindet sich in einem ehemaligen unterirdischen Flugzeughangar. Die Verkostung findet im Sitzen bei konstanter Temperatur statt; anschließend folgt eine kurze Rundfahrt durch die Hauptstadt.</p>
       </div>
       <div class="card">
         <p class="tag" data-i18n="c8t">Ganztag · Übergangszeit</p>
@@ -189,17 +194,18 @@
 
   <section>
     <p class="eyebrow" data-i18n="e_doc">Für Angehörige</p>
-    <h2 data-i18n="h_doc">Für Angehörige dokumentiert</h2>
-    <p class="prose" style="color:var(--ink-soft);" data-i18n="p_doc">Unser hauseigener Fotograf begleitet die größeren Ausflüge. Die Bilder wandern in das gedruckte Album, das jeder Bewohner am Ende des Turnus mit nach Hause nimmt — und Angehörige erhalten auf Wunsch wöchentlich eine Bildauswahl per E-Mail.</p>
-    <figure class="ph ph-feature">
-      <figcaption>Photo · exc-boat.webp — seniors seated on a covered boat deck, guide pointing at the island church of Gospa od Škrpjela</figcaption>
+    <h2 data-i18n="h_doc">Fotos für Angehörige</h2>
+    <p class="prose" style="color:var(--ink-soft);" data-i18n="p_doc">Unser Fotograf begleitet die wichtigsten Ausflüge. Am Ende des Aufenthalts erhält jeder Bewohner ein gedrucktes Album; Angehörige können zusätzlich einmal pro Woche eine Auswahl per E-Mail bekommen.</p>
+    <figure class="deco ph-feature">
+      <img class="photo" src="img/exc-boat.webp" loading="lazy" width="2048" height="1152" alt="Ältere Passagiere auf einem überdachten Ausflugsboot mit Blick auf die Inselkirche Gospa od Škrpjela.">
+      <figcaption data-i18n="img_feature">Die Bucht vom Wasser aus</figcaption>
     </figure>
   </section>
 
   <section class="cta-band">
     <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
-    <h2 data-i18n="h_cta">Stellen Sie dieses Programm für Ihre Bewohner zusammen</h2>
-    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Fordern Sie ein Angebot für einen Pilotturnus an — mit einem Ausflugsplan, der zur Saison und zum Mobilitätsprofil Ihrer Bewohner passt.</p>
+    <h2 data-i18n="h_cta">Ergänzen Sie den Aufenthalt um passende Ausflüge</h2>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Wir erstellen ein Angebot für den Pilotaufenthalt und wählen Ausflüge passend zur Saison und zur Mobilität Ihrer Bewohner aus.</p>
     <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
   </section>
 
@@ -214,18 +220,19 @@
   var I18N = {
     de: null,
     en: {
-      banner: "Opening in 2027 · We are taking preliminary applications and signing pre-agreements →",
+      banner: "Opening in 2027. We are already accepting preliminary applications and signing pre-agreements →",
       back: "← Montenegro",
+      img_hero: "A panorama without the climb", img_feature: "The bay from the water",
       e_hero: "Excursion programme",
-      h1: "A whole country as an excursion catalogue — curated for seniors",
-      lede: "Every excursion runs with licensed Montenegrin guides and our own escort staff, in climate-controlled minibuses and to a fixed senior standard: no more than 300 metres on foot, seating along the way, and return in time for the midday rest or by early evening.",
+      h1: "Eight relaxed routes through Montenegro",
+      lede: "Licensed Montenegrin guides lead every excursion, supported by a member of our staff. Air-conditioned minibuses, walking sections of no more than 300 metres and planned rest stops keep each trip manageable. Groups return for the midday rest or by early evening.",
       e_std: "Our standard", h_std: "Four rules that apply on every excursion",
       s1: "Licensed Montenegrin guides lead every tour in German and English.",
-      s2: "Maximum group size — small enough for an individual pace and personal attention.",
-      s3: "On every trip: a medically trained escort with a first-aid kit.",
+      s2: "Group size is limited so that each participant can move at a comfortable pace and receive personal attention.",
+      s3: "Every group is accompanied by a member of staff trained in first aid, with a first-aid kit.",
       s4: "Every route is checked for accessibility in advance; entrance fees and seats are reserved beforehand.",
       e_cat: "The catalogue", h_cat: "Eight routes through Montenegro",
-      p_cat: "The programme covers coast, lakes and mountains and follows the seasons. Before each rotation your facility receives the excursion plan with dates, walking distances and return times.",
+      p_cat: "The programme includes the coast, lakes and mountains, with routes selected for the season. Before each stay, your home receives a schedule with dates, walking distances and return times.",
       c1t: "Half day · year-round", c1h: "Bay of Kotor by boat",
       c1p: "The fjord-like UNESCO bay seen from the water: Perast, the pilgrimage island of Our Lady of the Rocks and the Venetian old town of Kotor. The covered boat seats everyone and moors right at the promenade.",
       c2t: "Half day · spring–autumn", c2h: "Lake Skadar &amp; winery",
@@ -233,35 +240,36 @@
       c3t: "Half day · year-round", c3h: "Cetinje &amp; the Njegoš heritage",
       c3p: "The old royal capital with its monastery, royal palace and museums — the cultural heart of the country. The bus stops right at each entrance; the museums are compact and largely step-free.",
       c4t: "Half day · May–Oct.", c4h: "Lovćen panoramic road",
-      c4p: "The famous serpentine road above the Bay of Kotor: mountain air and sweeping views without any hiking. The bus drives up to the viewpoints; on hot summer days it doubles as welcome relief from the heat.",
+      c4p: "The minibus follows the serpentine road above the Bay of Kotor and stops directly at the viewpoints. No long hike is required, and in summer the mountains are noticeably cooler than the coast.",
       c5t: "Full day · June–Sept.", c5h: "Durmitor &amp; the Black Lake",
-      c5p: "The national park in the north with the Black Lake at 1,400 metres: a level lakeside path with benches and lunch at a mountain inn. The longer drive is planned with rest stops — a highlight of the summer.",
+      c5p: "Black Lake lies in a northern national park at 1,400 metres. The programme includes a level lakeside path with benches and lunch at a mountain inn. As the drive is long, we schedule several rest stops.",
       c6t: "Full day · year-round", c6h: "Ostrog Monastery",
       c6p: "The monastery built into the rock face is one of the most important pilgrimage sites in the Balkans. A shuttle takes the group right up to the upper monastery. For residents of faith it is part of our <a href='pilgrimage.html'>pilgrimage programme</a>.",
       c7t: "Half day · year-round", c7h: "Šipčanik wine cellar &amp; Podgorica",
-      c7p: "The largest wine cellar in Europe, laid out in a former underground aircraft hangar: a seated tasting at constant temperatures, plus a short panoramic drive through the capital.",
+      c7p: "The wine cellar occupies a former underground aircraft hangar. The tasting is seated and held at a constant temperature, followed by a short sightseeing drive through the capital.",
       c8t: "Full day · shoulder season", c8h: "Olive route Bar &amp; Ulcinj",
       c8p: "The south of the country: the olive tree of Bar, more than 2,000 years old, an olive-oil tasting and the long sandy beaches near Ulcinj — planned for the mild shoulder-season months.",
-      e_doc: "For families", h_doc: "Documented for the family",
-      p_doc: "Our in-house photographer joins the bigger excursions. The pictures go into the printed album every resident takes home at the end of the rotation — and, on request, families receive a weekly selection of photos by e-mail.",
-      e_cta: "Next step", h_cta: "Put this programme together for your residents",
-      p_cta: "Request an offer for a pilot rotation — with an excursion plan matched to the season and to your residents' mobility profile.",
+      e_doc: "For families", h_doc: "Photographs for families",
+      p_doc: "Our photographer joins the main excursions. At the end of the stay, each resident receives a printed album; families may also receive a weekly selection of photographs by email.",
+      e_cta: "Next step", h_cta: "Add excursions to the stay programme",
+      p_cta: "We will prepare a pilot-stay proposal with excursions selected for the season and residents' mobility.",
       cta: "Request an offer", foot1: "Adria Care Residence · Budva, Montenegro",
-      foot_symbol: "Illustrative images"
+      foot_symbol: "Images for illustrative purposes"
     },
     fr: {
-      banner: "Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →",
+      banner: "Ouverture en 2027. Nous acceptons déjà les préinscriptions et concluons des avant-contrats →",
       back: "← Monténégro",
+      img_hero: "Le panorama sans longue marche", img_feature: "La baie vue de l’eau",
       e_hero: "Programme d'excursions",
-      h1: "Un pays entier comme catalogue d'excursions — pensé pour les aînés",
-      lede: "Chaque excursion se déroule avec des guides monténégrins agréés et notre propre personnel accompagnant, en minibus climatisés et selon un standard senior fixe : 300 mètres de marche au maximum, des assises en chemin, et le retour pour la sieste ou en début de soirée.",
+      h1: "Huit itinéraires tranquilles au Monténégro",
+      lede: "Chaque excursion est conduite par un guide monténégrin agréé et accompagnée par un membre de notre équipe. Les minibus sont climatisés, les parcours à pied ne dépassent pas 300 mètres et des pauses sont prévues. Le groupe rentre pour le repos de midi ou en début de soirée.",
       e_std: "Notre standard", h_std: "Quatre règles valables sur chaque excursion",
       s1: "Des guides monténégrins agréés mènent chaque visite en allemand et en anglais.",
-      s2: "Taille maximale du groupe — assez petit pour un rythme individuel et une attention personnelle.",
-      s3: "Sur chaque sortie : un accompagnant formé aux gestes médicaux, avec trousse de premiers secours.",
+      s2: "La taille des groupes permet de respecter le rythme de chacun et d’assurer un accompagnement attentif.",
+      s3: "Chaque sortie se fait avec un accompagnateur formé aux premiers secours et muni d’une trousse d’urgence.",
       s4: "Chaque itinéraire est vérifié à l'avance pour son accessibilité ; entrées et places assises sont réservées au préalable.",
       e_cat: "Le catalogue", h_cat: "Huit itinéraires à travers le Monténégro",
-      p_cat: "Le programme couvre la côte, les lacs et les montagnes et suit les saisons. Avant chaque rotation, votre établissement reçoit le plan des excursions avec dates, distances de marche et heures de retour.",
+      p_cat: "Le programme couvre la côte, les lacs et les montagnes et s’adapte aux saisons. Avant chaque séjour, votre établissement reçoit le calendrier des excursions, les distances à parcourir à pied et les horaires de retour.",
       c1t: "Demi-journée · toute l'année", c1h: "Les bouches de Kotor en bateau",
       c1p: "La baie UNESCO aux allures de fjord, vue de l'eau : Perast, l'île de pèlerinage Notre-Dame-du-Récif et la vieille ville vénitienne de Kotor. Le bateau couvert offre une place assise à chacun et accoste au pied de la promenade.",
       c2t: "Demi-journée · printemps–automne", c2h: "Lac de Skadar &amp; domaine viticole",
@@ -278,26 +286,27 @@
       c7p: "La plus grande cave à vin d'Europe, aménagée dans un ancien hangar d'avions souterrain : dégustation assise à température constante, suivie d'un court circuit panoramique dans la capitale.",
       c8t: "Journée · intersaison", c8h: "Route des oliviers Bar &amp; Ulcinj",
       c8p: "Le sud du pays : l'olivier de Bar, vieux de plus de 2 000 ans, une dégustation d'huile d'olive et les longues plages de sable près d'Ulcinj — programmé pour les mois doux de l'intersaison.",
-      e_doc: "Pour les proches", h_doc: "Documenté pour les proches",
-      p_doc: "Notre photographe maison accompagne les grandes excursions. Les images rejoignent l'album imprimé que chaque résident rapporte chez lui à la fin de la rotation — et, sur demande, les familles reçoivent chaque semaine une sélection de photos par courriel.",
-      e_cta: "Prochaine étape", h_cta: "Composez ce programme pour vos résidents",
-      p_cta: "Demandez une offre pour une rotation pilote — avec un plan d'excursions adapté à la saison et au profil de mobilité de vos résidents.",
+      e_doc: "Pour les proches", h_doc: "Des photos pour les familles",
+      p_doc: "Notre photographe accompagne les principales excursions. À la fin du séjour, chaque résident reçoit un album imprimé ; les familles peuvent également recevoir une sélection hebdomadaire de photos par courriel.",
+      e_cta: "Prochaine étape", h_cta: "Ajoutez des excursions au programme du séjour",
+      p_cta: "Nous préparerons une proposition de séjour pilote avec des excursions adaptées à la saison et à la mobilité des résidents.",
       cta: "Demander une offre", foot1: "Adria Care Résidence · Budva, Monténégro",
-      foot_symbol: "Images d'illustration"
+      foot_symbol: "Images présentées à titre d’illustration"
     },
     es: {
-      banner: "Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →",
+      banner: "Apertura en 2027. Ya aceptamos preinscripciones y formalizamos precontratos →",
       back: "← Montenegro",
+      img_hero: "Panorama sin largas caminatas", img_feature: "La bahía desde el agua",
       e_hero: "Programa de excursiones",
-      h1: "Un país entero como catálogo de excursiones — pensado para mayores",
-      lede: "Todas las excursiones se realizan con guías montenegrinos autorizados y nuestro propio personal acompañante, en microbuses climatizados y con un estándar sénior fijo: máximo 300 metros a pie, asientos en el camino y regreso a tiempo para la siesta o a primera hora de la tarde.",
+      h1: "Ocho rutas tranquilas por Montenegro",
+      lede: "Cada excursión cuenta con un guía montenegrino autorizado y un miembro de nuestro equipo. Los microbuses están climatizados, los tramos a pie no superan los 300 metros y se programan descansos. El grupo regresa para el descanso del mediodía o a primera hora de la tarde.",
       e_std: "Nuestro estándar", h_std: "Cuatro reglas que rigen en cada excursión",
       s1: "Guías montenegrinos autorizados dirigen cada visita en alemán e inglés.",
-      s2: "Tamaño máximo del grupo — lo bastante pequeño para un ritmo individual y una atención personal.",
-      s3: "En cada salida: un acompañante con formación médica y botiquín de primeros auxilios.",
+      s2: "El tamaño de los grupos permite respetar el ritmo de cada persona y ofrecer una atención cercana.",
+      s3: "En cada salida participa un acompañante formado en primeros auxilios y provisto de un botiquín.",
       s4: "Cada ruta se comprueba de antemano en cuanto a accesibilidad; entradas y asientos se reservan con antelación.",
       e_cat: "El catálogo", h_cat: "Ocho rutas por Montenegro",
-      p_cat: "El programa abarca costa, lagos y montañas y sigue las estaciones. Antes de cada turno, su centro recibe el plan de excursiones con fechas, distancias a pie y horas de regreso.",
+      p_cat: "El programa abarca la costa, los lagos y las montañas y se adapta a cada estación. Antes de cada estancia, su centro recibe el calendario de excursiones, las distancias a pie y las horas de regreso.",
       c1t: "Media jornada · todo el año", c1h: "La bahía de Kotor en barco",
       c1p: "La bahía UNESCO con aire de fiordo, vista desde el agua: Perast, la isla de peregrinación de Nuestra Señora de las Rocas y el casco veneciano de Kotor. El barco cubierto tiene asiento para todos y atraca junto al paseo.",
       c2t: "Media jornada · primavera–otoño", c2h: "Lago Skadar y bodega",
@@ -314,26 +323,27 @@
       c7p: "La bodega más grande de Europa, instalada en un antiguo hangar subterráneo de aviones: cata sentados a temperatura constante, más un breve recorrido panorámico por la capital.",
       c8t: "Jornada completa · entretiempo", c8h: "Ruta del olivo Bar y Ulcinj",
       c8p: "El sur del país: el olivo de Bar, de más de 2.000 años, una cata de aceite de oliva y las largas playas de arena cerca de Ulcinj — planificado para los meses templados del entretiempo.",
-      e_doc: "Para las familias", h_doc: "Documentado para las familias",
-      p_doc: "Nuestro fotógrafo de la casa acompaña las excursiones mayores. Las imágenes pasan al álbum impreso que cada residente se lleva a casa al final del turno — y, si lo desean, las familias reciben cada semana una selección de fotos por correo electrónico.",
-      e_cta: "Siguiente paso", h_cta: "Componga este programa para sus residentes",
-      p_cta: "Solicite una oferta para un turno piloto — con un plan de excursiones acorde a la temporada y al perfil de movilidad de sus residentes.",
+      e_doc: "Para las familias", h_doc: "Fotos para las familias",
+      p_doc: "Nuestro fotógrafo acompaña las excursiones principales. Al final de la estancia, cada residente recibe un álbum impreso; las familias también pueden recibir una selección semanal de fotos por correo electrónico.",
+      e_cta: "Siguiente paso", h_cta: "Añada excursiones al programa de la estancia",
+      p_cta: "Prepararemos una propuesta de estancia piloto con excursiones adaptadas a la temporada y a la movilidad de los residentes.",
       cta: "Solicitar oferta", foot1: "Adria Care Residencia · Budva, Montenegro",
-      foot_symbol: "Imágenes ilustrativas"
+      foot_symbol: "Imágenes con fines ilustrativos"
     },
     sr: {
-      banner: "Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →",
+      banner: "Otvaranje 2027. godine. Već primamo prethodne prijave i zaključujemo predugovore →",
       back: "← Crna Gora",
+      img_hero: "Panorama bez dugog hodanja", img_feature: "Zaliv sa vode",
       e_hero: "Program izleta",
-      h1: "Cela zemlja kao katalog izleta — birano za starije",
-      lede: "Svi izleti se odvijaju sa licenciranim crnogorskim vodičima i našim sopstvenim pratećim osobljem, u klimatizovanim minibusima i po utvrđenom seniorskom standardu: najviše 300 metara hoda, mesta za sedenje usput i povratak do podnevnog odmora ili do ranog večera.",
+      h1: "Osam mirnih ruta kroz Crnu Goru",
+      lede: "Svaki izlet vodi licencirani crnogorski vodič, uz pratnju člana našeg tima. Minibusi su klimatizovani, pešačke deonice nisu duže od 300 metara, a pauze su unapred planirane. Grupa se vraća do podnevnog odmora ili u ranim večernjim satima.",
       e_std: "Naš standard", h_std: "Četiri pravila koja važe na svakom izletu",
       s1: "Licencirani crnogorski vodiči vode svaku turu na nemačkom i engleskom jeziku.",
-      s2: "Najveća dozvoljena grupa — dovoljno mala za individualni tempo i ličnu pažnju.",
-      s3: "Na svakoj vožnji: medicinski obučen pratilac sa kompletom prve pomoći.",
+      s2: "Veličina grupe omogućava da se poštuje tempo svakog korisnika i pruži pažljiva pratnja.",
+      s3: "Na svakom izletu učestvuje pratilac obučen za pružanje prve pomoći, sa kompletom za hitne slučajeve.",
       s4: "Svaka ruta se unapred proverava na pristupačnost; ulaznice i sedišta rezervišu se unapred.",
       e_cat: "Katalog", h_cat: "Osam ruta kroz Crnu Goru",
-      p_cat: "Program obuhvata obalu, jezera i planine i prati sezonu. Pre svakog turnusa vaša ustanova dobija plan izleta sa terminima, dužinama hoda i vremenima povratka.",
+      p_cat: "Program obuhvata obalu, jezera i planine i prilagođava se godišnjem dobu. Pre svakog boravka vaša ustanova dobija raspored izleta, dužine pešačkih deonica i vremena povratka.",
       c1t: "Poludnevni · cele godine", c1h: "Boka Kotorska brodom",
       c1p: "Fjordovski UNESCO zaliv sa vode: Perast, ostrvo Gospa od Škrpjela i venecijanski stari grad Kotor. Natkriveni brod ima sedište za svakoga i pristaje uz samo šetalište.",
       c2t: "Poludnevni · proleće–jesen", c2h: "Skadarsko jezero i vinarija",
@@ -350,48 +360,49 @@
       c7p: "Najveći vinski podrum Evrope, uređen u nekadašnjem podzemnom avionskom hangaru: degustacija u sedećem položaju na stalnoj temperaturi, uz kratku panoramsku vožnju kroz glavni grad.",
       c8t: "Celodnevni · prelazni period", c8h: "Put masline Bar i Ulcinj",
       c8p: "Jug zemlje: barska maslina starija od 2.000 godina, degustacija maslinovog ulja i duge peščane plaže kod Ulcinja — planirano za blage mesece prelaznog perioda.",
-      e_doc: "Za porodice", h_doc: "Dokumentovano za porodice",
-      p_doc: "Naš kućni fotograf prati veće izlete. Fotografije ulaze u štampani album koji svaki korisnik nosi kući na kraju turnusa — a porodice, po želji, jednom nedeljno dobijaju izbor fotografija e-poštom.",
-      e_cta: "Sledeći korak", h_cta: "Sastavite ovaj program za svoje korisnike",
-      p_cta: "Zatražite ponudu za pilot-turnus — sa planom izleta koji odgovara sezoni i profilu pokretljivosti vaših korisnika.",
+      e_doc: "Za porodice", h_doc: "Fotografije za porodice",
+      p_doc: "Naš fotograf prati glavne izlete. Na kraju boravka svaki korisnik dobija štampani album, a porodice po želji mogu da dobijaju nedeljni izbor fotografija e-poštom.",
+      e_cta: "Sledeći korak", h_cta: "Uvrstite izlete u program boravka",
+      p_cta: "Pripremićemo predlog pilot-boravka sa izletima prilagođenim godišnjem dobu i pokretljivosti korisnika.",
       cta: "Zatražite ponudu", foot1: "Adria Care Rezidencija · Budva, Crna Gora",
-      foot_symbol: "Ilustrativne fotografije"
+      foot_symbol: "Fotografije služe kao ilustracija"
     },
     ru: {
-      banner: "Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →",
+      banner: "Открытие — в 2027 году. Уже принимаем заявки и заключаем предварительные договоры →",
       back: "← Черногория",
+      img_hero: "Панорама без долгого подъёма", img_feature: "Бухта с воды",
       e_hero: "Экскурсионная программа",
-      h1: "Целая страна как каталог экскурсий — подобрано для старшего возраста",
-      lede: "Все экскурсии проходят с лицензированными черногорскими гидами и нашим собственным сопровождающим персоналом, в кондиционированных микроавтобусах и по единому сеньор-стандарту: не более 300 метров пешком, сидячие места по пути, возвращение к дневному отдыху или к раннему вечеру.",
+      h1: "Черногория: восемь маршрутов для спокойных поездок",
+      lede: "Экскурсии ведут лицензированные черногорские гиды, а группу сопровождает наш сотрудник. Микроавтобусы оборудованы кондиционерами, пешие участки не превышают 300 метров, по пути предусмотрены места для отдыха. Возвращаемся к дневному отдыху или ранним вечером.",
       e_std: "Наш стандарт", h_std: "Четыре правила, действующие на каждой экскурсии",
       s1: "Лицензированные черногорские гиды ведут каждую экскурсию на немецком и английском языках.",
-      s2: "Максимальный размер группы — достаточно небольшой для индивидуального темпа и личного внимания.",
-      s3: "В каждой поездке — медицински обученный сопровождающий с аптечкой первой помощи.",
+      s2: "Размер группы ограничен, чтобы учитывать темп каждого участника и уделять ему достаточно внимания.",
+      s3: "В каждой поездке группу сопровождает сотрудник, прошедший подготовку по первой помощи; у него всегда есть аптечка.",
       s4: "Каждый маршрут заранее проверяется на доступность; билеты и сидячие места бронируются заблаговременно.",
       e_cat: "Каталог", h_cat: "Восемь маршрутов по Черногории",
-      p_cat: "Программа охватывает побережье, озёра и горы и следует за сезоном. Перед каждым заездом ваше учреждение получает план экскурсий с датами, пешими дистанциями и временем возвращения.",
+      p_cat: "В программе есть поездки на побережье, к озёрам и в горы. Маршруты выбираем по сезону. До начала заезда учреждение получает расписание с датами, длиной пеших участков и временем возвращения.",
       c1t: "Полдня · круглый год", c1h: "Бока-Которская бухта на кораблике",
-      c1p: "Фьордовая бухта из списка ЮНЕСКО — с воды: Пераст, остров-святыня Госпа-од-Шкрпела и венецианский старый город Котор. У крытого кораблика есть место для каждого, швартуется он прямо у набережной.",
+      c1p: "Маршрут по бухте из списка ЮНЕСКО проходит мимо Пераста и острова Госпа-од-Шкрпела, а затем ведёт в старый город Котора. На крытом кораблике всем хватает сидячих мест; он швартуется прямо у набережной.",
       c2t: "Полдня · весна–осень", c2h: "Скадарское озеро и винодельня",
-      c2p: "Тихая прогулка на лодке по крупнейшему озеру Балкан, между полями кувшинок и монастырскими островами. Затем дегустация вина и мёда на семейной усадьбе — всё на одном уровне, в тени и сидя.",
+      c2p: "Спокойная прогулка на лодке по крупнейшему озеру Балкан проходит среди кувшинок и монастырских островов. После неё — дегустация вина и мёда на семейной усадьбе; маршрут без ступеней, места находятся в тени.",
       c3t: "Полдня · круглый год", c3h: "Цетине и наследие Негоша",
       c3p: "Старая королевская столица с монастырём, дворцом и музеями — культурное сердце страны. Автобус останавливается прямо у входов; музеи компактны и почти без ступеней.",
       c4t: "Полдня · май–окт.", c4h: "Панорамная дорога Ловчена",
-      c4p: "Знаменитый серпантин над Бока-Которской бухтой: горный воздух и широкие виды без всяких походов. Автобус поднимается к самым смотровым площадкам; в жаркие летние дни это ещё и желанная прохлада.",
+      c4p: "По серпантину над Бока-Которской бухтой автобус поднимается прямо к смотровым площадкам. Долгий поход не нужен, а летом в горах заметно прохладнее, чем на побережье.",
       c5t: "Целый день · июнь–сент.", c5h: "Дурмитор и Чёрное озеро",
-      c5p: "Национальный парк на севере с Чёрным озером на высоте 1 400 метров: ровная прибрежная тропа со скамейками и обед в горной гостинице. Долгая дорога спланирована с остановками — кульминация лета.",
+      c5p: "Чёрное озеро расположено в национальном парке на высоте 1 400 метров. В программе — ровная тропа со скамейками и обед в горной гостинице. Дорога длинная, поэтому предусматриваем несколько остановок.",
       c6t: "Целый день · круглый год", c6h: "Монастырь Острог",
       c6p: "Встроенный в скалу монастырь — одно из главных мест паломничества на Балканах. Шатл довозит группу до самого верхнего монастыря. Для верующих резидентов — часть нашей <a href='pilgrimage.html'>паломнической программы</a>.",
       c7t: "Полдня · круглый год", c7h: "Винный погреб Шипчаник и Подгорица",
-      c7p: "Крупнейший винный погреб Европы, устроенный в бывшем подземном авиационном ангаре: дегустация сидя при постоянной температуре, плюс короткая панорамная поездка по столице.",
+      c7p: "Винный погреб расположен в бывшем подземном авиационном ангаре. Дегустация проходит за столом при постоянной температуре; затем следует короткая обзорная поездка по столице.",
       c8t: "Целый день · межсезонье", c8h: "Оливковый путь: Бар и Улцинь",
-      c8p: "Юг страны: олива из Бара возрастом более 2 000 лет, дегустация оливкового масла и длинные песчаные пляжи под Улцинем — запланировано на мягкие месяцы межсезонья.",
-      e_doc: "Для близких", h_doc: "Задокументировано для близких",
-      p_doc: "Наш штатный фотограф сопровождает крупные экскурсии. Снимки попадают в печатный альбом, который каждый резидент увозит домой в конце заезда, — а близкие по желанию еженедельно получают подборку фотографий по электронной почте.",
-      e_cta: "Следующий шаг", h_cta: "Соберите эту программу для своих резидентов",
-      p_cta: "Запросите предложение для пилотного заезда — с планом экскурсий, подобранным под сезон и профиль мобильности ваших резидентов.",
+      c8p: "На юге страны увидим оливу возрастом более 2 000 лет, попробуем местное оливковое масло и побываем на длинных песчаных пляжах близ Улциня. Поездка проходит в мягкие месяцы межсезонья.",
+      e_doc: "Для близких", h_doc: "Фотографии для семей",
+      p_doc: "Наш фотограф сопровождает основные экскурсии. В конце заезда каждый резидент получает печатный альбом, а его близкие при желании раз в неделю получают подборку снимков по электронной почте.",
+      e_cta: "Следующий шаг", h_cta: "Добавьте экскурсии в программу заезда",
+      p_cta: "Мы подготовим предложение для пилотного заезда и подберём экскурсии по сезону и уровню подвижности резидентов.",
       cta: "Запросить предложение", foot1: "Adria Care Residenz · Будва, Черногория",
-      foot_symbol: "Иллюстративные изображения"
+      foot_symbol: "Изображения для иллюстрации"
     }
   };
 
