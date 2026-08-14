@@ -105,5 +105,5 @@ Pflegegrade 1–3, Reisefähigkeit nach Einschätzung des behandelnden Arztes. N
 Senden Sie uns Gruppengröße, Pflegegrade und Ihr Wunschzeitfenster — Sie erhalten innerhalb von fünf Werktagen eine verbindliche Kalkulation und einen Terminvorschlag für ein Erstgespräch.
 
 **Adria Care Residenz** · Budva, Montenegro
-kontakt@adriacare.me · adriacare.me
+partners@adriacare.me · adriacare.me
 Ansprechpartner: [Name, Telefon]
