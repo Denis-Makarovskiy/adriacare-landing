@@ -146,14 +146,32 @@
   .btn-quiet { background: transparent; color: var(--sea); }
   .btn-quiet:hover { background: transparent; color: var(--sea-deep); }
 
-  img.photo {
-    display: block; width: 100%; height: auto; object-fit: cover;
+  img.photo { display: block; width: 100%; height: 100%; object-fit: cover; }
+  figure.deco {
+    position: relative; overflow: hidden; margin: 0;
     border: 1px solid var(--line); background: var(--ph-a);
   }
+  figure.deco img.photo {
+    filter: blur(2.5px) saturate(0.82) brightness(0.9);
+    transform: scale(1.06);
+  }
+  figure.deco::after {
+    content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg, rgba(11,30,39,0.10) 35%, rgba(11,30,39,0.52));
+  }
+  figure.deco figcaption {
+    position: absolute; inset: 0; z-index: 2;
+    display: grid; place-items: center; padding: 16px; text-align: center;
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: clamp(19px, 2.2vw, 27px); font-weight: 600; letter-spacing: 0.02em;
+    color: #f6f9fa; text-shadow: 0 2px 18px rgba(0,0,0,0.55);
+  }
   .gallery { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 14px; padding-bottom: 68px; }
-  .gallery .photo { aspect-ratio: 4 / 3; }
-  .gallery .photo:first-child { aspect-ratio: 16 / 9; }
-  @media (max-width: 780px) { .gallery { grid-template-columns: 1fr; } }
+  .gallery figure.deco { height: clamp(180px, 21vw, 260px); }
+  @media (max-width: 780px) {
+    .gallery { grid-template-columns: 1fr; }
+    .gallery figure.deco { height: 210px; }
+  }
   .ph-wide { aspect-ratio: 3 / 1; margin-top: 44px; }
   @media (max-width: 780px) { .ph-wide { aspect-ratio: 16/9; } }
 
@@ -220,14 +238,15 @@
 
   .contact {
     background: var(--sea-deep); color: var(--on-sea); border-top: none;
-    display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px 72px; align-items: start;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px 64px; align-items: start;
+    padding: 64px 56px;
   }
   .contact .eyebrow { color: var(--gold); }
   .contact h2 { color: var(--on-sea); }
   .contact .prose p { color: #c3d3d9; }
   form { margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px; }
   @media (max-width: 900px) {
-    .contact { grid-template-columns: 1fr; gap: 8px; }
+    .contact { grid-template-columns: 1fr; gap: 8px; padding: 48px 28px; }
     form { margin-top: 26px; }
   }
   @media (max-width: 680px) { form { grid-template-columns: 1fr; } }
@@ -295,9 +314,18 @@
   </div>
 
   <div class="gallery">
-    <img class="photo" src="img/hero-terrace.webp" loading="lazy" width="2048" height="1152" alt="Drei ältere Bewohner frühstücken mit einer Betreuungskraft auf einer Terrasse mit Blick auf Budva und die Adria.">
-    <img class="photo" src="img/care-walk.webp" loading="lazy" width="2048" height="1536" alt="Eine Betreuungskraft begleitet eine ältere Bewohnerin bei einem Spaziergang an der winterlichen Uferpromenade von Budva.">
-    <img class="photo" src="img/room.webp" loading="lazy" width="2048" height="1536" alt="Helles barrierefreies Zimmer mit Holzbett, Handlauf, Sessel und Blick auf die Adria.">
+    <figure class="deco">
+      <img class="photo" src="img/hero-terrace.webp" loading="lazy" width="2048" height="1152" alt="Drei ältere Bewohner frühstücken mit einer Betreuungskraft auf einer Terrasse mit Blick auf Budva und die Adria.">
+      <figcaption data-i18n="img1">Frühstück über der Adria</figcaption>
+    </figure>
+    <figure class="deco">
+      <img class="photo" src="img/care-walk.webp" loading="lazy" width="2048" height="1536" alt="Eine Betreuungskraft begleitet eine ältere Bewohnerin bei einem Spaziergang an der winterlichen Uferpromenade von Budva.">
+      <figcaption data-i18n="img2">Begleitet unterwegs</figcaption>
+    </figure>
+    <figure class="deco">
+      <img class="photo" src="img/room.webp" loading="lazy" width="2048" height="1536" alt="Helles barrierefreies Zimmer mit Holzbett, Handlauf, Sessel und Blick auf die Adria.">
+      <figcaption data-i18n="img3">Wohnen mit Meerblick</figcaption>
+    </figure>
   </div>
 
   <section>
@@ -363,7 +391,10 @@
         <p data-i18n="c4p">Auslandskranken- und Rücktransportversicherung für jeden Bewohner ist im Programmpreis enthalten. Der medizinische Rücktransport ist vertraglich zugesichert.</p>
       </div>
     </div>
-    <img class="photo ph-wide" src="img/medical.webp" loading="lazy" width="2172" height="724" alt="Ein Arzt spricht mit einem älteren Bewohner; eine Pflegefachkraft steht mit einem Tablet daneben.">
+    <figure class="deco ph-wide">
+      <img class="photo" src="img/medical.webp" loading="lazy" width="2172" height="724" alt="Ein Arzt spricht mit einem älteren Bewohner; eine Pflegefachkraft steht mit einem Tablet daneben.">
+      <figcaption data-i18n="img4">Medizin im Haus</figcaption>
+    </figure>
   </section>
 
   <section>
@@ -424,7 +455,10 @@
         <p data-i18n="p3">Wenn Hitzewellen Ihre Region belasten: klimatisierte Residenz, Morgenprogramm am Wasser, Rückzug in die kühleren Lagen des Hinterlands.</p>
       </div>
     </div>
-    <img class="photo ph-wide" src="img/activity.webp" loading="lazy" width="2172" height="724" alt="Ältere Bewohner machen mit einer Trainerin leichte Gymnastik auf einer Terrasse am Meer im winterlichen Budva.">
+    <figure class="deco ph-wide">
+      <img class="photo" src="img/activity.webp" loading="lazy" width="2172" height="724" alt="Ältere Bewohner machen mit einer Trainerin leichte Gymnastik auf einer Terrasse am Meer im winterlichen Budva.">
+      <figcaption data-i18n="img5">Winter in Bewegung</figcaption>
+    </figure>
   </section>
 
   <section>
@@ -525,7 +559,7 @@
   <footer class="site">
     <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
     <span data-i18n="foot_symbol">Symbolbilder</span>
-    <span>partners@adriacare.me · Impressum · Datenschutz</span>
+    <span>parthners@adriacare.me · Impressum · Datenschutz</span>
   </footer>
 </div>
 
@@ -534,6 +568,7 @@
     de: null, /* German lives in the markup as the source of truth */
     en: {
       banner: "Opening in 2027 · We are taking preliminary applications and signing pre-agreements →",
+      img1: "Breakfast above the Adriatic", img2: "Out for a walk, accompanied", img3: "Living with a sea view", img4: "Medicine in the house", img5: "Winter in motion",
       tag: "Budva Riviera · Montenegro",
       e_hero: "For operators and directors of residential care homes",
       h1: "Your residents winter on the Adriatic. Your standard of care travels with them.",
@@ -630,6 +665,7 @@
     },
     fr: {
       banner: "Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →",
+      img1: "Petit déjeuner face à l'Adriatique", img2: "En promenade, accompagné", img3: "Vivre face à la mer", img4: "La médecine dans la maison", img5: "L'hiver en mouvement",
       tag: "Budva · Monténégro",
       e_hero: "Pour les gestionnaires et directions d'EHPAD et de résidences médicalisées",
       h1: "Vos résidents passent l'hiver sur l'Adriatique. Votre standard de soins voyage avec eux.",
@@ -726,6 +762,7 @@
     },
     es: {
       banner: "Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →",
+      img1: "Desayuno sobre el Adriático", img2: "De paseo, con compañía", img3: "Vivir con vistas al mar", img4: "Medicina en casa", img5: "Invierno en movimiento",
       tag: "Budva · Montenegro",
       e_hero: "Para gestores y direcciones de residencias de mayores",
       h1: "Sus residentes invernan en el Adriático. Su estándar de cuidados viaja con ellos.",
@@ -822,6 +859,7 @@
     },
     sr: {
       banner: "Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →",
+      img1: "Doručak iznad Jadrana", img2: "U šetnji, uz pratnju", img3: "Stanovanje s pogledom na more", img4: "Medicina u kući", img5: "Zima u pokretu",
       tag: "Budva · Crna Gora",
       e_hero: "Za osnivače i direktore ustanova za smeštaj starijih",
       h1: "Vaši korisnici zimuju na Jadranu. Vaš standard nege putuje sa njima.",
@@ -918,6 +956,7 @@
     },
     ru: {
       banner: "Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →",
+      img1: "Завтрак над Адриатикой", img2: "На прогулке с сопровождением", img3: "Жизнь с видом на море", img4: "Медицина в доме", img5: "Зима в движении",
       tag: "Будва · Черногория",
       e_hero: "Для учредителей и директоров стационарных учреждений ухода",
       h1: "Ваши резиденты зимуют на Адриатике. Ваш стандарт ухода едет с ними.",
@@ -1055,7 +1094,7 @@
       '\nGruppe / Group: ' + d.get('size') +
       '\nSaison / Season: ' + d.get('season') +
       '\nAnmerkungen / Notes: ' + (d.get('msg') || '—');
-    location.href = 'mailto:partners@adriacare.me?subject=' +
+    location.href = 'mailto:parthners@adriacare.me?subject=' +
       encodeURIComponent('Angebotsanfrage / Offer request — ' + d.get('org')) +
       '&body=' + encodeURIComponent(body);
   });
