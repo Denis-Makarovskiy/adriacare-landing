@@ -146,28 +146,15 @@
   .btn-quiet { background: transparent; color: var(--sea); }
   .btn-quiet:hover { background: transparent; color: var(--sea-deep); }
 
-  /* Photo placeholders */
-  figure.ph {
-    margin: 0; position: relative; overflow: hidden;
-    background:
-      radial-gradient(120% 90% at 15% 0%, var(--ph-a) 0%, transparent 60%),
-      linear-gradient(160deg, var(--ph-b) 0%, var(--ph-a) 55%, var(--ph-b) 100%);
-    border: 1px solid var(--line);
-    display: grid; place-items: center;
-  }
-  figure.ph figcaption {
-    text-align: center; padding: 18px; color: var(--ink-soft);
-    font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
-    max-width: 30ch;
-  }
-  figure.ph figcaption::before {
-    content: "◻"; display: block; font-size: 26px; margin-bottom: 8px; color: var(--sea);
+  img.photo {
+    display: block; width: 100%; height: auto; object-fit: cover;
+    border: 1px solid var(--line); background: var(--ph-a);
   }
   .gallery { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 14px; padding-bottom: 68px; }
-  .gallery .ph { aspect-ratio: 4 / 3; }
-  .gallery .ph:first-child { aspect-ratio: auto; }
-  @media (max-width: 780px) { .gallery { grid-template-columns: 1fr; } .gallery .ph:first-child { aspect-ratio: 16/9; } }
-  .ph-wide { aspect-ratio: 21 / 7; margin-top: 44px; }
+  .gallery .photo { aspect-ratio: 4 / 3; }
+  .gallery .photo:first-child { aspect-ratio: 16 / 9; }
+  @media (max-width: 780px) { .gallery { grid-template-columns: 1fr; } }
+  .ph-wide { aspect-ratio: 3 / 1; margin-top: 44px; }
   @media (max-width: 780px) { .ph-wide { aspect-ratio: 16/9; } }
 
   section { padding: 68px 0; border-top: 1px solid var(--line); }
@@ -308,9 +295,9 @@
   </div>
 
   <div class="gallery">
-    <figure class="ph"><figcaption>Photo 1 · Terrace of the residence at golden hour, residents at breakfast, Budva Riviera behind</figcaption></figure>
-    <figure class="ph"><figcaption>Photo 2 · Caregiver walking arm-in-arm with a resident along the waterfront</figcaption></figure>
-    <figure class="ph"><figcaption>Photo 3 · Bright barrier-free room, sea light through the window</figcaption></figure>
+    <img class="photo" src="img/hero-terrace.webp" loading="lazy" width="2048" height="1152" alt="Drei ältere Bewohner frühstücken mit einer Betreuungskraft auf einer Terrasse mit Blick auf Budva und die Adria.">
+    <img class="photo" src="img/care-walk.webp" loading="lazy" width="2048" height="1536" alt="Eine Betreuungskraft begleitet eine ältere Bewohnerin bei einem Spaziergang an der winterlichen Uferpromenade von Budva.">
+    <img class="photo" src="img/room.webp" loading="lazy" width="2048" height="1536" alt="Helles barrierefreies Zimmer mit Holzbett, Handlauf, Sessel und Blick auf die Adria.">
   </div>
 
   <section>
@@ -376,7 +363,7 @@
         <p data-i18n="c4p">Auslandskranken- und Rücktransportversicherung für jeden Bewohner ist im Programmpreis enthalten. Der medizinische Rücktransport ist vertraglich zugesichert.</p>
       </div>
     </div>
-    <figure class="ph ph-wide"><figcaption>Photo 4 · Nurse station / doctor's visit in the residence — clinical credibility shot</figcaption></figure>
+    <img class="photo ph-wide" src="img/medical.webp" loading="lazy" width="2172" height="724" alt="Ein Arzt spricht mit einem älteren Bewohner; eine Pflegefachkraft steht mit einem Tablet daneben.">
   </section>
 
   <section>
@@ -437,7 +424,7 @@
         <p data-i18n="p3">Wenn Hitzewellen Ihre Region belasten: klimatisierte Residenz, Morgenprogramm am Wasser, Rückzug in die kühleren Lagen des Hinterlands.</p>
       </div>
     </div>
-    <figure class="ph ph-wide"><figcaption>Photo 5 · Group activity outdoors — light gymnastics or coffee on the promenade, winter sun</figcaption></figure>
+    <img class="photo ph-wide" src="img/activity.webp" loading="lazy" width="2172" height="724" alt="Ältere Bewohner machen mit einer Trainerin leichte Gymnastik auf einer Terrasse am Meer im winterlichen Budva.">
   </section>
 
   <section>
@@ -537,6 +524,7 @@
 
   <footer class="site">
     <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
+    <span data-i18n="foot_symbol">Symbolbilder</span>
     <span>partners@adriacare.me · Impressum · Datenschutz</span>
   </footer>
 </div>
@@ -637,7 +625,8 @@
       l_msg: "Notes (optional)", ph_msg: "Care levels, time window, special requirements …",
       fnote: "No obligation. Your details are used solely to prepare the offer.",
       btn: "Request offer",
-      foot1: "Adria Care Residence · Budva Riviera, Montenegro"
+      foot1: "Adria Care Residence · Budva Riviera, Montenegro",
+      foot_symbol: "Illustrative images"
     },
     fr: {
       banner: "Ouverture en 2027 · Nous prenons les pré-inscriptions et signons des avant-contrats →",
@@ -732,7 +721,8 @@
       l_msg: "Remarques (facultatif)", ph_msg: "Niveaux de dépendance, créneau, exigences particulières …",
       fnote: "Sans engagement. Vos données servent uniquement à établir l'offre.",
       btn: "Demander l'offre",
-      foot1: "Adria Care Résidence · Budva, Monténégro"
+      foot1: "Adria Care Résidence · Budva, Monténégro",
+      foot_symbol: "Images d’illustration"
     },
     es: {
       banner: "Apertura en 2027 · Aceptamos solicitudes previas y firmamos precontratos →",
@@ -827,7 +817,8 @@
       l_msg: "Observaciones (opcional)", ph_msg: "Grados de dependencia, fechas, requisitos especiales …",
       fnote: "Sin compromiso. Sus datos se usan únicamente para elaborar la oferta.",
       btn: "Solicitar oferta",
-      foot1: "Adria Care Residencia · Budva, Montenegro"
+      foot1: "Adria Care Residencia · Budva, Montenegro",
+      foot_symbol: "Imágenes ilustrativas"
     },
     sr: {
       banner: "Otvaranje 2027. · Primamo prethodne prijave i zaključujemo predugovore →",
@@ -922,7 +913,8 @@
       l_msg: "Napomene (opciono)", ph_msg: "Stepeni nege, termin, posebni zahtevi …",
       fnote: "Neobavezujuće. Vaše podatke koristimo isključivo za izradu ponude.",
       btn: "Zatražite ponudu",
-      foot1: "Adria Care Rezidencija · Budva, Crna Gora"
+      foot1: "Adria Care Rezidencija · Budva, Crna Gora",
+      foot_symbol: "Ilustrativne fotografije"
     },
     ru: {
       banner: "Открытие в 2027 году · Принимаем предварительные заявки и заключаем предварительные договоры →",
@@ -1017,7 +1009,8 @@
       l_msg: "Комментарий (необязательно)", ph_msg: "Степени ухода, сроки, особые требования …",
       fnote: "Без обязательств. Ваши данные используются только для подготовки предложения.",
       btn: "Запросить предложение",
-      foot1: "Adria Care Residenz · Будва, Черногория"
+      foot1: "Adria Care Residenz · Будва, Черногория",
+      foot_symbol: "Иллюстративные изображения"
     }
   };
 
