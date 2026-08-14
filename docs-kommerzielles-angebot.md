@@ -25,12 +25,13 @@ Adria Care Residenz nimmt Bewohnergruppen Ihrer Einrichtung für saisonale Aufen
 ### Im Programmpreis enthalten
 
 - Unterbringung im Einzel- oder Doppelzimmer, barrierefrei, klimatisiert, Meerblick-Option
-- Grund- und Behandlungspflege nach übergebener Pflegeplanung (Pflegegrade 1–3)
+- Grund- und Behandlungspflege nach übergebener Pflegeplanung (Pflegegrade 1–2)
 - Deutschsprachige Pflegedienst- und Schichtleitung; mehrsprachiges Team (Deutsch, Englisch, Französisch, Spanisch, Serbisch, Russisch), Dokumentation in der Sprache Ihres Hauses
 - Vollverpflegung inkl. Diät- und Schonkost
 - Wöchentliche hausärztliche Visite in der Residenz
 - Klimaprogramm: tägliche betreute Aktivierung, Bewegung im Freien, Ausflüge in Budva und Umgebung
 - Wöchentlicher Pflegebericht an Ihre Pflegedienstleitung, auf Wunsch an Angehörige
+- Professioneller Fotograf im Haus: Jeder Bewohner erhält zum Abschied ein gedrucktes Fotoalbum mit der Geschichte seines Aufenthalts — ein Erinnerungsstück, das Angehörige sehen und weiterempfehlen
 - Auslandskranken- und Rücktransportversicherung für jeden Bewohner
 - Kostenfreie Mitunterbringung einer Begleitkraft Ihres Hauses (1 Kraft je 6–10 Bewohner)
 
@@ -56,7 +57,6 @@ Der Index wird auf den für Ihr Haus geltenden Vollkostensatz je Pflegegrad ange
 |---|---|---|
 | Pflegegrad 1 | ab 390 € | ab 705 € |
 | Pflegegrad 2 | ab 485 € | ab 875 € |
-| Pflegegrad 3 | ab 580 € | ab 1.040 € |
 
 **Saisonunabhängige Positionen:**
 
@@ -83,7 +83,7 @@ Der Index wird auf den für Ihr Haus geltenden Vollkostensatz je Pflegegrad ange
 
 ## 6. Aufnahmekriterien
 
-Pflegegrade 1–3, Reisefähigkeit nach Einschätzung des behandelnden Arztes. Nicht aufgenommen werden derzeit Bewohner mit schwerer Demenz oder intensivpflichtiger Versorgung.
+Pflegegrade 1–2, Reisefähigkeit nach Einschätzung des behandelnden Arztes. Nicht aufgenommen werden derzeit Bewohner ab Pflegegrad 3, mit schwerer Demenz oder intensivpflichtiger Versorgung.
 
 ## 7. Saisonfenster 2026/27
 
@@ -107,5 +107,5 @@ Pflegegrade 1–3, Reisefähigkeit nach Einschätzung des behandelnden Arztes. N
 Senden Sie uns Gruppengröße, Pflegegrade und Ihr Wunschzeitfenster — Sie erhalten innerhalb von fünf Werktagen eine verbindliche Kalkulation und einen Terminvorschlag für ein Erstgespräch.
 
 **Adria Care Residenz** · Budva, Montenegro
-partners@adriacare.me · adriacare.me
+parthners@adriacare.me · adriacare.me
 Ansprechpartner: [Name, Telefon]
