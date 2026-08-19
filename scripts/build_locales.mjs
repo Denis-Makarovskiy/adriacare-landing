@@ -624,7 +624,7 @@ function rewriteJsonLd(html, lang, dict, file) {
     alternateName: "MK REHAB DOO",
     url: pageUrl(lang, file),
     email: "partners@adriacare.me",
-    logo: `${SITE}/img/hero-terrace.webp`,
+    logo: `${SITE}/img/mne-hero.webp`,
     description: meta.desc,
     address: {
       "@type": "PostalAddress",
