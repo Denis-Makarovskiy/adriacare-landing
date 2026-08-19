@@ -59,6 +59,10 @@ def main() -> None:
     check(DE_H1 not in en_index, "en/index.html must not keep the German h1")
     check("var I18N" not in en_index, "locale landing must not depend on an I18N swap script")
     check('<html lang="en">' in en_index, "en/index.html must set html lang=en")
+    check(
+        'class="photo hero-photo"' in read("de", "index.html"),
+        "German homepage must keep the unblurred hero-photo",
+    )
     check('"url":"https://adriacare.me/en/"' in en_index, "EN Organization JSON-LD must use the English URL")
     check("Seasonal care stays in Budva" in en_index, "EN Organization JSON-LD must be English")
     check('"inLanguage":"en"' in en_index, "EN FAQPage must set inLanguage=en")
@@ -100,6 +104,17 @@ def main() -> None:
                 f'<meta property="og:locale" content="{og}">' in html,
                 f"{lang}/{page}: og:locale {og}",
             )
+            if page == "index.html":
+                hero_idx = html.find('class="photo hero-photo"')
+                h1_idx = html.find("<h1", html.find('id="top"'))
+                check(
+                    hero_idx != -1 and "hero-terrace.webp" in html[hero_idx : hero_idx + 200],
+                    f"{lang}/{page}: unblurred hero-photo (hero-terrace.webp)",
+                )
+                check(
+                    hero_idx != -1 and h1_idx != -1 and hero_idx < h1_idx,
+                    f"{lang}/{page}: hero-photo must appear before the h1, not only as a blurred gallery tile",
+                )
 
     sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
     check('xmlns:xhtml="http://www.w3.org/1999/xhtml"' in sitemap, "sitemap xhtml namespace")

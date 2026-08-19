@@ -150,6 +150,14 @@
 
   .hero { padding: 74px 0 56px; }
   .hero h1 { font-size: clamp(34px, 5.2vw, 56px); max-width: 20ch; }
+  img.photo.hero-photo {
+    aspect-ratio: 21 / 9;
+    height: auto;
+    margin: 0 0 36px;
+    border: 1px solid var(--line);
+    background: var(--ph-a);
+  }
+  @media (max-width: 780px) { img.photo.hero-photo { aspect-ratio: 16 / 9; min-height: 180px; } }
   .hero .lede {
     margin-top: 26px; max-width: 58ch;
     font-size: 19.5px; color: var(--ink-soft);
@@ -355,6 +363,7 @@
   </header>
 
   <div class="hero" id="top">
+    <img class="photo hero-photo" src="/img/hero-terrace.webp" width="2048" height="1152" alt="Drei ältere Bewohner frühstücken mit einer Betreuungskraft auf einer Terrasse mit Blick auf Budva und die Adria.">
     <p class="eyebrow" data-i18n="e_hero">Para propietarios y direcciones de residencias asistidas</p>
     <h1 style="margin-top:14px;" data-i18n="h1">Sus residentes pasan el invierno en el Adriático con la atención de siempre.</h1>
     <p class="lede" data-i18n="lede">A partir de la apertura en 2027, Adria Care Residencia acogerá grupos de centros europeos para estancias estacionales de 4 a 12 semanas. Las conversaciones con los gestores ya son posibles; la residencia aún no está en funcionamiento. Seguimos un plan de cuidados acordado y nos comunicamos en alemán, inglés, francés, español, serbio y ruso.</p>
