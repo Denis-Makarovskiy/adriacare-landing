@@ -6,6 +6,13 @@
 <meta name="description" content="Begleitete Reisen ab Budva nach Kroatien, Bosnien-Herzegowina, Albanien und Nordmazedonien — mit kurzen Gehstrecken, Pflegebegleitung und Hilfe an der Grenze.">
 <title>Nachbarländer entdecken — Adria Care Residenz</title>
 <link rel="canonical" href="https://adriacare.me/neighbors.html">
+<link rel="alternate" hreflang="de" href="https://adriacare.me/neighbors.html">
+<link rel="alternate" hreflang="en" href="https://adriacare.me/en/neighbors.html">
+<link rel="alternate" hreflang="fr" href="https://adriacare.me/fr/neighbors.html">
+<link rel="alternate" hreflang="es" href="https://adriacare.me/es/neighbors.html">
+<link rel="alternate" hreflang="sr" href="https://adriacare.me/sr/neighbors.html">
+<link rel="alternate" hreflang="ru" href="https://adriacare.me/ru/neighbors.html">
+<link rel="alternate" hreflang="x-default" href="https://adriacare.me/neighbors.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adria Care Residenz">
 <meta property="og:title" content="Nachbarländer entdecken — Adria Care Residenz">
@@ -59,10 +66,13 @@
   .head-right { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
   .backlink { font-size: 14px; text-decoration: none; font-weight: 600; }
   .lang { display: flex; gap: 2px; border: 1px solid var(--line); }
-  .lang button { font: inherit; font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em;
-    background: transparent; color: var(--ink-soft); border: none; padding: 6px 9px; cursor: pointer; }
-  .lang button[aria-pressed="true"] { background: var(--sea); color: var(--on-sea); }
-  .lang button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  .lang a {
+    font: inherit; font-size: 12.5px; font-weight: 600; letter-spacing: 0.05em;
+    background: transparent; color: var(--ink-soft); text-decoration: none;
+    padding: 6px 9px; display: inline-block;
+  }
+  .lang a[aria-current="page"] { background: var(--sea); color: var(--on-sea); }
+  .lang a:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
   .hero { padding: 70px 0 56px; }
   .hero h1 { font-size: clamp(32px, 4.8vw, 52px); max-width: 22ch; }
   .hero .lede { margin-top: 24px; max-width: 60ch; font-size: 19px; color: var(--ink-soft); }
@@ -140,12 +150,12 @@
     <div class="head-right">
       <a class="backlink" href="montenegro.html" data-i18n="back">← Montenegro</a>
       <nav class="lang" aria-label="Sprache / Language">
-        <button type="button" data-lang="de" aria-pressed="true">DE</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
-        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
-        <button type="button" data-lang="es" aria-pressed="false">ES</button>
-        <button type="button" data-lang="sr" aria-pressed="false">SR</button>
-        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        <a href="/neighbors.html" hreflang="de" lang="de" aria-current="page">DE</a>
+        <a href="/en/neighbors.html" hreflang="en" lang="en">EN</a>
+        <a href="/fr/neighbors.html" hreflang="fr" lang="fr">FR</a>
+        <a href="/es/neighbors.html" hreflang="es" lang="es">ES</a>
+        <a href="/sr/neighbors.html" hreflang="sr" lang="sr">SR</a>
+        <a href="/ru/neighbors.html" hreflang="ru" lang="ru">RU</a>
       </nav>
     </div>
   </header>
@@ -155,7 +165,7 @@
     <h1 style="margin-top:14px;" data-i18n="h1">Vier Nachbarländer im Reiseprogramm ab Budva</h1>
     <p class="lede" data-i18n="lede">Kroatien, Bosnien und Herzegowina sowie Albanien sind von Budva gut erreichbar; Nordmazedonien eignet sich für eine kurze Mehrtagesreise. Wir organisieren den Transport von Tür zu Tür, kurze Gehstrecken und medizinische Begleitung und unterstützen die Gruppe bei den Grenzformalitäten.</p>
     <figure class="deco ph-hero">
-      <img class="photo" src="img/nb-hero.webp" loading="lazy" width="2100" height="900" alt="Dubrovniks Altstadt mit Festungsmauern und roten Dächern im morgendlichen Licht, vom Meer aus gesehen.">
+      <img class="photo" src="/img/nb-hero.webp" loading="lazy" width="2100" height="900" alt="Dubrovniks Altstadt mit Festungsmauern und roten Dächern im morgendlichen Licht, vom Meer aus gesehen.">
       <figcaption data-i18n="img_hero">Dubrovnik am Morgen</figcaption>
     </figure>
   </div>
@@ -209,7 +219,7 @@
       <div class="fact"><b data-i18n="fb4">Pflegeplan</b><span data-i18n="f4">Die Begleitkraft führt während der gesamten Reise den aktuellen Pflege- und Medikamentenplan mit.</span></div>
     </div>
     <figure class="deco ph-feature">
-      <img class="photo" src="img/nb-ohrid.webp" loading="lazy" width="2048" height="1152" alt="Älteres Paar auf einer schattigen Bank am Ohridsee mit Blick auf Sveti Naum und die Berge.">
+      <img class="photo" src="/img/nb-ohrid.webp" loading="lazy" width="2048" height="1152" alt="Älteres Paar auf einer schattigen Bank am Ohridsee mit Blick auf Sveti Naum und die Berge.">
       <figcaption data-i18n="img_feature">Ruhe am Ohridsee</figcaption>
     </figure>
   </section>
@@ -398,30 +408,6 @@
     }
   };
 
-  var DE = {};
-  document.querySelectorAll('[data-i18n]').forEach(function (el) { DE[el.getAttribute('data-i18n')] = el.innerHTML; });
-  I18N.de = DE;
-
-  function setLang(lang) {
-    var dict = I18N[lang] || I18N.de;
-    document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      var v = dict[el.getAttribute('data-i18n')];
-      if (v != null) el.innerHTML = v;
-    });
-    document.documentElement.setAttribute('lang', lang);
-    document.querySelectorAll('.lang button').forEach(function (b) {
-      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang));
-    });
-    try { localStorage.setItem('acr-lang', lang); } catch (e) {}
-  }
-
-  document.querySelectorAll('.lang button').forEach(function (b) {
-    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
-  });
-
-  var saved = null;
-  try { saved = localStorage.getItem('acr-lang'); } catch (e) {}
-  if (saved && I18N[saved] && saved !== 'de') setLang(saved);
 </script>
 </body>
 </html>
