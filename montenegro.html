@@ -116,6 +116,8 @@
   .cta-band .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 26px; }
   footer.site { padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
     display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
+  footer.site a { color: var(--sea); text-decoration: none; }
+  footer.site a:hover { text-decoration: underline; }
 
   .table-scroll {
     background-color: var(--surface);
@@ -143,7 +145,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027. Wir nehmen bereits Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
+  <div class="topbar"><a href="index.html#kontakt" data-i18n="banner">Eröffnung 2027. Gespräche sind schon jetzt möglich — die Residenz ist noch nicht in Betrieb. →</a></div>
   <header class="site">
     <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
     <div class="head-right">
@@ -169,7 +171,7 @@
   <section>
     <p class="eyebrow" data-i18n="e_climate">Klima &amp; Temperaturen</p>
     <h2 data-i18n="h_climate">Zwölf Monate Budva in Zahlen</h2>
-    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_climate">Budva hat mediterranes Klima. Selbst im kältesten Monat liegt die durchschnittliche Tageshöchsttemperatur über 10 °C, und das Meer bleibt bis in den November hinein warm. Hervorgehoben ist der Zeitraum mit dem Saisonfaktor 0,50.</p>
+    <p class="prose" style="color:var(--ink-soft); margin-bottom:26px;" data-i18n="p_climate">Budva hat mediterranes Klima. Selbst im kältesten Monat liegt die durchschnittliche Tageshöchsttemperatur über 10 °C, und das Meer bleibt bis in den November hinein warm. Hervorgehoben sind die kühleren Monate von Oktober bis April.</p>
     <div class="table-scroll">
       <table>
         <thead>
@@ -178,22 +180,21 @@
             <th data-i18n="th_air">Luft, Tageshoch</th>
             <th data-i18n="th_sea">Meer</th>
             <th data-i18n="th_sun">Sonnenstunden / Tag</th>
-            <th data-i18n="th_idx">Saisonindex</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="season-low"><td data-i18n="m1">Januar</td><td class="num">12 °C</td><td class="num">15 °C</td><td class="num">4</td><td class="num">0,50</td></tr>
-          <tr class="season-low"><td data-i18n="m2">Februar</td><td class="num">13 °C</td><td class="num">14 °C</td><td class="num">5</td><td class="num">0,50</td></tr>
-          <tr class="season-low"><td data-i18n="m3">März</td><td class="num">15 °C</td><td class="num">14 °C</td><td class="num">6</td><td class="num">0,50</td></tr>
-          <tr class="season-low"><td data-i18n="m4">April</td><td class="num">18 °C</td><td class="num">16 °C</td><td class="num">7</td><td class="num">0,50</td></tr>
-          <tr><td data-i18n="m5">Mai</td><td class="num">22 °C</td><td class="num">19 °C</td><td class="num">9</td><td class="num">0,90</td></tr>
-          <tr><td data-i18n="m6">Juni</td><td class="num">26 °C</td><td class="num">23 °C</td><td class="num">10</td><td class="num">0,90</td></tr>
-          <tr><td data-i18n="m7">Juli</td><td class="num">29 °C</td><td class="num">25 °C</td><td class="num">11</td><td class="num">0,90</td></tr>
-          <tr><td data-i18n="m8">August</td><td class="num">29 °C</td><td class="num">26 °C</td><td class="num">10</td><td class="num">0,90</td></tr>
-          <tr><td data-i18n="m9">September</td><td class="num">26 °C</td><td class="num">23 °C</td><td class="num">8</td><td class="num">0,90</td></tr>
-          <tr class="season-low"><td data-i18n="m10">Oktober</td><td class="num">21 °C</td><td class="num">20 °C</td><td class="num">6</td><td class="num">0,50</td></tr>
-          <tr class="season-low"><td data-i18n="m11">November</td><td class="num">17 °C</td><td class="num">18 °C</td><td class="num">4</td><td class="num">0,50</td></tr>
-          <tr class="season-low"><td data-i18n="m12">Dezember</td><td class="num">13 °C</td><td class="num">16 °C</td><td class="num">3</td><td class="num">0,50</td></tr>
+          <tr class="season-low"><td data-i18n="m1">Januar</td><td class="num">12 °C</td><td class="num">15 °C</td><td class="num">4</td></tr>
+          <tr class="season-low"><td data-i18n="m2">Februar</td><td class="num">13 °C</td><td class="num">14 °C</td><td class="num">5</td></tr>
+          <tr class="season-low"><td data-i18n="m3">März</td><td class="num">15 °C</td><td class="num">14 °C</td><td class="num">6</td></tr>
+          <tr class="season-low"><td data-i18n="m4">April</td><td class="num">18 °C</td><td class="num">16 °C</td><td class="num">7</td></tr>
+          <tr><td data-i18n="m5">Mai</td><td class="num">22 °C</td><td class="num">19 °C</td><td class="num">9</td></tr>
+          <tr><td data-i18n="m6">Juni</td><td class="num">26 °C</td><td class="num">23 °C</td><td class="num">10</td></tr>
+          <tr><td data-i18n="m7">Juli</td><td class="num">29 °C</td><td class="num">25 °C</td><td class="num">11</td></tr>
+          <tr><td data-i18n="m8">August</td><td class="num">29 °C</td><td class="num">26 °C</td><td class="num">10</td></tr>
+          <tr><td data-i18n="m9">September</td><td class="num">26 °C</td><td class="num">23 °C</td><td class="num">8</td></tr>
+          <tr class="season-low"><td data-i18n="m10">Oktober</td><td class="num">21 °C</td><td class="num">20 °C</td><td class="num">6</td></tr>
+          <tr class="season-low"><td data-i18n="m11">November</td><td class="num">17 °C</td><td class="num">18 °C</td><td class="num">4</td></tr>
+          <tr class="season-low"><td data-i18n="m12">Dezember</td><td class="num">13 °C</td><td class="num">16 °C</td><td class="num">3</td></tr>
         </tbody>
       </table>
     </div>
@@ -328,15 +329,15 @@
 
   <section class="cta-band">
     <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
-    <h2 data-i18n="h_cta">Testen Sie das Programm mit einem vierwöchigen Pilotaufenthalt</h2>
-    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Wir erstellen eine Kalkulation nach Pflegegrad und empfehlen eine Saison, die zum Gesundheitszustand und zur Mobilität Ihrer Bewohner passt.</p>
-    <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
+    <h2 data-i18n="h_cta">Fordern Sie eine kurze Übersicht zum Standort an</h2>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Gespräche sind schon jetzt möglich; die Residenz öffnet 2027 und ist noch nicht in Betrieb. Wir senden Ihnen zunächst eine kurze Übersicht — ohne Preisofferte als ersten Schritt.</p>
+    <a class="btn" href="index.html#kontakt" data-i18n="cta">Kurze Übersicht anfordern</a>
   </section>
 
   <footer class="site">
     <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
     <span data-i18n="foot_symbol">Symbolbilder</span>
-    <span>partners@adriacare.me</span>
+    <span data-i18n="foot_legal"><a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </footer>
 </div>
 
@@ -344,14 +345,14 @@
   var I18N = {
     de: null,
     en: {
-      banner: "Opening in 2027. We are already accepting preliminary applications and signing pre-agreements →",
+      banner: "Opening in 2027. Conversations are possible now — the residence is not operating yet. →",
       back: "← Back to the main page",
       e_hero: "Location",
       h1: "Montenegro: a mild climate between sea and mountains",
       lede: "The Adriatic coast has around 240 sunny days a year, frosts are rare in winter, and the cooler hills are less than an hour away in summer. Short distances and convenient walking routes make Montenegro a practical setting for a seasonal care programme.",
       e_climate: "Climate & temperatures", h_climate: "Twelve months of Budva in numbers",
-      p_climate: "Budva has a Mediterranean climate. Even in the coldest month, the average daytime high remains above 10 °C, while the sea stays warm into November. The table highlights the period with a seasonal factor of 0.50.",
-      th_month: "Month", th_air: "Air, daytime high", th_sea: "Sea", th_sun: "Sunshine hours / day", th_idx: "Season index",
+      p_climate: "Budva has a Mediterranean climate. Even in the coldest month, the average daytime high remains above 10 °C, while the sea stays warm into November. The table highlights the cooler months from October to April.",
+      th_month: "Month", th_air: "Air, daytime high", th_sea: "Sea", th_sun: "Sunshine hours / day",
       m1: "January", m2: "February", m3: "March", m4: "April", m5: "May", m6: "June",
       m7: "July", m8: "August", m9: "September", m10: "October", m11: "November", m12: "December",
       note_climate: "Long-term averages for Budva, based on national weather-service data. The shoulder months avoid both frost and extreme heat and provide more daylight than central and northern Europe. The attending physician should assess any individual medical contraindications to travel.",
@@ -392,20 +393,20 @@
       mo3t: "Excursions", mo3h: "The full catalogue", mo3p: "Eight curated routes with licensed guides — from the boat in the bay to the panoramic road in the national park.",
       mo4t: "Neighbouring countries", mo4h: "Dubrovnik, Trebinje, Shkodra, Ohrid", mo4p: "Day trips and relaxed multi-day journeys with the same level of support throughout.",
       mo_more1: "Open the page →", mo_more2: "Open the page →", mo_more3: "Open the page →", mo_more4: "Open the page →",
-      e_cta: "Next step", h_cta: "Try the programme with a four-week pilot stay",
-      p_cta: "We will prepare a calculation by care level and recommend a season based on your residents' health and mobility needs.",
-      cta: "Request an offer", foot1: "Adria Care Residence · Budva, Montenegro",
-      foot_symbol: "Images for illustrative purposes"
+      e_cta: "Next step", h_cta: "Request a short overview of the location",
+      p_cta: "Conversations are possible now; the residence opens in 2027 and is not operating yet. We will first send a short overview — not a priced offer as the first step.",
+      cta: "Request a short overview", foot1: "Adria Care Residence · Budva, Montenegro",
+      foot_symbol: "Images for illustrative purposes", foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     fr: {
-      banner: "Ouverture en 2027. Nous acceptons déjà les préinscriptions et concluons des avant-contrats →",
+      banner: "Ouverture en 2027. Les échanges sont déjà possibles — la résidence n’est pas encore en activité. →",
       back: "← Retour à l'accueil",
       e_hero: "Le lieu",
       h1: "Le Monténégro : un climat doux entre mer et montagnes",
       lede: "La côte adriatique compte environ 240 jours de soleil par an, les gelées y sont rares en hiver et les hauteurs plus fraîches se trouvent à moins d’une heure en été. Les courtes distances et les itinéraires de promenade accessibles font du Monténégro un cadre pratique pour un programme de séjour saisonnier.",
       e_climate: "Climat & températures", h_climate: "Douze mois de Budva en chiffres",
-      p_climate: "Budva bénéficie d’un climat méditerranéen. Même pendant le mois le plus froid, la température maximale moyenne en journée reste supérieure à 10 °C, et la mer demeure relativement douce jusqu’en novembre. Le tableau met en évidence la période assortie d’un coefficient saisonnier de 0,50.",
-      th_month: "Mois", th_air: "Air, maximum diurne", th_sea: "Mer", th_sun: "Heures de soleil / jour", th_idx: "Indice saisonnier",
+      p_climate: "Budva bénéficie d’un climat méditerranéen. Même pendant le mois le plus froid, la température maximale moyenne en journée reste supérieure à 10 °C, et la mer demeure relativement douce jusqu’en novembre. Le tableau met en évidence les mois plus frais d’octobre à avril.",
+      th_month: "Mois", th_air: "Air, maximum diurne", th_sea: "Mer", th_sun: "Heures de soleil / jour",
       m1: "Janvier", m2: "Février", m3: "Mars", m4: "Avril", m5: "Mai", m6: "Juin",
       m7: "Juillet", m8: "Août", m9: "Septembre", m10: "Octobre", m11: "Novembre", m12: "Décembre",
       note_climate: "Moyennes à long terme pour Budva, établies à partir des données des services météorologiques nationaux. Les mois d’intersaison évitent généralement le gel comme les fortes chaleurs et offrent davantage de lumière qu’en Europe centrale et du Nord. Le médecin traitant évalue les éventuelles contre-indications individuelles au voyage.",
@@ -446,20 +447,20 @@
       mo3t: "Excursions", mo3h: "Le catalogue complet", mo3p: "Huit itinéraires choisis avec des guides agréés — du bateau dans les bouches à la route panoramique du parc national.",
       mo4t: "Pays voisins", mo4h: "Dubrovnik, Trebinje, Shkodra, Ohrid", mo4p: "Excursions accompagnées à la journée et courts voyages de plusieurs jours, avec le plan de soins habituel et un rythme adapté au groupe.",
       mo_more1: "Ouvrir la page →", mo_more2: "Ouvrir la page →", mo_more3: "Ouvrir la page →", mo_more4: "Ouvrir la page →",
-      e_cta: "Prochaine étape", h_cta: "Testez le programme lors d’un séjour pilote de quatre semaines",
-      p_cta: "Nous préparerons un calcul par niveau de dépendance et recommanderons une saison en fonction de l’état de santé et de la mobilité des résidents.",
-      cta: "Demander une offre", foot1: "Adria Care Résidence · Budva, Monténégro",
-      foot_symbol: "Images présentées à titre d’illustration"
+      e_cta: "Prochaine étape", h_cta: "Demandez une brève présentation du lieu",
+      p_cta: "Les échanges sont déjà possibles ; la résidence ouvre en 2027 et n’est pas encore en activité. Nous vous enverrons d’abord une brève présentation — pas une offre tarifaire comme première réponse.",
+      cta: "Demander une brève présentation", foot1: "Adria Care Résidence · Budva, Monténégro",
+      foot_symbol: "Images présentées à titre d’illustration", foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     es: {
-      banner: "Apertura en 2027. Ya aceptamos preinscripciones y formalizamos precontratos →",
+      banner: "Apertura en 2027. Las conversaciones ya son posibles — la residencia aún no está en funcionamiento. →",
       back: "← Volver a la página principal",
       e_hero: "El lugar",
       h1: "Montenegro: un clima suave entre el mar y las montañas",
       lede: "La costa adriática tiene unos 240 días de sol al año, las heladas son poco frecuentes en invierno y en verano se llega a zonas de montaña más frescas en menos de una hora. Las distancias cortas y las rutas cómodas para pasear hacen de Montenegro un lugar práctico para un programa de estancia estacional.",
       e_climate: "Clima y temperaturas", h_climate: "Doce meses de Budva en cifras",
-      p_climate: "Budva tiene un clima mediterráneo. Incluso en el mes más frío, la máxima media diurna supera los 10 °C y el mar mantiene una temperatura moderada hasta noviembre. La tabla destaca el periodo con un coeficiente estacional de 0,50.",
-      th_month: "Mes", th_air: "Aire, máxima diurna", th_sea: "Mar", th_sun: "Horas de sol / día", th_idx: "Índice estacional",
+      p_climate: "Budva tiene un clima mediterráneo. Incluso en el mes más frío, la máxima media diurna supera los 10 °C y el mar mantiene una temperatura moderada hasta noviembre. La tabla destaca los meses más frescos de octubre a abril.",
+      th_month: "Mes", th_air: "Aire, máxima diurna", th_sea: "Mar", th_sun: "Horas de sol / día",
       m1: "Enero", m2: "Febrero", m3: "Marzo", m4: "Abril", m5: "Mayo", m6: "Junio",
       m7: "Julio", m8: "Agosto", m9: "Septiembre", m10: "Octubre", m11: "Noviembre", m12: "Diciembre",
       note_climate: "Promedios a largo plazo para Budva basados en datos de los servicios meteorológicos nacionales. Los meses de entretiempo suelen evitar tanto las heladas como el calor extremo y ofrecen más horas de luz que Europa central y septentrional. El médico responsable debe valorar las posibles contraindicaciones individuales para el viaje.",
@@ -500,20 +501,20 @@
       mo3t: "Excursiones", mo3h: "El catálogo completo", mo3p: "Ocho rutas seleccionadas con guías licenciados — del barco en la bahía a la carretera panorámica del parque nacional.",
       mo4t: "Países vecinos", mo4h: "Dubrovnik, Trebinje, Shkodra, Ohrid", mo4p: "Excursiones acompañadas de un día y viajes cortos de varias jornadas, con el plan de cuidados habitual y un ritmo adaptado al grupo.",
       mo_more1: "Abrir la página →", mo_more2: "Abrir la página →", mo_more3: "Abrir la página →", mo_more4: "Abrir la página →",
-      e_cta: "Siguiente paso", h_cta: "Pruebe el programa durante una estancia piloto de cuatro semanas",
-      p_cta: "Prepararemos un cálculo según el grado de dependencia y recomendaremos una temporada de acuerdo con la salud y la movilidad de los residentes.",
-      cta: "Solicitar oferta", foot1: "Adria Care Residencia · Budva, Montenegro",
-      foot_symbol: "Imágenes con fines ilustrativos"
+      e_cta: "Siguiente paso", h_cta: "Solicite una breve presentación del lugar",
+      p_cta: "Las conversaciones ya son posibles; la residencia abre en 2027 y aún no está en funcionamiento. Primero le enviaremos una breve presentación, no una oferta de precios como primer paso.",
+      cta: "Solicitar una breve presentación", foot1: "Adria Care Residencia · Budva, Montenegro",
+      foot_symbol: "Imágenes con fines ilustrativos", foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     sr: {
-      banner: "Otvaranje 2027. godine. Već primamo prethodne prijave i zaključujemo predugovore →",
+      banner: "Otvaranje 2027. godine. Razgovori su već mogući — rezidencija još nije u radu. →",
       back: "← Nazad na početnu",
       e_hero: "Lokacija",
       h1: "Crna Gora: blaga klima između mora i planina",
       lede: "Na jadranskoj obali ima oko 240 sunčanih dana godišnje, mraz je zimi redak, a leti se do svežijih planinskih predela stiže za manje od sat vremena. Kratke razdaljine i pogodne staze za šetnju čine Crnu Goru praktičnim mestom za sezonski program boravka.",
       e_climate: "Klima i temperature", h_climate: "Dvanaest meseci Budve u brojevima",
-      p_climate: "Budva ima mediteransku klimu. Čak i u najhladnijem mesecu prosečna najviša dnevna temperatura prelazi 10 °C, a more ostaje umereno toplo do novembra. U tabeli je istaknut period sa sezonskim koeficijentom 0,50.",
-      th_month: "Mesec", th_air: "Vazduh, dnevni maksimum", th_sea: "More", th_sun: "Sunčanih sati / dan", th_idx: "Sezonski indeks",
+      p_climate: "Budva ima mediteransku klimu. Čak i u najhladnijem mesecu prosečna najviša dnevna temperatura prelazi 10 °C, a more ostaje umereno toplo do novembra. U tabeli su istaknuti hladniji meseci od oktobra do aprila.",
+      th_month: "Mesec", th_air: "Vazduh, dnevni maksimum", th_sea: "More", th_sun: "Sunčanih sati / dan",
       m1: "Januar", m2: "Februar", m3: "Mart", m4: "April", m5: "Maj", m6: "Jun",
       m7: "Jul", m8: "Avgust", m9: "Septembar", m10: "Oktobar", m11: "Novembar", m12: "Decembar",
       note_climate: "Višegodišnji proseci za Budvu zasnovani su na podacima nacionalnih meteoroloških službi. Prelazni meseci uglavnom prolaze bez mraza i velikih vrućina i imaju više dnevne svetlosti nego srednja i severna Evropa. Eventualne individualne kontraindikacije za put procenjuje nadležni lekar.",
@@ -554,20 +555,20 @@
       mo3t: "Izleti", mo3h: "Ceo katalog", mo3p: "Osam odabranih ruta sa licenciranim vodičima — od broda u Boki do panoramskog puta u nacionalnom parku.",
       mo4t: "Susedne zemlje", mo4h: "Dubrovnik, Trebinje, Skadar, Ohrid", mo4p: "Jednodnevni izleti uz pratnju i kraća višednevna putovanja, uz uobičajeni plan nege i tempo prilagođen grupi.",
       mo_more1: "Otvori stranicu →", mo_more2: "Otvori stranicu →", mo_more3: "Otvori stranicu →", mo_more4: "Otvori stranicu →",
-      e_cta: "Sledeći korak", h_cta: "Isprobajte program tokom četvoronedeljnog pilot-boravka",
-      p_cta: "Pripremićemo obračun prema stepenu nege i predložiti sezonu u skladu sa zdravstvenim stanjem i pokretljivošću korisnika.",
-      cta: "Zatražite ponudu", foot1: "Adria Care Rezidencija · Budva, Crna Gora",
-      foot_symbol: "Fotografije služe kao ilustracija"
+      e_cta: "Sledeći korak", h_cta: "Zatražite kratak pregled lokacije",
+      p_cta: "Razgovori su već mogući; rezidencija se otvara 2027. i još nije u radu. Prvo šaljemo kratak pregled — ne cenovnu ponudu kao prvi korak.",
+      cta: "Zatražite kratak pregled", foot1: "Adria Care Rezidencija · Budva, Crna Gora",
+      foot_symbol: "Fotografije služe kao ilustracija", foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     ru: {
-      banner: "Открытие — в 2027 году. Уже принимаем заявки и заключаем предварительные договоры →",
+      banner: "Открытие — в 2027 году. Переговоры возможны уже сейчас — резиденция ещё не работает. →",
       back: "← На главную",
       e_hero: "Место",
       h1: "Черногория: мягкий климат между морем и горами",
       lede: "На Адриатическом побережье около 240 солнечных дней в году, зимой редко бывают морозы, а летом до прохладных предгорий можно добраться меньше чем за час. Короткие расстояния и удобные маршруты для прогулок делают Черногорию подходящим местом для сезонной программы.",
       e_climate: "Климат и температуры", h_climate: "Двенадцать месяцев Будвы в цифрах",
-      p_climate: "Будва расположена в зоне средиземноморского климата. Даже в самый холодный месяц средняя дневная температура превышает +10 °C, а море остаётся тёплым до ноября. В таблице выделен период с сезонным коэффициентом 0,50.",
-      th_month: "Месяц", th_air: "Воздух, дневной максимум", th_sea: "Море", th_sun: "Часов солнца / день", th_idx: "Сезонный индекс",
+      p_climate: "Будва расположена в зоне средиземноморского климата. Даже в самый холодный месяц средняя дневная температура превышает +10 °C, а море остаётся тёплым до ноября. В таблице выделены более прохладные месяцы с октября по апрель.",
+      th_month: "Месяц", th_air: "Воздух, дневной максимум", th_sea: "Море", th_sun: "Часов солнца / день",
       m1: "Январь", m2: "Февраль", m3: "Март", m4: "Апрель", m5: "Май", m6: "Июнь",
       m7: "Июль", m8: "Август", m9: "Сентябрь", m10: "Октябрь", m11: "Ноябрь", m12: "Декабрь",
       note_climate: "Приведены многолетние средние значения для Будвы по данным национальных метеослужб. В переходные месяцы здесь нет ни мороза, ни сильной жары, а световой день заметно длиннее, чем в Центральной и Северной Европе. Индивидуальные противопоказания к поездке оценивает лечащий врач.",
@@ -608,10 +609,10 @@
       mo3t: "Экскурсии", mo3h: "Полный каталог", mo3p: "Восемь отобранных маршрутов с лицензированными гидами — от кораблика в бухте до панорамной дороги в национальном парке.",
       mo4t: "Соседние страны", mo4h: "Дубровник, Требине, Шкодер, Охрид", mo4p: "Однодневные экскурсии и спокойные многодневные поездки с привычным уровнем сопровождения.",
       mo_more1: "Открыть страницу →", mo_more2: "Открыть страницу →", mo_more3: "Открыть страницу →", mo_more4: "Открыть страницу →",
-      e_cta: "Следующий шаг", h_cta: "Оцените программу на четырёхнедельном пилотном заезде",
-      p_cta: "Мы подготовим расчёт с ценами по степеням ухода и предложим сезон с учётом состояния и подвижности ваших резидентов.",
-      cta: "Запросить предложение", foot1: "Adria Care Residenz · Будва, Черногория",
-      foot_symbol: "Изображения для иллюстрации"
+      e_cta: "Следующий шаг", h_cta: "Запросите краткий обзор локации",
+      p_cta: "Переговоры возможны уже сейчас; резиденция открывается в 2027 году и ещё не работает. Сначала мы пришлём краткий обзор — не ценовое предложение как первый шаг.",
+      cta: "Запросить краткий обзор", foot1: "Adria Care Residenz · Будва, Черногория",
+      foot_symbol: "Изображения для иллюстрации", foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     }
   };
 

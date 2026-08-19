@@ -104,6 +104,8 @@
   .cta-band .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 26px; }
   footer.site { padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
     display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
+  footer.site a { color: var(--sea); text-decoration: none; }
+  footer.site a:hover { text-decoration: underline; }
 
   .table-scroll {
     background-color: var(--surface);
@@ -131,7 +133,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027. Wir nehmen bereits Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
+  <div class="topbar"><a href="index.html#kontakt" data-i18n="banner">Eröffnung 2027. Gespräche sind schon jetzt möglich — die Residenz ist noch nicht in Betrieb. →</a></div>
   <header class="site">
     <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
     <div class="head-right">
@@ -213,14 +215,14 @@
   <section class="cta-band">
     <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
     <h2 data-i18n="h_cta">Bewahren Sie vertraute spirituelle Angebote während des Aufenthalts</h2>
-    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Auf Wunsch nehmen wir begleitete Pilgerfahrten in das Aufenthaltsprogramm auf und stimmen die Routen vorab mit Ihrer Einrichtung ab.</p>
-    <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Gespräche sind schon jetzt möglich; die Residenz öffnet 2027. Auf Wunsch besprechen wir begleitete Pilgerfahrten in einer kurzen Übersicht — ohne Preisofferte als ersten Schritt.</p>
+    <a class="btn" href="index.html#kontakt" data-i18n="cta">Kurze Übersicht anfordern</a>
   </section>
 
   <footer class="site">
     <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
     <span data-i18n="foot_symbol">Symbolbilder</span>
-    <span>partners@adriacare.me</span>
+    <span data-i18n="foot_legal"><a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </footer>
 </div>
 
@@ -228,7 +230,7 @@
   var I18N = {
     de: null,
     en: {
-      banner: 'Opening in 2027. We are already accepting preliminary applications and signing pre-agreements →',
+      banner: 'Opening in 2027. Conversations are possible now — the residence is not operating yet. →',
       back: '← Montenegro',
       img_hero: 'Ostrog in the morning light', img_feature: 'A light of devotion',
       e_hero: 'Pilgrimage journeys',
@@ -254,12 +256,12 @@
       g3: 'Planned seating and rest breaks on every route',
       g4: 'Support in several languages; on request, we contact the local Orthodox, Catholic or Protestant community',
       e_cta: 'Next step', h_cta: 'Maintain a familiar spiritual life during the stay',
-      p_cta: 'At your request, we will include accompanied pilgrimages in the stay programme and agree the routes with your home in advance.',
-      cta: 'Request an offer', foot1: 'Adria Care Residence · Budva, Montenegro',
-      foot_symbol: 'Images for illustrative purposes'
+      p_cta: 'Conversations are possible now; the residence opens in 2027. At your request, we can discuss accompanied pilgrimages in a short overview — not a priced offer as the first step.',
+      cta: 'Request a short overview', foot1: 'Adria Care Residence · Budva, Montenegro',
+      foot_symbol: 'Images for illustrative purposes', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     fr: {
-      banner: 'Ouverture en 2027. Nous acceptons déjà les préinscriptions et concluons des avant-contrats →',
+      banner: 'Ouverture en 2027. Les échanges sont déjà possibles — la résidence n’est pas encore en activité. →',
       back: '← Monténégro',
       img_hero: 'Ostrog dans la lumière du matin', img_feature: 'Une lumière de recueillement',
       e_hero: 'Pèlerinages',
@@ -285,12 +287,12 @@
       g3: 'Assises et pauses de repos à chaque étape',
       g4: 'Accompagnement multilingue ; sur demande, mise en relation avec la paroisse locale (orthodoxe, catholique, protestante sur accord)',
       e_cta: 'Prochaine étape', h_cta: 'Préservez les habitudes spirituelles pendant le séjour',
-      p_cta: 'À votre demande, nous intégrerons des pèlerinages accompagnés au programme du séjour et conviendrons des itinéraires avec votre établissement.',
-      cta: 'Demander une offre', foot1: 'Adria Care Résidence · Budva, Monténégro',
-      foot_symbol: 'Images présentées à titre d’illustration'
+      p_cta: 'Les échanges sont déjà possibles ; la résidence ouvre en 2027. À votre demande, nous pourrons parler de pèlerinages accompagnés dans une brève présentation — pas une offre tarifaire comme première réponse.',
+      cta: 'Demander une brève présentation', foot1: 'Adria Care Résidence · Budva, Monténégro',
+      foot_symbol: 'Images présentées à titre d’illustration', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     es: {
-      banner: 'Apertura en 2027. Ya aceptamos preinscripciones y formalizamos precontratos →',
+      banner: 'Apertura en 2027. Las conversaciones ya son posibles — la residencia aún no está en funcionamiento. →',
       back: '← Montenegro',
       img_hero: 'Ostrog a la luz de la mañana', img_feature: 'Una luz de recogimiento',
       e_hero: 'Peregrinaciones',
@@ -316,12 +318,12 @@
       g3: 'Asientos y pausas de descanso en cada lugar',
       g4: 'Acompañamiento multilingüe; si se desea, contacto con la parroquia local (ortodoxa, católica, evangélica previo acuerdo)',
       e_cta: 'Siguiente paso', h_cta: 'Mantenga la vida espiritual habitual durante la estancia',
-      p_cta: 'Si lo desea, incluiremos peregrinaciones acompañadas en el programa de la estancia y acordaremos las rutas con su centro.',
-      cta: 'Solicitar oferta', foot1: 'Adria Care Residencia · Budva, Montenegro',
-      foot_symbol: 'Imágenes con fines ilustrativos'
+      p_cta: 'Las conversaciones ya son posibles; la residencia abre en 2027. Si lo desea, podemos hablar de peregrinaciones acompañadas en una breve presentación, no una oferta de precios como primer paso.',
+      cta: 'Solicitar una breve presentación', foot1: 'Adria Care Residencia · Budva, Montenegro',
+      foot_symbol: 'Imágenes con fines ilustrativos', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     sr: {
-      banner: 'Otvaranje 2027. godine. Već primamo prethodne prijave i zaključujemo predugovore →',
+      banner: 'Otvaranje 2027. godine. Razgovori su već mogući — rezidencija još nije u radu. →',
       back: '← Crna Gora',
       img_hero: 'Ostrog u jutarnjem svetlu', img_feature: 'Svetlost molitve',
       e_hero: 'Hodočašća',
@@ -347,12 +349,12 @@
       g3: 'Mesta za sedenje i predasi na svakom mestu',
       g4: 'Višejezična pratnja; po želji kontakt sa mesnom crkvenom zajednicom (pravoslavnom, katoličkom, evangeličkom po dogovoru)',
       e_cta: 'Sledeći korak', h_cta: 'Sačuvajte duhovne navike i tokom boravka',
-      p_cta: 'Na vaš zahtev uvrstićemo hodočašća uz pratnju u program boravka i unapred usaglasiti rute sa vašom ustanovom.',
-      cta: 'Zatražite ponudu', foot1: 'Adria Care Rezidencija · Budva, Crna Gora',
-      foot_symbol: 'Fotografije služe kao ilustracija'
+      p_cta: 'Razgovori su već mogući; rezidencija se otvara 2027. Na vaš zahtev možemo u kratkom pregledu razgovarati o hodočašćima uz pratnju — ne o cenovnoj ponudi kao prvom koraku.',
+      cta: 'Zatražite kratak pregled', foot1: 'Adria Care Rezidencija · Budva, Crna Gora',
+      foot_symbol: 'Fotografije služe kao ilustracija', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     ru: {
-      banner: 'Открытие — в 2027 году. Уже принимаем заявки и заключаем предварительные договоры →',
+      banner: 'Открытие — в 2027 году. Переговоры возможны уже сейчас — резиденция ещё не работает. →',
       back: '← Черногория',
       img_hero: 'Острог в утреннем свете', img_feature: 'Свет молитвы',
       e_hero: 'Паломничество',
@@ -378,9 +380,9 @@
       g3: 'Места для отдыха и запланированные паузы на каждом маршруте',
       g4: 'Сопровождение на нескольких языках; по желанию свяжемся с местной православной, католической или протестантской общиной',
       e_cta: 'Следующий шаг', h_cta: 'Сохраните привычную духовную жизнь и во время заезда',
-      p_cta: 'По вашему запросу мы включим паломнические поездки с сопровождением в программу заезда и заранее согласуем маршруты с учреждением.',
-      cta: 'Запросить предложение', foot1: 'Adria Care Residenz · Будва, Черногория',
-      foot_symbol: 'Изображения для иллюстрации'
+      p_cta: 'Переговоры возможны уже сейчас; резиденция открывается в 2027 году. По запросу мы можем обсудить паломнические поездки в кратком обзоре — не ценовое предложение как первый шаг.',
+      cta: 'Запросить краткий обзор', foot1: 'Adria Care Residenz · Будва, Черногория',
+      foot_symbol: 'Изображения для иллюстрации', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     }
   };
 

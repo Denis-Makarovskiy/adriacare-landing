@@ -105,6 +105,8 @@
   .cta-band .btn { background: var(--gold); border-color: var(--gold); color: #2a2107; margin-top: 26px; }
   footer.site { padding: 30px 0 44px; font-size: 13.5px; color: var(--ink-soft);
     display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; }
+  footer.site a { color: var(--sea); text-decoration: none; }
+  footer.site a:hover { text-decoration: underline; }
 
   .table-scroll {
     background-color: var(--surface);
@@ -132,7 +134,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar"><a href="index.html#angebot" data-i18n="banner">Eröffnung 2027. Wir nehmen bereits Voranmeldungen entgegen und schließen Vorverträge ab →</a></div>
+  <div class="topbar"><a href="index.html#kontakt" data-i18n="banner">Eröffnung 2027. Gespräche sind schon jetzt möglich — die Residenz ist noch nicht in Betrieb. →</a></div>
   <header class="site">
     <a class="brand" href="index.html">Adria<span> Care</span> Residenz</a>
     <div class="head-right">
@@ -220,14 +222,15 @@
 
   <section class="cta-band">
     <p class="eyebrow" data-i18n="e_cta">Nächster Schritt</p>
-    <h2 data-i18n="h_cta">Testen Sie das Programm während eines Pilotaufenthalts</h2>
-    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Wir erstellen eine Kalkulation, einen Aktivitätenplan passend zur Mobilität Ihrer Bewohner und Preise je Pflegegrad.</p>
-    <a class="btn" href="index.html#angebot" data-i18n="cta">Angebot anfordern</a>
+    <h2 data-i18n="h_cta">Fordern Sie eine kurze Übersicht zum Aktivitätsprogramm an</h2>
+    <p class="prose" style="margin-top:14px;" data-i18n="p_cta">Gespräche sind schon jetzt möglich; die Residenz öffnet 2027. Wir senden Ihnen zunächst eine kurze Übersicht zum Aktivitätsprogramm — ohne Preisofferte als ersten Schritt.</p>
+    <a class="btn" href="index.html#kontakt" data-i18n="cta">Kurze Übersicht anfordern</a>
   </section>
 
   <footer class="site">
     <span data-i18n="foot1">Adria Care Residenz · Budva, Montenegro</span>
-    <span>partners@adriacare.me · <span data-i18n="foot_symbol">Symbolbilder</span></span>
+    <span data-i18n="foot_symbol">Symbolbilder</span>
+    <span data-i18n="foot_legal"><a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </footer>
 </div>
 
@@ -235,7 +238,7 @@
   var I18N = {
     de: null,
     en: {
-      banner: 'Opening in 2027. We are already accepting preliminary applications and signing pre-agreements →',
+      banner: 'Opening in 2027. Conversations are possible now — the residence is not operating yet. →',
       back: '← Montenegro',
       img_hero: 'Morning exercise above the Adriatic', img_feature: 'A walk by the mountain lake',
       e_hero: 'Health & activity',
@@ -260,13 +263,13 @@
       note_trails: 'A trained member of staff accompanies every walk. We plan rest points in advance, the minibus takes the group to the start of the route, and the escort always carries a first-aid kit.',
       e_safety: 'Responsibility', h_safety: 'Safety during activity',
       p_safety: 'Before each activity, a nurse checks how participants are feeling. Groups are limited to eight residents per escort. In summer we follow a hydration and shade plan, and a physiotherapist monitors individual exertion.',
-      e_cta: 'Next step', h_cta: 'Try the programme during a pilot stay',
-      p_cta: 'We will prepare a pilot-stay calculation, an activity plan suited to residents’ mobility and prices by care level.',
-      cta: 'Request an offer', foot1: 'Adria Care Residence · Budva, Montenegro',
-      foot_symbol: 'Images for illustrative purposes'
+      e_cta: 'Next step', h_cta: 'Request a short overview of the activity programme',
+      p_cta: 'Conversations are possible now; the residence opens in 2027. We will first send a short overview of the activity programme — not a priced offer as the first step.',
+      cta: 'Request a short overview', foot1: 'Adria Care Residence · Budva, Montenegro',
+      foot_symbol: 'Images for illustrative purposes', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     fr: {
-      banner: 'Ouverture en 2027. Nous acceptons déjà les préinscriptions et concluons des avant-contrats →',
+      banner: 'Ouverture en 2027. Les échanges sont déjà possibles — la résidence n’est pas encore en activité. →',
       back: '← Monténégro',
       img_hero: 'En mouvement face à l’Adriatique', img_feature: 'Une promenade douce au bord du lac de montagne',
       e_hero: 'Santé & activité',
@@ -291,13 +294,13 @@
       note_trails: 'Chaque randonnée se fait avec un accompagnement formé : bancs et pauses planifiés à l’avance, bus jusqu’au point de départ, trousse médicale d’urgence toujours à bord.',
       e_safety: 'Responsabilité', h_safety: 'La sécurité pendant l’activité',
       p_safety: 'Avant chaque activité, un membre du personnel soignant vérifie l’état des participants. Les groupes sont limités à huit résidents par accompagnateur. En été, nous prévoyons l’hydratation et des parcours ombragés ; un kinésithérapeute contrôle l’intensité de l’effort.',
-      e_cta: 'Prochaine étape', h_cta: 'Testez le programme lors d’un séjour pilote',
-      p_cta: 'Nous préparerons le calcul du séjour pilote, un programme d’activités adapté à la mobilité des résidents et les tarifs correspondant à leur niveau de dépendance.',
-      cta: 'Demander une offre', foot1: 'Adria Care Résidence · Budva, Monténégro',
-      foot_symbol: 'Images présentées à titre d’illustration'
+      e_cta: 'Prochaine étape', h_cta: 'Demandez une brève présentation du programme d’activités',
+      p_cta: 'Les échanges sont déjà possibles ; la résidence ouvre en 2027. Nous vous enverrons d’abord une brève présentation du programme d’activités — pas une offre tarifaire comme première réponse.',
+      cta: 'Demander une brève présentation', foot1: 'Adria Care Résidence · Budva, Monténégro',
+      foot_symbol: 'Images présentées à titre d’illustration', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     es: {
-      banner: 'Apertura en 2027. Ya aceptamos preinscripciones y formalizamos precontratos →',
+      banner: 'Apertura en 2027. Las conversaciones ya son posibles — la residencia aún no está en funcionamiento. →',
       back: '← Montenegro',
       img_hero: 'Movimiento sobre el Adriático', img_feature: 'Un paseo suave junto al lago de montaña',
       e_hero: 'Salud y actividad',
@@ -322,13 +325,13 @@
       note_trails: 'Cada caminata se realiza con acompañamiento formado: los bancos y las pausas se planifican de antemano, el autobús lleva al grupo hasta el inicio del sendero y siempre se lleva un botiquín médico de emergencia.',
       e_safety: 'Responsabilidad', h_safety: 'Seguridad durante la actividad',
       p_safety: 'Antes de cada actividad, el personal de enfermería comprueba el estado de los participantes. Los grupos se limitan a ocho residentes por acompañante. En verano planificamos la hidratación y las rutas con sombra; un fisioterapeuta controla la intensidad del esfuerzo.',
-      e_cta: 'Siguiente paso', h_cta: 'Pruebe el programa durante una estancia piloto',
-      p_cta: 'Prepararemos el cálculo de la estancia piloto, un plan de actividades adaptado a la movilidad de los residentes y los precios según su grado de dependencia.',
-      cta: 'Solicitar oferta', foot1: 'Adria Care Residencia · Budva, Montenegro',
-      foot_symbol: 'Imágenes con fines ilustrativos'
+      e_cta: 'Siguiente paso', h_cta: 'Solicite una breve presentación del programa de actividades',
+      p_cta: 'Las conversaciones ya son posibles; la residencia abre en 2027. Primero le enviaremos una breve presentación del programa de actividades, no una oferta de precios como primer paso.',
+      cta: 'Solicitar una breve presentación', foot1: 'Adria Care Residencia · Budva, Montenegro',
+      foot_symbol: 'Imágenes con fines ilustrativos', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     sr: {
-      banner: 'Otvaranje 2027. godine. Već primamo prethodne prijave i zaključujemo predugovore →',
+      banner: 'Otvaranje 2027. godine. Razgovori su već mogući — rezidencija još nije u radu. →',
       back: '← Crna Gora',
       img_hero: 'Pokret iznad Jadrana', img_feature: 'Lagana šetnja pored planinskog jezera',
       e_hero: 'Zdravlje i aktivnost',
@@ -353,13 +356,13 @@
       note_trails: 'Svaka šetnja odvija se uz obučenu pratnju: klupe i pauze planiraju se unapred, autobus dovozi grupu do polazne tačke, a medicinski komplet za hitne slučajeve uvek je uz nas.',
       e_safety: 'Odgovornost', h_safety: 'Bezbednost tokom aktivnosti',
       p_safety: 'Pre svake aktivnosti medicinsko osoblje proverava kako se učesnici osećaju. Na jednog pratioca dolazi najviše osam korisnika. Leti unapred planiramo dovoljan unos tečnosti i biramo staze u hladu, a fizioterapeut prati intenzitet opterećenja.',
-      e_cta: 'Sledeći korak', h_cta: 'Isprobajte program tokom pilot-boravka',
-      p_cta: 'Pripremićemo obračun pilot-boravka, plan aktivnosti prilagođen pokretljivosti korisnika i cene prema stepenu nege.',
-      cta: 'Zatražite ponudu', foot1: 'Adria Care Rezidencija · Budva, Crna Gora',
-      foot_symbol: 'Fotografije služe kao ilustracija'
+      e_cta: 'Sledeći korak', h_cta: 'Zatražite kratak pregled programa aktivnosti',
+      p_cta: 'Razgovori su već mogući; rezidencija se otvara 2027. Prvo šaljemo kratak pregled programa aktivnosti — ne cenovnu ponudu kao prvi korak.',
+      cta: 'Zatražite kratak pregled', foot1: 'Adria Care Rezidencija · Budva, Crna Gora',
+      foot_symbol: 'Fotografije služe kao ilustracija', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     },
     ru: {
-      banner: 'Открытие — в 2027 году. Уже принимаем заявки и заключаем предварительные договоры →',
+      banner: 'Открытие — в 2027 году. Переговоры возможны уже сейчас — резиденция ещё не работает. →',
       back: '← Черногория',
       img_hero: 'Гимнастика над Адриатикой', img_feature: 'Прогулка у горного озера',
       e_hero: 'Здоровье и активность',
@@ -384,10 +387,10 @@
       note_trails: 'Группу сопровождает подготовленный сотрудник. Места для отдыха и паузы планируем заранее, автобус довозит участников до начала маршрута, аптечка первой помощи всегда находится у сопровождающего.',
       e_safety: 'Ответственность', h_safety: 'Безопасность во время активности',
       p_safety: 'Перед каждым занятием медсестра уточняет самочувствие участников. В группе не более восьми человек на одного сопровождающего. Летом соблюдаем питьевой режим, выбираем затенённые маршруты, а физиотерапевт контролирует нагрузку.',
-      e_cta: 'Следующий шаг', h_cta: 'Попробуйте программу во время пилотного заезда',
-      p_cta: 'Мы подготовим расчёт пилотного заезда, план занятий с учётом подвижности резидентов и цены по степеням ухода.',
-      cta: 'Запросить предложение', foot1: 'Adria Care Residenz · Будва, Черногория',
-      foot_symbol: 'Изображения для иллюстрации'
+      e_cta: 'Следующий шаг', h_cta: 'Запросите краткий обзор программы активности',
+      p_cta: 'Переговоры возможны уже сейчас; резиденция открывается в 2027 году. Сначала мы пришлём краткий обзор программы активности — не ценовое предложение как первый шаг.',
+      cta: 'Запросить краткий обзор', foot1: 'Adria Care Residenz · Будва, Черногория',
+      foot_symbol: 'Изображения для иллюстрации', foot_legal: '<a href="mailto:partners@adriacare.me">partners@adriacare.me</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>'
     }
   };
 
