@@ -41,6 +41,8 @@ node scripts/build_locales.mjs
 python3 scripts/check_locales.py
 ```
 
+Optional visit counts (Google Analytics 4 `G-2T17E8PYZK` and Yandex Metrica `111778025`) load from `js/consent-analytics.js` only after the visitor accepts statistics cookies. Decline is the default. There is no GoatCounter, no marketing pixel, and no session replay.
+
 Do not enable outreach automation from this public site.
 
 - `docs-kommerzielles-angebot.md` — commercial offer (German, not public)
