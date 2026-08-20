@@ -104,6 +104,19 @@ def main() -> None:
                 f'<meta property="og:locale" content="{og}">' in html,
                 f"{lang}/{page}: og:locale {og}",
             )
+            check(
+                'src="/js/consent-analytics.js"' in html,
+                f"{lang}/{page}: consent-gated analytics script",
+            )
+            check("goatcounter" not in html.lower(), f"{lang}/{page}: do not add GoatCounter")
+            check(
+                not re.search(
+                    r'<script[^>]+src="https?://(www\.googletagmanager\.com|mc\.yandex\.(ru|com))',
+                    html,
+                    re.I,
+                ),
+                f"{lang}/{page}: must not load GA/YM before consent",
+            )
             if page == "index.html":
                 hero_idx = html.find('class="photo hero-photo"')
                 h1_idx = html.find("<h1", html.find('id="top"'))
@@ -157,6 +170,35 @@ def main() -> None:
     check("MK REHAB DOO" in en_imp, "EN Impressum keeps MK REHAB DOO")
     check("The legally binding operator information" in en_imp, "EN Impressum labels the German legal text")
     check("lang=\"de\"" in en_imp, "EN Impressum marks German legal body")
+
+    js = (ROOT / "js" / "consent-analytics.js").read_text(encoding="utf-8")
+    check("G-2T17E8PYZK" in js, "consent script must use the real GA4 ID")
+    check("111778025" in js, "consent script must use the real Yandex Metrica ID")
+    check("localStorage" in js, "consent script must persist the choice")
+    check("webvisor: false" in js, "Yandex Webvisor must stay off")
+    check("clickmap: false" in js, "Yandex clickmap must stay off")
+    check("accurateTrackBounce: false" in js, "Yandex accurateTrackBounce must stay off")
+    check("goatcounter" not in js.lower(), "do not add GoatCounter")
+    check("googletagmanager.com/gtag/js" in js, "GA4 must load via gtag.js after consent")
+
+    de_ds = read("de", "datenschutz.html")
+    check("Google Analytics 4" in de_ds, "Datenschutz must name Google Analytics 4")
+    check("Yandex Metrica" in de_ds, "Datenschutz must name Yandex Metrica")
+    check("Google Ireland" in de_ds, "Datenschutz must name Google Ireland")
+    check("Google LLC" in de_ds, "Datenschutz must name Google LLC")
+    check("Yandex" in de_ds, "Datenschutz must name Yandex as processor")
+    check("kein Cookie-Banner" not in de_ds, "Datenschutz must not claim there is no cookie banner")
+    check("keine Analyse-Tracker" not in de_ds, "Datenschutz must not claim there are no analysis trackers")
+    check("Marketing-Pixel" in de_ds, "Datenschutz should say there are no marketing pixels")
+    check("Telefonnummer wird auf dieser Website nicht" in de_ds, "Datenschutz must still say there is no phone number")
+    check("G-2T17E8PYZK" in de_ds, "Datenschutz should name the GA4 measurement ID")
+    check("111778025" in de_ds, "Datenschutz should name the Yandex counter ID")
+
+    en_ds = read("en", "datenschutz.html")
+    check("Google Analytics 4" in en_ds, "EN Datenschutz note must mention GA4")
+    check("Yandex Metrica" in en_ds, "EN Datenschutz note must mention Yandex Metrica")
+    check("there is no cookie banner" not in en_ds.lower(), "EN Datenschutz must not claim there is no cookie banner")
+    check("no marketing pixels" in en_ds.lower() or "no marketing pixel" in en_ds.lower(), "EN Datenschutz note: no marketing pixels")
 
     if errors:
         print("\n".join(f"FAIL: {e}" for e in errors), file=sys.stderr)

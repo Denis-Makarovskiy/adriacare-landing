@@ -19,7 +19,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://adriacare.me";
-const LASTMOD = "2026-08-19";
+const LASTMOD = "2026-08-20";
 
 const LANGS = ["de", "en", "fr", "es", "sr", "ru"];
 const LOCALE_LANGS = LANGS.filter((l) => l !== "de");
@@ -259,27 +259,27 @@ const PAGE_META = {
   "datenschutz.html": {
     de: {
       title: "Datenschutz — Adria Care Residenz",
-      desc: "Datenschutzerklärung der Adria Care Residenz: Verantwortlicher MK REHAB DOO, Kontakt per E-Mail, keine Marketing-Cookies.",
+      desc: "Datenschutzerklärung der Adria Care Residenz: Verantwortlicher MK REHAB DOO, optionale Besuchsstatistik nach Einwilligung, keine Marketing-Cookies.",
     },
     en: {
       title: "Privacy (German) — Adria Care Residenz",
-      desc: "Privacy notice of Adria Care Residenz: controller MK REHAB DOO, contact by email, no marketing cookies. The legally binding text is in German.",
+      desc: "Privacy notice of Adria Care Residenz: controller MK REHAB DOO, optional visit statistics after consent, no marketing cookies. The legally binding text is in German.",
     },
     fr: {
       title: "Protection des données (texte allemand) — Adria Care Residenz",
-      desc: "Déclaration de confidentialité de l’Adria Care Residenz : responsable MK REHAB DOO, contact par e-mail, pas de cookies marketing. Le texte juridiquement contraignant est en allemand.",
+      desc: "Déclaration de confidentialité de l’Adria Care Residenz : responsable MK REHAB DOO, statistiques de visite facultatives après consentement, pas de cookies marketing. Le texte juridiquement contraignant est en allemand.",
     },
     es: {
       title: "Protección de datos (texto alemán) — Adria Care Residenz",
-      desc: "Aviso de privacidad de Adria Care Residenz: responsable MK REHAB DOO, contacto por correo, sin cookies de marketing. El texto jurídicamente vinculante está en alemán.",
+      desc: "Aviso de privacidad de Adria Care Residenz: responsable MK REHAB DOO, estadísticas de visita opcionales tras el consentimiento, sin cookies de marketing. El texto jurídicamente vinculante está en alemán.",
     },
     sr: {
       title: "Zaštita podataka (nemački tekst) — Adria Care Residenz",
-      desc: "Izjava o zaštiti podataka Adria Care Residenz: odgovorni MK REHAB DOO, kontakt e-poštom, bez marketinških kolačića. Pravno obavezujući tekst je na nemačkom.",
+      desc: "Izjava o zaštiti podataka Adria Care Residenz: odgovorni MK REHAB DOO, opciona statistika poseta nakon saglasnosti, bez marketinških kolačića. Pravno obavezujući tekst je na nemačkom.",
     },
     ru: {
       title: "Защита данных (немецкий текст) — Adria Care Residenz",
-      desc: "Уведомление о защите данных Adria Care Residenz: ответственный MK REHAB DOO, контакт по эл. почте, без маркетинговых cookie. Юридически обязательный текст — на немецком языке.",
+      desc: "Уведомление о защите данных Adria Care Residenz: ответственный MK REHAB DOO, необязательная статистика посещений после согласия, без маркетинговых cookie. Юридически обязательный текст — на немецком языке.",
     },
   },
 };
@@ -292,7 +292,7 @@ const LEGAL_UI = {
     notice_impressum:
       "The legally binding operator information is the German text below. Adria Care Residenz is the public name of the project; the legal operator is MK REHAB DOO in Podgorica, Montenegro. There is no German GmbH and no phone number on this website.",
     notice_datenschutz:
-      "The legally binding privacy notice is the German text below. The controller is MK REHAB DOO. This website uses no marketing cookies or trackers; there is no cookie banner.",
+      "The legally binding privacy notice is the German text below. The controller is MK REHAB DOO. After consent, the site may use Google Analytics 4 and Yandex Metrica to count visits. There are no marketing pixels or ad networks. There is no phone number on this website.",
   },
   fr: {
     back: "← Accueil",
@@ -301,7 +301,7 @@ const LEGAL_UI = {
     notice_impressum:
       "Les informations juridiquement contraignantes sur l’exploitant sont le texte allemand ci-dessous. Adria Care Residenz est le nom public du projet ; l’exploitant légal est MK REHAB DOO à Podgorica, Monténégro. Il n’existe pas de GmbH allemande et aucun numéro de téléphone n’est publié.",
     notice_datenschutz:
-      "La déclaration de confidentialité juridiquement contraignante est le texte allemand ci-dessous. Le responsable est MK REHAB DOO. Ce site n’utilise ni cookies marketing ni traceurs ; il n’y a pas de bannière de cookies.",
+      "La déclaration de confidentialité juridiquement contraignante est le texte allemand ci-dessous. Le responsable est MK REHAB DOO. Après consentement, le site peut utiliser Google Analytics 4 et Yandex Metrica pour compter les visites. Il n’y a ni pixels marketing ni réseaux publicitaires. Aucun numéro de téléphone n’est publié.",
   },
   es: {
     back: "← Inicio",
@@ -310,7 +310,7 @@ const LEGAL_UI = {
     notice_impressum:
       "La información jurídicamente vinculante sobre el operador es el texto alemán siguiente. Adria Care Residenz es el nombre público del proyecto; el operador legal es MK REHAB DOO en Podgorica, Montenegro. No existe una GmbH alemana y no se publica ningún número de teléfono.",
     notice_datenschutz:
-      "El aviso de privacidad jurídicamente vinculante es el texto alemán siguiente. El responsable es MK REHAB DOO. Este sitio no usa cookies de marketing ni rastreadores; no hay banner de cookies.",
+      "El aviso de privacidad jurídicamente vinculante es el texto alemán siguiente. El responsable es MK REHAB DOO. Tras el consentimiento, el sitio puede usar Google Analytics 4 y Yandex Metrica para contar visitas. No hay píxeles de marketing ni redes publicitarias. No se publica ningún número de teléfono.",
   },
   sr: {
     back: "← Početna",
@@ -319,7 +319,7 @@ const LEGAL_UI = {
     notice_impressum:
       "Pravno obavezujući podaci o operatoru su nemački tekst ispod. Adria Care Residenz je javni naziv projekta; pravni operator je MK REHAB DOO u Podgorici, Crna Gora. Ne postoji nemački GmbH i na sajtu nema broja telefona.",
     notice_datenschutz:
-      "Pravno obavezujuća izjava o zaštiti podataka je nemački tekst ispod. Odgovorni je MK REHAB DOO. Sajt ne koristi marketinške kolačiće ni trekere; nema banera za kolačiće.",
+      "Pravno obavezujuća izjava o zaštiti podataka je nemački tekst ispod. Odgovorni je MK REHAB DOO. Nakon saglasnosti sajt može koristiti Google Analytics 4 i Yandex Metrica za brojanje poseta. Nema marketinških piksela ni reklamnih mreža. Broj telefona se ne objavljuje.",
   },
   ru: {
     back: "← Главная",
@@ -328,7 +328,7 @@ const LEGAL_UI = {
     notice_impressum:
       "Юридически обязательные сведения об операторе — немецкий текст ниже. Adria Care Residenz — публичное название проекта; правовой оператор — MK REHAB DOO в Подгорице, Черногория. Немецкого GmbH нет, номер телефона на сайте не публикуется.",
     notice_datenschutz:
-      "Юридически обязательное уведомление о защите данных — немецкий текст ниже. Ответственный — MK REHAB DOO. Сайт не использует маркетинговые cookie и трекеры; баннера cookie нет.",
+      "Юридически обязательное уведомление о защите данных — немецкий текст ниже. Ответственный — MK REHAB DOO. После согласия сайт может использовать Google Analytics 4 и Yandex Metrica для подсчёта визитов. Маркетинговых пикселей и рекламных сетей нет. Номер телефона на сайте не публикуется.",
   },
 };
 
@@ -458,6 +458,13 @@ function applyDict(html, dict) {
 
 function convertImgPaths(html) {
   return html.replace(/\bsrc=(["'])img\//g, "src=$1/img/");
+}
+
+const CONSENT_SCRIPT = '<script src="/js/consent-analytics.js" defer></script>';
+
+function ensureConsentScript(html) {
+  if (html.includes("consent-analytics.js")) return html;
+  return html.replace(/\s*<\/body>/, `\n${CONSENT_SCRIPT}\n</body>`);
 }
 
 const LANG_LINK_CSS = `  .lang a {
@@ -758,6 +765,7 @@ function processContentPage(file) {
   de = setSwitcher(de, "de", file);
   de = disableClientI18N(de);
   de = rewriteJsonLd(de, "de", i18n.de, file);
+  de = ensureConsentScript(de);
   fs.writeFileSync(srcPath, de);
 
   for (const lang of LOCALE_LANGS) {
@@ -769,6 +777,7 @@ function processContentPage(file) {
     loc = setSwitcher(loc, lang, file);
     loc = rewriteJsonLd(loc, lang, dict, file);
     loc = stripI18NKeepForm(loc);
+    loc = ensureConsentScript(loc);
     const destDir = path.join(ROOT, lang);
     fs.mkdirSync(destDir, { recursive: true });
     fs.writeFileSync(path.join(destDir, file), loc);
@@ -787,6 +796,7 @@ function processLegalPage(file) {
   de = setHtmlLang(de, "de");
   de = setCanonicalAndSocial(de, "de", file);
   de = setSwitcher(de, "de", file);
+  de = ensureConsentScript(de);
   fs.writeFileSync(srcPath, de);
 
   for (const lang of LOCALE_LANGS) {
@@ -796,6 +806,7 @@ function processLegalPage(file) {
     loc = setCanonicalAndSocial(loc, lang, file);
     loc = setSwitcher(loc, lang, file);
     loc = localizeLegalChrome(loc, lang, file);
+    loc = ensureConsentScript(loc);
     fs.writeFileSync(path.join(ROOT, lang, file), loc);
   }
 }
