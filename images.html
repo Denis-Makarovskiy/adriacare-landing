@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <title>Adria Care — Image Board</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ink: #1d2a30;
+      --ink-soft: #66747a;
+      --ground: #f6f4ee;
+      --surface: #fdfcf9;
+      --line: #d9d4c8;
+      --sea: #16566b;
+      --gold: #c89b3c;
+      --shadow: 0 12px 34px rgba(16, 38, 47, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #e8e6df;
+        --ink-soft: #a9b3b8;
+        --ground: #141d21;
+        --surface: #1b2529;
+        --line: #32414a;
+        --sea: #76b7ca;
+        --gold: #d3ad58;
+        --shadow: 0 14px 38px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink);
+      font-family: "Avenir Next", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(1480px, 100%);
+      margin: 0 auto;
+      padding: 0 24px 56px;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 44px 0 30px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--sea);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: clamp(34px, 5vw, 62px);
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .summary {
+      max-width: 520px;
+      margin: 14px 0 0;
+      color: var(--ink-soft);
+      font-size: 15px;
+    }
+
+    .count {
+      flex: 0 0 auto;
+      min-width: 132px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      text-align: right;
+    }
+
+    .count strong {
+      display: block;
+      color: var(--sea);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .count span {
+      color: var(--ink-soft);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .board {
+      columns: 360px 3;
+      column-gap: 18px;
+    }
+
+    .item {
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 18px;
+      overflow: hidden;
+      break-inside: avoid;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .image-link {
+      display: block;
+      overflow: hidden;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--sea) 9%, var(--surface)), var(--surface));
+    }
+
+    .image-link:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: -3px;
+    }
+
+    .image-link img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 180ms ease, filter 180ms ease;
+    }
+
+    .image-link:hover img {
+      transform: scale(1.012);
+      filter: saturate(1.04);
+    }
+
+    figcaption {
+      display: grid;
+      gap: 5px;
+      padding: 12px 14px 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .file {
+      overflow-wrap: anywhere;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .usage {
+      color: var(--ink-soft);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--sea);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      .wrap { padding-inline: 14px; }
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 28px;
+      }
+      .count {
+        min-width: 0;
+        text-align: left;
+      }
+      .board { columns: 1; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .image-link img { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <p class="eyebrow">Adria Care Residenz</p>
+        <h1>Image Board</h1>
+        <p class="summary">All unique image files currently used across the public website. Select an image to open the original file.</p>
+      </div>
+      <div class="count" aria-label="21 images">
+        <strong>21</strong>
+        <span>images</span>
+      </div>
+    </header>
+
+    <section class="board" aria-label="Website images">
+      <figure class="item">
+        <a class="image-link" href="/img/hero-terrace.webp" target="_blank" rel="noopener" aria-label="Open hero-terrace.webp in full size">
+          <img src="/img/hero-terrace.webp" loading="lazy" decoding="async" alt="Adria Care image: hero-terrace.webp">
+        </a>
+        <figcaption><span class="file">/img/hero-terrace.webp</span><span class="usage">Home</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/care-walk.webp" target="_blank" rel="noopener" aria-label="Open care-walk.webp in full size">
+          <img src="/img/care-walk.webp" loading="lazy" decoding="async" alt="Adria Care image: care-walk.webp">
+        </a>
+        <figcaption><span class="file">/img/care-walk.webp</span><span class="usage">Home</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/room.webp" target="_blank" rel="noopener" aria-label="Open room.webp in full size">
+          <img src="/img/room.webp" loading="lazy" decoding="async" alt="Adria Care image: room.webp">
+        </a>
+        <figcaption><span class="file">/img/room.webp</span><span class="usage">Home</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/medical.webp" target="_blank" rel="noopener" aria-label="Open medical.webp in full size">
+          <img src="/img/medical.webp" loading="lazy" decoding="async" alt="Adria Care image: medical.webp">
+        </a>
+        <figcaption><span class="file">/img/medical.webp</span><span class="usage">Home</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/activity.webp" target="_blank" rel="noopener" aria-label="Open activity.webp in full size">
+          <img src="/img/activity.webp" loading="lazy" decoding="async" alt="Adria Care image: activity.webp">
+        </a>
+        <figcaption><span class="file">/img/activity.webp</span><span class="usage">Home</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-hero.webp" target="_blank" rel="noopener" aria-label="Open mne-hero.webp in full size">
+          <img src="/img/mne-hero.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-hero.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-hero.webp</span><span class="usage">Montenegro · social preview</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-coast.webp" target="_blank" rel="noopener" aria-label="Open mne-coast.webp in full size">
+          <img src="/img/mne-coast.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-coast.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-coast.webp</span><span class="usage">Montenegro</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-kotor.webp" target="_blank" rel="noopener" aria-label="Open mne-kotor.webp in full size">
+          <img src="/img/mne-kotor.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-kotor.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-kotor.webp</span><span class="usage">Montenegro</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-sveti-stefan.webp" target="_blank" rel="noopener" aria-label="Open mne-sveti-stefan.webp in full size">
+          <img src="/img/mne-sveti-stefan.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-sveti-stefan.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-sveti-stefan.webp</span><span class="usage">Montenegro</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-cetinje.webp" target="_blank" rel="noopener" aria-label="Open mne-cetinje.webp in full size">
+          <img src="/img/mne-cetinje.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-cetinje.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-cetinje.webp</span><span class="usage">Montenegro</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-lovcen.webp" target="_blank" rel="noopener" aria-label="Open mne-lovcen.webp in full size">
+          <img src="/img/mne-lovcen.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-lovcen.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-lovcen.webp</span><span class="usage">Montenegro</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-skadar.webp" target="_blank" rel="noopener" aria-label="Open mne-skadar.webp in full size">
+          <img src="/img/mne-skadar.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-skadar.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-skadar.webp</span><span class="usage">Montenegro</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/mne-olive.webp" target="_blank" rel="noopener" aria-label="Open mne-olive.webp in full size">
+          <img src="/img/mne-olive.webp" loading="lazy" decoding="async" alt="Adria Care image: mne-olive.webp">
+        </a>
+        <figcaption><span class="file">/img/mne-olive.webp</span><span class="usage">Montenegro</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/exc-hero.webp" target="_blank" rel="noopener" aria-label="Open exc-hero.webp in full size">
+          <img src="/img/exc-hero.webp" loading="lazy" decoding="async" alt="Adria Care image: exc-hero.webp">
+        </a>
+        <figcaption><span class="file">/img/exc-hero.webp</span><span class="usage">Excursions</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/exc-boat.webp" target="_blank" rel="noopener" aria-label="Open exc-boat.webp in full size">
+          <img src="/img/exc-boat.webp" loading="lazy" decoding="async" alt="Adria Care image: exc-boat.webp">
+        </a>
+        <figcaption><span class="file">/img/exc-boat.webp</span><span class="usage">Excursions</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/nb-hero.webp" target="_blank" rel="noopener" aria-label="Open nb-hero.webp in full size">
+          <img src="/img/nb-hero.webp" loading="lazy" decoding="async" alt="Adria Care image: nb-hero.webp">
+        </a>
+        <figcaption><span class="file">/img/nb-hero.webp</span><span class="usage">Neighbouring countries</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/nb-ohrid.webp" target="_blank" rel="noopener" aria-label="Open nb-ohrid.webp in full size">
+          <img src="/img/nb-ohrid.webp" loading="lazy" decoding="async" alt="Adria Care image: nb-ohrid.webp">
+        </a>
+        <figcaption><span class="file">/img/nb-ohrid.webp</span><span class="usage">Neighbouring countries</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/pilg-hero.webp" target="_blank" rel="noopener" aria-label="Open pilg-hero.webp in full size">
+          <img src="/img/pilg-hero.webp" loading="lazy" decoding="async" alt="Adria Care image: pilg-hero.webp">
+        </a>
+        <figcaption><span class="file">/img/pilg-hero.webp</span><span class="usage">Pilgrimage</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/pilg-candles.webp" target="_blank" rel="noopener" aria-label="Open pilg-candles.webp in full size">
+          <img src="/img/pilg-candles.webp" loading="lazy" decoding="async" alt="Adria Care image: pilg-candles.webp">
+        </a>
+        <figcaption><span class="file">/img/pilg-candles.webp</span><span class="usage">Pilgrimage</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/well-hero.webp" target="_blank" rel="noopener" aria-label="Open well-hero.webp in full size">
+          <img src="/img/well-hero.webp" loading="lazy" decoding="async" alt="Adria Care image: well-hero.webp">
+        </a>
+        <figcaption><span class="file">/img/well-hero.webp</span><span class="usage">Wellness</span></figcaption>
+      </figure>
+      <figure class="item">
+        <a class="image-link" href="/img/well-trail.webp" target="_blank" rel="noopener" aria-label="Open well-trail.webp in full size">
+          <img src="/img/well-trail.webp" loading="lazy" decoding="async" alt="Adria Care image: well-trail.webp">
+        </a>
+        <figcaption><span class="file">/img/well-trail.webp</span><span class="usage">Wellness</span></figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <span>This utility page is public but excluded from search indexing.</span>
+      <a href="/">Back to adriacare.me</a>
+    </footer>
+  </main>
+</body>
+</html>
