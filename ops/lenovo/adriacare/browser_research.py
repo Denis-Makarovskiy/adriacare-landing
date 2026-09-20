@@ -221,7 +221,7 @@ def finalise(lead: dict[str, Any], crawl: dict[str, Any], *, dry_run: bool,
         # target, typically because the host does not resolve or is not IDNA
         # safe.  That is a final result, not a temporary network failure, and
         # retrying such a domain forever only wastes the research queue.
-        decision, status = 'no_published_email', 'rejected'
+        decision, status = 'no_published_email', 'unsuitable'
         detail = (f"Domain is not reachable ({kinds}); Chrome never started, so the site is "
                   'classified as address-less and removed from the research queue.')
     elif failures:
